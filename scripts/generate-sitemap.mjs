@@ -5,7 +5,7 @@ const rootDir = process.cwd();
 const publicDir = resolve(rootDir, "public");
 const ministerePath = resolve(rootDir, "data", "ministere.json");
 
-const siteUrl = (process.env.SITE_URL || process.env.VITE_SITE_URL || "https://bugetul-romaniei.ro").replace(
+const siteUrl = (process.env.SITE_URL || process.env.VITE_SITE_URL || "https://bugetul-romaniei.vercel.app").replace(
   /\/+$/,
   ""
 );

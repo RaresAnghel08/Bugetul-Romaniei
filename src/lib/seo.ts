@@ -1,4 +1,10 @@
-export const SITE_URL = "https://bugetul-romaniei.ro";
+const runtimeOrigin = typeof window !== "undefined" ? window.location.origin : "";
+const configuredSiteUrl = (import.meta.env.VITE_SITE_URL ?? "").trim();
+
+export const SITE_URL = (configuredSiteUrl || runtimeOrigin || "https://bugetul-romaniei.vercel.app").replace(
+  /\/+$/,
+  ""
+);
 export const SITE_NAME = "Bugetul Romaniei";
 
 export const toAbsoluteSiteUrl = (path: string): string => {
