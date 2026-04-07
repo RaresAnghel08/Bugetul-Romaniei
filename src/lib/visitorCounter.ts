@@ -7,9 +7,11 @@ export interface VisitorSnapshot {
   source: "live" | "fallback";
 }
 
+const configuredCounterBaseUrl = import.meta.env.VITE_COUNTER_BASE_URL?.trim();
 const COUNTER_BASE_URL =
-  import.meta.env.VITE_COUNTER_BASE_URL?.trim() ||
-  "https://api.counterapi.dev/v2/rares-anghels-team-3633/mycountrar";
+  configuredCounterBaseUrl && configuredCounterBaseUrl.startsWith("/")
+    ? configuredCounterBaseUrl
+    : "/api/counter";
 
 const STORAGE = {
   pageviews: "buget.pageviews",
