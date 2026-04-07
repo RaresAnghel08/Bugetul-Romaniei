@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { SITE_NAME, SITE_URL } from "../lib/seo";
 
-const OG_IMAGE_VERSION = "20260407-2";
-const DEFAULT_IMAGE_PATH = `/og-cover.png?v=${OG_IMAGE_VERSION}`;
-const DEFAULT_IMAGE_ALT = "Bugetul Romaniei - dashboard civic bugetar";
+const OG_IMAGE_VERSION = "20260407-3";
+const DEFAULT_IMAGE_PATH = `/favicon.png?v=${OG_IMAGE_VERSION}`;
+const DEFAULT_IMAGE_ALT = "Bugetul Romaniei - favicon tricolor";
 
 type JsonLd = Record<string, unknown>;
 
@@ -79,10 +79,10 @@ export const Seo = ({
     upsertMetaTag("property", "og:image:secure_url", imageUrl);
     upsertMetaTag("property", "og:image:alt", DEFAULT_IMAGE_ALT);
     upsertMetaTag("property", "og:image:type", "image/png");
-    upsertMetaTag("property", "og:image:width", "1200");
-    upsertMetaTag("property", "og:image:height", "630");
+    upsertMetaTag("property", "og:image:width", "256");
+    upsertMetaTag("property", "og:image:height", "256");
 
-    upsertMetaTag("name", "twitter:card", "summary_large_image");
+    upsertMetaTag("name", "twitter:card", "summary");
     upsertMetaTag("name", "twitter:title", title);
     upsertMetaTag("name", "twitter:description", description);
     upsertMetaTag("name", "twitter:image", imageUrl);
