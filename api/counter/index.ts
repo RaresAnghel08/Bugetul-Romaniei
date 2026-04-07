@@ -1,3 +1,5 @@
+/// <reference types="node" />
+
 const COUNTER_WORKSPACE =
   process.env.COUNTER_WORKSPACE || process.env.VITE_COUNTER_WORKSPACE || "rares-anghels-team-3633";
 const COUNTER_NAME = process.env.COUNTER_NAME || process.env.VITE_COUNTER_NAME || "mycountrar";
