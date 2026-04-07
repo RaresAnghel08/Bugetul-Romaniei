@@ -1,0 +1,163 @@
+<?xml version="1.0" ?>
+<!DOCTYPE main [
+  <!ELEMENT main (DATA_RECORD*)>
+  <!ELEMENT DATA_RECORD (TITLU_RAPORT?,ANEXA?,COD_ORDONATOR?,ORDONATOR?,CAPITOL?,SUBCAPITOL?,PARAGRAF?,TITLU?,ARTICOL?,ALINEAT?,DENUMIRE?,PROGRAM_2017?,ESTIMARI2018?,ESTIMARI2019?,ESTIMARI2020?)+>
+  <!ELEMENT TITLU_RAPORT (#PCDATA)>
+  <!ELEMENT ANEXA (#PCDATA)>
+  <!ELEMENT COD_ORDONATOR (#PCDATA)>
+  <!ELEMENT ORDONATOR (#PCDATA)>
+  <!ELEMENT CAPITOL (#PCDATA)>
+  <!ELEMENT SUBCAPITOL (#PCDATA)>
+  <!ELEMENT PARAGRAF (#PCDATA)>
+  <!ELEMENT TITLU (#PCDATA)>
+  <!ELEMENT ARTICOL (#PCDATA)>
+  <!ELEMENT ALINEAT (#PCDATA)>
+  <!ELEMENT DENUMIRE (#PCDATA)>
+  <!ELEMENT PROGRAM_2017 (#PCDATA)>
+  <!ELEMENT ESTIMARI2018 (#PCDATA)>
+  <!ELEMENT ESTIMARI2019 (#PCDATA)>
+  <!ELEMENT ESTIMARI2020 (#PCDATA)>
+]>
+<main>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>5006</CAPITOL>
+    <DENUMIRE>CREDITE EXTERNE</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>5006</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>70</TITLU>
+    <DENUMIRE>CHELTUIELI DE CAPITAL</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>5006</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>71</TITLU>
+    <DENUMIRE>TITLUL XIII ACTIVE NEFINANCIARE</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>5006</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>71</TITLU>
+    <ARTICOL>01</ARTICOL>
+    <DENUMIRE> Active fixe</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>5006</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>71</TITLU>
+    <ARTICOL>01</ARTICOL>
+    <ALINEAT>02</ALINEAT>
+    <DENUMIRE> Masini, echipamente si mijloace de transport</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>6106</CAPITOL>
+    <DENUMIRE>ORDINE PUBLICA SI SIGURANTA NATIONALA</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>6106</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>70</TITLU>
+    <DENUMIRE>CHELTUIELI DE CAPITAL</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>6106</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>71</TITLU>
+    <DENUMIRE>TITLUL XIII ACTIVE NEFINANCIARE</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>6106</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>71</TITLU>
+    <ARTICOL>01</ARTICOL>
+    <DENUMIRE> Active fixe</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>6106</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>71</TITLU>
+    <ARTICOL>01</ARTICOL>
+    <ALINEAT>02</ALINEAT>
+    <DENUMIRE>  Masini, echipamente si mijloace de transport</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>6106</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Ordine publica</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli, articole si alineate&#40;sume alocate din credite externe&#41;</TITLU_RAPORT>
+    <ANEXA>Anexa nr.3/19/07</ANEXA>
+    <COD_ORDONATOR>19</COD_ORDONATOR>
+    <ORDONATOR>Ministerul Afacerilor Interne</ORDONATOR>
+    <CAPITOL>6106</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <PARAGRAF>03</PARAGRAF>
+    <DENUMIRE>  Paza si supravegherea frontierei</DENUMIRE>
+    <PROGRAM_2017>1.100</PROGRAM_2017>
+  </DATA_RECORD>
+</main>

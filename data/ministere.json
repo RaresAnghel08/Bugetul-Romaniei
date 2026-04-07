@@ -1,0 +1,2263 @@
+[
+  {
+    "cod": "65",
+    "nume": "Ministerul Finantelor-Actiuni Generale",
+    "2025": 85410764000,
+    "2026": 111838953000,
+    "estimari_2027": 108625593000,
+    "estimari_2028": 105007911000,
+    "estimari_2029": 104162297000,
+    "delta_pct": 30.94,
+    "exclude_from_ranking": true,
+    "istoric": {
+      "2015": 20061358000,
+      "2016": 22552764000,
+      "2017": 18461698000,
+      "2018": 21478098000,
+      "2019": 25433843000,
+      "2020": 26390521000,
+      "2021": 35556900000,
+      "2022": 44248919000,
+      "2023": 55673507000,
+      "2024": 63186519000,
+      "2025": 85410764000,
+      "2026": 111838953000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5500",
+        "denumire": "TRANZACTII PRIVIND DATORIA PUBLICA SI IMPRUMUTURI",
+        "2025": 41456940000,
+        "2026": 60433649000
+      },
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 40428265000,
+        "2026": 46681218000
+      },
+      {
+        "capitol": "8000",
+        "denumire": "ACTIUNI GENERALE ECONOMICE, COMERCIALE SI DE MUNCA",
+        "2025": 1326844000,
+        "2026": 2960963000
+      },
+      {
+        "capitol": "5400",
+        "denumire": "ALTE SERVICII PUBLICE GENERALE",
+        "2025": 2198715000,
+        "2026": 1763123000
+      }
+    ]
+  },
+  {
+    "cod": "20",
+    "nume": "Ministerul Muncii, Familiei, Tineretului si Solidaritatii Sociale",
+    "2025": 96111960000,
+    "2026": 92900424000,
+    "estimari_2027": 95776902000,
+    "estimari_2028": 99019995000,
+    "estimari_2029": 98992488000,
+    "delta_pct": -3.34,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 36721160000,
+      "2016": 41215828000,
+      "2017": 35800766000,
+      "2018": 31692984000,
+      "2019": 27220709000,
+      "2020": 41910839000,
+      "2021": 53778709000,
+      "2022": 56578716000,
+      "2023": 60983436000,
+      "2024": 75941830000,
+      "2025": 96111960000,
+      "2026": 92900424000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 60616179000,
+        "2026": 61429678000
+      },
+      {
+        "capitol": "5600",
+        "denumire": "TRANSFERURI CU CARACTER GENERAL INTRE DIFERITE NIVELE ALE ADMINISTRATIEI",
+        "2025": 35443076000,
+        "2026": 31419238000
+      },
+      {
+        "capitol": "6500",
+        "denumire": "INVATAMANT",
+        "2025": 48000000,
+        "2026": 47000000
+      },
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 4705000,
+        "2026": 4508000
+      }
+    ]
+  },
+  {
+    "cod": "25",
+    "nume": "Ministerul Educatiei si Cercetarii",
+    "2025": 64818304000,
+    "2026": 64924370000,
+    "estimari_2027": 59300812000,
+    "estimari_2028": 60926170000,
+    "estimari_2029": 60016485000,
+    "delta_pct": 0.16,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 9133831000,
+      "2016": 8958896000,
+      "2017": 8243101000,
+      "2018": 23796045000,
+      "2019": 33209208000,
+      "2020": 32876149000,
+      "2021": 31122596000,
+      "2022": 32485047000,
+      "2023": 37093718000,
+      "2024": 61632992000,
+      "2025": 64818304000,
+      "2026": 64924370000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6500",
+        "denumire": "INVATAMANT",
+        "2025": 62630283000,
+        "2026": 62143814000
+      },
+      {
+        "capitol": "5300",
+        "denumire": "CERCETARE FUNDAMENTALA SI CERCETARE DEZVOLTARE",
+        "2025": 2150457000,
+        "2026": 2703920000
+      },
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 35064000,
+        "2026": 74136000
+      },
+      {
+        "capitol": "6600",
+        "denumire": "SANATATE",
+        "2025": 2500000,
+        "2026": 2500000
+      }
+    ]
+  },
+  {
+    "cod": "18",
+    "nume": "Ministerul Apararii Nationale",
+    "2025": 42755030000,
+    "2026": 49438621000,
+    "estimari_2027": 61816401000,
+    "estimari_2028": 69548316000,
+    "estimari_2029": 76805415000,
+    "delta_pct": 15.63,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 7357291000,
+      "2016": 7154973000,
+      "2017": 16322232000,
+      "2018": 18164891000,
+      "2019": 20590658000,
+      "2020": 23735849000,
+      "2021": 22746269000,
+      "2022": 25912725000,
+      "2023": 38759270000,
+      "2024": 39544618000,
+      "2025": 42755030000,
+      "2026": 49438621000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6000",
+        "denumire": "APARARE",
+        "2025": 29496491000,
+        "2026": 36341076000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 5801269000,
+        "2026": 6445815000
+      },
+      {
+        "capitol": "6600",
+        "denumire": "SANATATE",
+        "2025": 3330697000,
+        "2026": 2737423000
+      },
+      {
+        "capitol": "6500",
+        "denumire": "INVATAMANT",
+        "2025": 2454630000,
+        "2026": 2316887000
+      },
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 1437535000,
+        "2026": 1421970000
+      },
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 194602000,
+        "2026": 138100000
+      },
+      {
+        "capitol": "5400",
+        "denumire": "ALTE SERVICII PUBLICE GENERALE",
+        "2025": 18576000,
+        "2026": 19323000
+      },
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 12915000,
+        "2026": 9712000
+      },
+      {
+        "capitol": "7000",
+        "denumire": "LOCUINTE, SERVICII SI DEZVOLTARE PUBLICA",
+        "2025": 5000000,
+        "2026": 5000000
+      },
+      {
+        "capitol": "8000",
+        "denumire": "ACTIUNI GENERALE ECONOMICE, COMERCIALE SI DE MUNCA",
+        "2025": 3315000,
+        "2026": 3315000
+      }
+    ]
+  },
+  {
+    "cod": "24",
+    "nume": "Ministerul Transporturilor si Infrastructurii",
+    "2025": 43265989000,
+    "2026": 42033996000,
+    "estimari_2027": 34297851000,
+    "estimari_2028": 29324036000,
+    "estimari_2029": 11688761000,
+    "delta_pct": -2.85,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 14827360000,
+      "2016": 16149858000,
+      "2017": 13761215000,
+      "2018": 9132803000,
+      "2019": 13111972000,
+      "2020": 12094034000,
+      "2021": 14121403000,
+      "2022": 17017466000,
+      "2023": 23319757000,
+      "2024": 30001915000,
+      "2025": 43265989000,
+      "2026": 42033996000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "8400",
+        "denumire": "TRANSPORTURI",
+        "2025": 42385621000,
+        "2026": 41120993000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 775000000,
+        "2026": 800000000
+      },
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 96000000,
+        "2026": 107000000
+      },
+      {
+        "capitol": "6600",
+        "denumire": "SANATATE",
+        "2025": 9365000,
+        "2026": 6000000
+      },
+      {
+        "capitol": "5400",
+        "denumire": "ALTE SERVICII PUBLICE GENERALE",
+        "2025": 3000,
+        "2026": 3000
+      }
+    ]
+  },
+  {
+    "cod": "19",
+    "nume": "Ministerul Afacerilor Interne",
+    "2025": 34029061000,
+    "2026": 35765796000,
+    "estimari_2027": 35195397000,
+    "estimari_2028": 35375470000,
+    "estimari_2029": 35199630000,
+    "delta_pct": 5.1,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 8829361000,
+      "2016": 8820843000,
+      "2017": 11287012000,
+      "2018": 15311937000,
+      "2019": 19074992000,
+      "2020": 20192671000,
+      "2021": 21546618000,
+      "2022": 23692384000,
+      "2023": 26343952000,
+      "2024": 27987183000,
+      "2025": 34029061000,
+      "2026": 35765796000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 24596787000,
+        "2026": 25311769000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 8490372000,
+        "2026": 9475778000
+      },
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 505343000,
+        "2026": 463862000
+      },
+      {
+        "capitol": "6500",
+        "denumire": "INVATAMANT",
+        "2025": 321764000,
+        "2026": 367994000
+      },
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 114795000,
+        "2026": 146393000
+      }
+    ]
+  },
+  {
+    "cod": "22",
+    "nume": "Ministerul Agriculturii si Dezvoltarii Rurale",
+    "2025": 25785054000,
+    "2026": 27732342000,
+    "estimari_2027": 25975635000,
+    "estimari_2028": 26254511000,
+    "estimari_2029": 20259340000,
+    "delta_pct": 7.55,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 23692977000,
+      "2016": 22613669000,
+      "2017": 17383401000,
+      "2018": 23522064000,
+      "2019": 22862723000,
+      "2020": 18338542000,
+      "2021": 26005827000,
+      "2022": 24681163000,
+      "2023": 25373202000,
+      "2024": 26463956000,
+      "2025": 25785054000,
+      "2026": 27732342000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "8300",
+        "denumire": "AGRICULTURA, SILVICULTURA, PISCICULTURA SI VANATOARE",
+        "2025": 25163825000,
+        "2026": 27323051000
+      },
+      {
+        "capitol": "8600",
+        "denumire": "CERCETARE SI DEZVOLTARE IN DOMENIUL ECONOMIC",
+        "2025": 395229000,
+        "2026": 322251000
+      },
+      {
+        "capitol": "8000",
+        "denumire": "ACTIUNI GENERALE ECONOMICE, COMERCIALE SI DE MUNCA",
+        "2025": 226000000,
+        "2026": 87040000
+      }
+    ]
+  },
+  {
+    "cod": "15",
+    "nume": "Ministerul Dezvoltarii, Lucrarilor Publice si Administratiei",
+    "2025": 21662781000,
+    "2026": 22838339000,
+    "estimari_2027": 11906429000,
+    "estimari_2028": 10723175000,
+    "estimari_2029": 17063042000,
+    "delta_pct": 5.43,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 5005620000,
+      "2016": 3022898000,
+      "2017": 6909011000,
+      "2018": 6208580000,
+      "2019": 5697113000,
+      "2020": 5546919000,
+      "2021": 7902736000,
+      "2022": 8563590000,
+      "2023": 13210999000,
+      "2024": 13208743000,
+      "2025": 21662781000,
+      "2026": 22838339000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "7000",
+        "denumire": "LOCUINTE, SERVICII SI DEZVOLTARE PUBLICA",
+        "2025": 16479875000,
+        "2026": 11435575000
+      },
+      {
+        "capitol": "8000",
+        "denumire": "ACTIUNI GENERALE ECONOMICE, COMERCIALE SI DE MUNCA",
+        "2025": 4905900000,
+        "2026": 11116600000
+      },
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 277006000,
+        "2026": 286164000
+      }
+    ]
+  },
+  {
+    "cod": "26",
+    "nume": "Ministerul Sanatatii",
+    "2025": 28021128000,
+    "2026": 22784162000,
+    "estimari_2027": 20921710000,
+    "estimari_2028": 20885760000,
+    "estimari_2029": 19720062000,
+    "delta_pct": -18.69,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 6800576000,
+      "2016": 6716750000,
+      "2017": 7871466000,
+      "2018": 8767989000,
+      "2019": 11137470000,
+      "2020": 11581518000,
+      "2021": 17583582000,
+      "2022": 24092967000,
+      "2023": 23854672000,
+      "2024": 19406054000,
+      "2025": 28021128000,
+      "2026": 22784162000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6600",
+        "denumire": "SANATATE",
+        "2025": 24165674000,
+        "2026": 22783097000
+      },
+      {
+        "capitol": "7000",
+        "denumire": "LOCUINTE, SERVICII SI DEZVOLTARE PUBLICA",
+        "2025": 1330000,
+        "2026": 1065000
+      },
+      {
+        "capitol": "5600",
+        "denumire": "TRANSFERURI CU CARACTER GENERAL INTRE DIFERITE NIVELE ALE ADMINISTRATIEI",
+        "2025": 3854124000,
+        "2026": 0
+      }
+    ]
+  },
+  {
+    "cod": "36",
+    "nume": "Ministerul Energiei",
+    "2025": 15274496000,
+    "2026": 19716135000,
+    "estimari_2027": 6676892000,
+    "estimari_2028": 4103370000,
+    "estimari_2029": 3928761000,
+    "delta_pct": 29.08,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 1132139000,
+      "2016": 861084000,
+      "2017": 466879000,
+      "2018": 593300000,
+      "2019": 923349000,
+      "2021": 1135280000,
+      "2022": 3433564000,
+      "2023": 5462029000,
+      "2024": 8017626000,
+      "2025": 15274496000,
+      "2026": 19716135000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "8100",
+        "denumire": "COMBUSTIBILI SI ENERGIE",
+        "2025": 11600984000,
+        "2026": 14648907000
+      },
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 2063987000,
+        "2026": 2947747000
+      },
+      {
+        "capitol": "8000",
+        "denumire": "ACTIUNI GENERALE ECONOMICE, COMERCIALE SI DE MUNCA",
+        "2025": 1509525000,
+        "2026": 2009481000
+      },
+      {
+        "capitol": "8600",
+        "denumire": "CERCETARE SI DEZVOLTARE IN DOMENIUL ECONOMIC",
+        "2025": 100000000,
+        "2026": 110000000
+      }
+    ]
+  },
+  {
+    "cod": "54",
+    "nume": "Ministerul Investitiilor si Proiectelor Europene",
+    "2025": 15740236000,
+    "2026": 12635440000,
+    "estimari_2027": 13927919000,
+    "estimari_2028": 13927582000,
+    "estimari_2029": 13446697000,
+    "delta_pct": -19.73,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 1766723000,
+      "2016": 2621601000,
+      "2019": 2282932000,
+      "2020": 2094134000,
+      "2021": 2022468000,
+      "2022": 12799443000,
+      "2023": 11737079000,
+      "2024": 8667443000,
+      "2025": 15740236000,
+      "2026": 12635440000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 12445210000,
+        "2026": 10851240000
+      },
+      {
+        "capitol": "7400",
+        "denumire": "PROTECTIA MEDIULUI",
+        "2025": 2198926000,
+        "2026": 1563148000
+      },
+      {
+        "capitol": "8000",
+        "denumire": "ACTIUNI GENERALE ECONOMICE, COMERCIALE SI DE MUNCA",
+        "2025": 1096000000,
+        "2026": 220902000
+      },
+      {
+        "capitol": "5400",
+        "denumire": "ALTE SERVICII PUBLICE GENERALE",
+        "2025": 100000,
+        "2026": 150000
+      }
+    ]
+  },
+  {
+    "cod": "16",
+    "nume": "Ministerul Finantelor",
+    "2025": 12074065000,
+    "2026": 12169298000,
+    "estimari_2027": 12237123000,
+    "estimari_2028": 12208491000,
+    "estimari_2029": 13521183000,
+    "delta_pct": 0.79,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 3466981000,
+      "2016": 3461116000,
+      "2017": 3257148000,
+      "2018": 4563515000,
+      "2019": 5411863000,
+      "2020": 5304440000,
+      "2021": 5424736000,
+      "2022": 5918177000,
+      "2023": 6446635000,
+      "2024": 9968706000,
+      "2025": 12074065000,
+      "2026": 12169298000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 7138768000,
+        "2026": 9311035000
+      },
+      {
+        "capitol": "5400",
+        "denumire": "ALTE SERVICII PUBLICE GENERALE",
+        "2025": 4935297000,
+        "2026": 2858263000
+      }
+    ]
+  },
+  {
+    "cod": "23",
+    "nume": "Ministerul Mediului, Apelor si Padurilor",
+    "2025": 4840771000,
+    "2026": 5952143000,
+    "estimari_2027": 2025594000,
+    "estimari_2028": 1720583000,
+    "estimari_2029": 1675889000,
+    "delta_pct": 22.96,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 2826878000,
+      "2016": 2773083000,
+      "2017": 471201000,
+      "2018": 444907000,
+      "2019": 580332000,
+      "2020": 1200792000,
+      "2021": 1409076000,
+      "2022": 2428587000,
+      "2023": 3856010000,
+      "2024": 3144156000,
+      "2025": 4840771000,
+      "2026": 5952143000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "7400",
+        "denumire": "PROTECTIA MEDIULUI",
+        "2025": 3077179000,
+        "2026": 4071934000
+      },
+      {
+        "capitol": "7000",
+        "denumire": "LOCUINTE, SERVICII SI DEZVOLTARE PUBLICA",
+        "2025": 1166091000,
+        "2026": 1306349000
+      },
+      {
+        "capitol": "8300",
+        "denumire": "AGRICULTURA, SILVICULTURA, PISCICULTURA SI VANATOARE",
+        "2025": 424023000,
+        "2026": 365317000
+      },
+      {
+        "capitol": "8000",
+        "denumire": "ACTIUNI GENERALE ECONOMICE, COMERCIALE SI DE MUNCA",
+        "2025": 173478000,
+        "2026": 208543000
+      }
+    ]
+  },
+  {
+    "cod": "31",
+    "nume": "Serviciul Roman de Informatii",
+    "2025": 4435756000,
+    "2026": 5202140000,
+    "estimari_2027": 4866624000,
+    "estimari_2028": 4892949000,
+    "estimari_2029": 4811991000,
+    "delta_pct": 17.28,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 1392105000,
+      "2016": 1205979000,
+      "2017": 1706000000,
+      "2018": 2306284000,
+      "2019": 2020885000,
+      "2020": 2683966000,
+      "2021": 2708055000,
+      "2022": 3183068000,
+      "2023": 3939360000,
+      "2024": 3959208000,
+      "2025": 4435756000,
+      "2026": 5202140000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 3182351000,
+        "2026": 3889415000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 1160825000,
+        "2026": 1230725000
+      },
+      {
+        "capitol": "6500",
+        "denumire": "INVATAMANT",
+        "2025": 92580000,
+        "2026": 82000000
+      }
+    ]
+  },
+  {
+    "cod": "17",
+    "nume": "Ministerul Justitiei",
+    "2025": 4154225000,
+    "2026": 4455926000,
+    "estimari_2027": 4094548000,
+    "estimari_2028": 4224531000,
+    "estimari_2029": 4226081000,
+    "delta_pct": 7.26,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 2710586000,
+      "2016": 2724568000,
+      "2017": 3176621000,
+      "2018": 3750608000,
+      "2019": 4357261000,
+      "2020": 4931798000,
+      "2021": 4738568000,
+      "2022": 5001098000,
+      "2023": 2946709000,
+      "2024": 3036566000,
+      "2025": 4154225000,
+      "2026": 4455926000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 3889000000,
+        "2026": 4146473000
+      },
+      {
+        "capitol": "5400",
+        "denumire": "ALTE SERVICII PUBLICE GENERALE",
+        "2025": 239250000,
+        "2026": 276400000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 19675000,
+        "2026": 25553000
+      },
+      {
+        "capitol": "6600",
+        "denumire": "SANATATE",
+        "2025": 6300000,
+        "2026": 7500000
+      }
+    ]
+  },
+  {
+    "cod": "35",
+    "nume": "Ministerul Economiei, Digitalizarii, Antreprenoriatului si Turismului",
+    "2025": 2940863000,
+    "2026": 3682452000,
+    "estimari_2027": 1478092000,
+    "estimari_2028": 1009650000,
+    "estimari_2029": 1000058000,
+    "delta_pct": 25.22,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 407530000,
+      "2016": 506265000,
+      "2017": 302237000,
+      "2018": 355866000,
+      "2019": 620873000,
+      "2020": 1445224000,
+      "2021": 6596397000,
+      "2022": 453536000,
+      "2023": 708418000,
+      "2024": 1308387000,
+      "2025": 2940863000,
+      "2026": 3682452000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "8500",
+        "denumire": "COMUNICATII",
+        "2025": 706930000,
+        "2026": 1475223000
+      },
+      {
+        "capitol": "8000",
+        "denumire": "ACTIUNI GENERALE ECONOMICE, COMERCIALE SI DE MUNCA",
+        "2025": 703310000,
+        "2026": 1327184000
+      },
+      {
+        "capitol": "8200",
+        "denumire": "INDUSTRIA EXTRACTIVA, PRELUCRATOARE SI CONSTRUCTII",
+        "2025": 1193000000,
+        "2026": 505000000
+      },
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 295820000,
+        "2026": 316045000
+      },
+      {
+        "capitol": "8700",
+        "denumire": "ALTE ACTIUNI ECONOMICE",
+        "2025": 26803000,
+        "2026": 44000000
+      },
+      {
+        "capitol": "8100",
+        "denumire": "COMBUSTIBILI SI ENERGIE",
+        "2025": 10000000,
+        "2026": 10000000
+      },
+      {
+        "capitol": "8600",
+        "denumire": "CERCETARE SI DEZVOLTARE IN DOMENIUL ECONOMIC",
+        "2025": 5000000,
+        "2026": 5000000
+      }
+    ]
+  },
+  {
+    "cod": "04",
+    "nume": "Inalta Curte de Casatie si Justitie",
+    "2025": 3445048000,
+    "2026": 3424437000,
+    "estimari_2027": 3654389000,
+    "estimari_2028": 3771328000,
+    "estimari_2029": 3771360000,
+    "delta_pct": -0.6,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 71515000,
+      "2016": 67481000,
+      "2017": 99479000,
+      "2018": 128253000,
+      "2019": 150130000,
+      "2020": 147580000,
+      "2021": 144936000,
+      "2022": 152972000,
+      "2023": 2675983000,
+      "2024": 2884489000,
+      "2025": 3445048000,
+      "2026": 3424437000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 3444987000,
+        "2026": 3424366000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 50000,
+        "2026": 54000
+      },
+      {
+        "capitol": "5400",
+        "denumire": "ALTE SERVICII PUBLICE GENERALE",
+        "2025": 11000,
+        "2026": 17000
+      }
+    ]
+  },
+  {
+    "cod": "49",
+    "nume": "Secretariatul de Stat pentru Culte",
+    "2025": 2797999000,
+    "2026": 2804335000,
+    "estimari_2027": 2637243000,
+    "estimari_2028": 2721636000,
+    "estimari_2029": 2721636000,
+    "delta_pct": 0.23,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2017": 11703000,
+      "2018": 8921000,
+      "2025": 2797999000,
+      "2026": 2804335000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 2778984000,
+        "2026": 2788798000
+      },
+      {
+        "capitol": "6500",
+        "denumire": "INVATAMANT",
+        "2025": 19015000,
+        "2026": 15537000
+      }
+    ]
+  },
+  {
+    "cod": "13",
+    "nume": "Secretariatul General al Guvernului",
+    "2025": 2373070000,
+    "2026": 2700863000,
+    "estimari_2027": 2171534000,
+    "estimari_2028": 2210257000,
+    "estimari_2029": 2125989000,
+    "delta_pct": 13.81,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 897614000,
+      "2016": 959045000,
+      "2017": 878639000,
+      "2018": 1403356000,
+      "2019": 2251919000,
+      "2020": 1947472000,
+      "2021": 2514781000,
+      "2022": 2994605000,
+      "2023": 4119088000,
+      "2024": 4774650000,
+      "2025": 2373070000,
+      "2026": 2700863000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 1124451000,
+        "2026": 1328478000
+      },
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 1085840000,
+        "2026": 1104803000
+      },
+      {
+        "capitol": "8500",
+        "denumire": "COMUNICATII",
+        "2025": 46879000,
+        "2026": 126240000
+      },
+      {
+        "capitol": "8000",
+        "denumire": "ACTIUNI GENERALE ECONOMICE, COMERCIALE SI DE MUNCA",
+        "2025": 70400000,
+        "2026": 85612000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 45000000,
+        "2026": 45000000
+      },
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 0,
+        "2026": 10605000
+      },
+      {
+        "capitol": "8100",
+        "denumire": "COMBUSTIBILI SI ENERGIE",
+        "2025": 500000,
+        "2026": 125000
+      }
+    ]
+  },
+  {
+    "cod": "29",
+    "nume": "Ministerul Public",
+    "2025": 2155861000,
+    "2026": 2290630000,
+    "estimari_2027": 1845910000,
+    "estimari_2028": 1898955000,
+    "estimari_2029": 1897559000,
+    "delta_pct": 6.25,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 709281000,
+      "2016": 727723000,
+      "2017": 1036168000,
+      "2018": 1234684000,
+      "2019": 1320228000,
+      "2020": 1371695000,
+      "2021": 1549418000,
+      "2022": 1541635000,
+      "2023": 1674314000,
+      "2024": 1673875000,
+      "2025": 2155861000,
+      "2026": 2290630000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 2155811000,
+        "2026": 2290452000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 50000,
+        "2026": 178000
+      }
+    ]
+  },
+  {
+    "cod": "14",
+    "nume": "Ministerul Afacerilor Externe",
+    "2025": 1469384000,
+    "2026": 1600711000,
+    "estimari_2027": 1679545000,
+    "estimari_2028": 1722675000,
+    "estimari_2029": 1723597000,
+    "delta_pct": 8.94,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 686529000,
+      "2016": 638599000,
+      "2017": 778748000,
+      "2018": 944068000,
+      "2019": 1104282000,
+      "2020": 1091761000,
+      "2021": 1135745000,
+      "2022": 1240256000,
+      "2023": 1314323000,
+      "2024": 1341528000,
+      "2025": 1469384000,
+      "2026": 1600711000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 1415363000,
+        "2026": 1545051000
+      },
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 40721000,
+        "2026": 42360000
+      },
+      {
+        "capitol": "6500",
+        "denumire": "INVATAMANT",
+        "2025": 13300000,
+        "2026": 13300000
+      }
+    ]
+  },
+  {
+    "cod": "34",
+    "nume": "Serviciul de Telecomunicatii Speciale",
+    "2025": 2415280000,
+    "2026": 1525461000,
+    "estimari_2027": 1339130000,
+    "estimari_2028": 1330868000,
+    "estimari_2029": 1048545000,
+    "delta_pct": -36.84,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 250057000,
+      "2016": 368463000,
+      "2017": 270119000,
+      "2018": 332563000,
+      "2019": 604160000,
+      "2020": 680379000,
+      "2021": 622198000,
+      "2022": 938287000,
+      "2023": 1153972000,
+      "2024": 1479642000,
+      "2025": 2415280000,
+      "2026": 1525461000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 2410280000,
+        "2026": 1519790000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 5000000,
+        "2026": 5671000
+      }
+    ]
+  },
+  {
+    "cod": "38",
+    "nume": "Autoritatea Nationala Sanitara Veterinara si pentru Siguranta Alimentelor",
+    "2025": 1216053000,
+    "2026": 1463119000,
+    "estimari_2027": 1466194000,
+    "estimari_2028": 1490840000,
+    "estimari_2029": 1490840000,
+    "delta_pct": 20.32,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 528299000,
+      "2016": 533402000,
+      "2017": 640212000,
+      "2018": 698558000,
+      "2019": 890176000,
+      "2020": 917632000,
+      "2021": 1063798000,
+      "2022": 1461416000,
+      "2023": 1540852000,
+      "2024": 1313052000,
+      "2025": 1216053000,
+      "2026": 1463119000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "8300",
+        "denumire": "AGRICULTURA, SILVICULTURA, PISCICULTURA SI VANATOARE",
+        "2025": 1216053000,
+        "2026": 1463119000
+      }
+    ]
+  },
+  {
+    "cod": "27",
+    "nume": "Ministerul Culturii",
+    "2025": 1404761000,
+    "2026": 1443680000,
+    "estimari_2027": 1643881000,
+    "estimari_2028": 1633671000,
+    "estimari_2029": 1674937000,
+    "delta_pct": 2.77,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 579893000,
+      "2016": 590052000,
+      "2017": 766177000,
+      "2018": 1127657000,
+      "2019": 1006225000,
+      "2020": 946539000,
+      "2021": 935079000,
+      "2022": 1336430000,
+      "2023": 1297805000,
+      "2024": 1483551000,
+      "2025": 1404761000,
+      "2026": 1443680000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 1404761000,
+        "2026": 1443680000
+      }
+    ]
+  },
+  {
+    "cod": "32",
+    "nume": "Serviciul de Informatii Externe",
+    "2025": 811700000,
+    "2026": 812520000,
+    "estimari_2027": 811434000,
+    "estimari_2028": 837082000,
+    "estimari_2029": 837082000,
+    "delta_pct": 0.1,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 225380000,
+      "2016": 232125000,
+      "2017": 247061000,
+      "2018": 290079000,
+      "2019": 283083000,
+      "2020": 358700000,
+      "2021": 394933000,
+      "2022": 604250000,
+      "2023": 719280000,
+      "2024": 699030000,
+      "2025": 811700000,
+      "2026": 812520000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 808200000,
+        "2026": 808000000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 3500000,
+        "2026": 4520000
+      }
+    ]
+  },
+  {
+    "cod": "37",
+    "nume": "Academia Romana",
+    "2025": 665978000,
+    "2026": 752967000,
+    "estimari_2027": 652125000,
+    "estimari_2028": 663437000,
+    "estimari_2029": 662750000,
+    "delta_pct": 13.06,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 422467000,
+      "2016": 372643000,
+      "2017": 375783000,
+      "2018": 415384000,
+      "2019": 472111000,
+      "2020": 566789000,
+      "2021": 571408000,
+      "2022": 583106000,
+      "2023": 615064000,
+      "2024": 613308000,
+      "2025": 665978000,
+      "2026": 752967000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5300",
+        "denumire": "CERCETARE FUNDAMENTALA SI CERCETARE DEZVOLTARE",
+        "2025": 596233000,
+        "2026": 676910000
+      },
+      {
+        "capitol": "6600",
+        "denumire": "SANATATE",
+        "2025": 62000000,
+        "2026": 68580000
+      },
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 7017000,
+        "2026": 6889000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 728000,
+        "2026": 588000
+      }
+    ]
+  },
+  {
+    "cod": "40",
+    "nume": "Administratia Nationala a Rezervelor de Stat si Probleme Speciale",
+    "2025": 708028000,
+    "2026": 656494000,
+    "estimari_2027": 577185000,
+    "estimari_2028": 463399000,
+    "estimari_2029": 453399000,
+    "delta_pct": -7.28,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 11718000,
+      "2016": 20969000,
+      "2017": 13200000,
+      "2018": 16306000,
+      "2019": 16139000,
+      "2025": 708028000,
+      "2026": 656494000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "8000",
+        "denumire": "ACTIUNI GENERALE ECONOMICE, COMERCIALE SI DE MUNCA",
+        "2025": 554478000,
+        "2026": 518094000
+      },
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 153550000,
+        "2026": 138400000
+      }
+    ]
+  },
+  {
+    "cod": "03",
+    "nume": "Camera Deputatilor",
+    "2025": 576309000,
+    "2026": 578932000,
+    "estimari_2027": 613724000,
+    "estimari_2028": 629170000,
+    "estimari_2029": 631920000,
+    "delta_pct": 0.46,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 241754000,
+      "2016": 247598000,
+      "2017": 266517000,
+      "2018": 442039000,
+      "2019": 464681000,
+      "2020": 470915000,
+      "2021": 499267000,
+      "2022": 585397000,
+      "2023": 614355000,
+      "2024": 727849000,
+      "2025": 576309000,
+      "2026": 578932000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 533109000,
+        "2026": 530732000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 43200000,
+        "2026": 48200000
+      }
+    ]
+  },
+  {
+    "cod": "07",
+    "nume": "Curtea de conturi",
+    "2025": 576105000,
+    "2026": 557791000,
+    "estimari_2027": 570274000,
+    "estimari_2028": 584686000,
+    "estimari_2029": 498668000,
+    "delta_pct": -3.18,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 203570000,
+      "2016": 199530000,
+      "2017": 254000000,
+      "2018": 330059000,
+      "2019": 363764000,
+      "2020": 399324000,
+      "2021": 406348000,
+      "2022": 428055000,
+      "2023": 432358000,
+      "2024": 524775000,
+      "2025": 576105000,
+      "2026": 557791000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 576105000,
+        "2026": 557791000
+      }
+    ]
+  },
+  {
+    "cod": "46",
+    "nume": "Societatea Romana de Televiziune",
+    "2025": 474000000,
+    "2026": 500000000,
+    "estimari_2027": 532500000,
+    "estimari_2028": 549540000,
+    "estimari_2029": 549540000,
+    "delta_pct": 5.49,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 185835000,
+      "2016": 186260000,
+      "2017": 950000000,
+      "2018": 440000000,
+      "2019": 410000000,
+      "2020": 389000000,
+      "2021": 360000000,
+      "2022": 380000000,
+      "2023": 415000000,
+      "2024": 436000000,
+      "2025": 474000000,
+      "2026": 500000000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 474000000,
+        "2026": 500000000
+      }
+    ]
+  },
+  {
+    "cod": "45",
+    "nume": "Societatea Romana de Radiodifuziune",
+    "2025": 446000000,
+    "2026": 470000000,
+    "estimari_2027": 500550000,
+    "estimari_2028": 516568000,
+    "estimari_2029": 516568000,
+    "delta_pct": 5.38,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 192948000,
+      "2016": 198736000,
+      "2017": 383000000,
+      "2018": 373000000,
+      "2019": 387561000,
+      "2020": 377561000,
+      "2021": 342561000,
+      "2022": 370000000,
+      "2023": 415000000,
+      "2024": 436000000,
+      "2025": 446000000,
+      "2026": 470000000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 446000000,
+        "2026": 470000000
+      }
+    ]
+  },
+  {
+    "cod": "33",
+    "nume": "Serviciul de Protectie si Paza",
+    "2025": 443293000,
+    "2026": 408976000,
+    "estimari_2027": 423153000,
+    "estimari_2028": 436127000,
+    "estimari_2029": 436127000,
+    "delta_pct": -7.74,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 148795000,
+      "2016": 139659000,
+      "2017": 156486000,
+      "2018": 195094000,
+      "2019": 184846000,
+      "2020": 275175000,
+      "2021": 401646000,
+      "2022": 373791000,
+      "2023": 447246000,
+      "2024": 356869000,
+      "2025": 443293000,
+      "2026": 408976000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6100",
+        "denumire": "ORDINE PUBLICA SI SIGURANTA NATIONALA",
+        "2025": 442068000,
+        "2026": 407406000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 1225000,
+        "2026": 1570000
+      }
+    ]
+  },
+  {
+    "cod": "48",
+    "nume": "Autoritatea Electorala Permanenta",
+    "2025": 589010000,
+    "2026": 305395000,
+    "estimari_2027": 297467000,
+    "estimari_2028": 306987000,
+    "estimari_2029": 306987000,
+    "delta_pct": -48.15,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 32286000,
+      "2016": 33255000,
+      "2017": 129188000,
+      "2018": 117269000,
+      "2019": 442798000,
+      "2020": 272639000,
+      "2021": 401831000,
+      "2022": 298759000,
+      "2023": 361993000,
+      "2024": 399642000,
+      "2025": 589010000,
+      "2026": 305395000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5400",
+        "denumire": "ALTE SERVICII PUBLICE GENERALE",
+        "2025": 517400000,
+        "2026": 219200000
+      },
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 71610000,
+        "2026": 86195000
+      }
+    ]
+  },
+  {
+    "cod": "47",
+    "nume": "Consiliul Superior al Magistraturii",
+    "2025": 285225000,
+    "2026": 280839000,
+    "estimari_2027": 293947000,
+    "estimari_2028": 295142000,
+    "estimari_2029": 294417000,
+    "delta_pct": -1.54,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 90467000,
+      "2016": 89282000,
+      "2017": 133142000,
+      "2018": 150023000,
+      "2019": 162818000,
+      "2020": 180157000,
+      "2021": 173106000,
+      "2022": 232702000,
+      "2023": 252554000,
+      "2024": 243390000,
+      "2025": 285225000,
+      "2026": 280839000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 164698000,
+        "2026": 162574000
+      },
+      {
+        "capitol": "6500",
+        "denumire": "INVATAMANT",
+        "2025": 120527000,
+        "2026": 118265000
+      }
+    ]
+  },
+  {
+    "cod": "02",
+    "nume": "Senatul Romaniei",
+    "2025": 281440000,
+    "2026": 259881000,
+    "estimari_2027": 266562000,
+    "estimari_2028": 277444000,
+    "estimari_2029": 274889000,
+    "delta_pct": -7.66,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 104716000,
+      "2016": 109291000,
+      "2017": 122176000,
+      "2018": 195978000,
+      "2019": 221700000,
+      "2020": 215690000,
+      "2021": 250388000,
+      "2022": 218568000,
+      "2023": 326290000,
+      "2024": 390852000,
+      "2025": 281440000,
+      "2026": 259881000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 261440000,
+        "2026": 238881000
+      },
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 20000000,
+        "2026": 21000000
+      }
+    ]
+  },
+  {
+    "cod": "08",
+    "nume": "Consiliul Concurentei",
+    "2025": 106350000,
+    "2026": 126088000,
+    "estimari_2027": 84396000,
+    "estimari_2028": 77151000,
+    "estimari_2029": 77151000,
+    "delta_pct": 18.56,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 53242000,
+      "2016": 39364000,
+      "2017": 48383000,
+      "2018": 59845000,
+      "2019": 80103000,
+      "2020": 110057000,
+      "2021": 88563000,
+      "2022": 89776000,
+      "2023": 83375000,
+      "2024": 92067000,
+      "2025": 106350000,
+      "2026": 126088000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 106350000,
+        "2026": 126088000
+      }
+    ]
+  },
+  {
+    "cod": "01",
+    "nume": "Administratia Prezidentiala",
+    "2025": 102715000,
+    "2026": 103470000,
+    "estimari_2027": 86649000,
+    "estimari_2028": 89425000,
+    "estimari_2029": 89425000,
+    "delta_pct": 0.74,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 28234000,
+      "2016": 22805000,
+      "2017": 41000000,
+      "2018": 57558000,
+      "2019": 55421000,
+      "2020": 67836000,
+      "2021": 58814000,
+      "2022": 74550000,
+      "2023": 120000000,
+      "2024": 109699000,
+      "2025": 102715000,
+      "2026": 103470000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 89915000,
+        "2026": 91978000
+      },
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 11000000,
+        "2026": 10992000
+      },
+      {
+        "capitol": "5400",
+        "denumire": "ALTE SERVICII PUBLICE GENERALE",
+        "2025": 1800000,
+        "2026": 500000
+      }
+    ]
+  },
+  {
+    "cod": "11",
+    "nume": "Consiliul National al Audiovizualului",
+    "2025": 22256000,
+    "2026": 47772000,
+    "estimari_2027": 88036000,
+    "estimari_2028": 21246000,
+    "estimari_2029": 18328000,
+    "delta_pct": 114.65,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 8535000,
+      "2016": 8235000,
+      "2017": 9548000,
+      "2018": 11351000,
+      "2019": 13667000,
+      "2020": 14142000,
+      "2021": 13937000,
+      "2022": 14453000,
+      "2023": 18660000,
+      "2024": 17288000,
+      "2025": 22256000,
+      "2026": 47772000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 22256000,
+        "2026": 47772000
+      }
+    ]
+  },
+  {
+    "cod": "30",
+    "nume": "Agentia Nationala de Integritate",
+    "2025": 87379000,
+    "2026": 44877000,
+    "estimari_2027": 22766000,
+    "estimari_2028": 23496000,
+    "estimari_2029": 23496000,
+    "delta_pct": -48.64,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 37843000,
+      "2016": 25631000,
+      "2017": 21696000,
+      "2018": 21644000,
+      "2019": 22554000,
+      "2020": 34802000,
+      "2021": 28601000,
+      "2022": 33528000,
+      "2023": 60247000,
+      "2024": 41878000,
+      "2025": 87379000,
+      "2026": 44877000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 87379000,
+        "2026": 44877000
+      }
+    ]
+  },
+  {
+    "cod": "05",
+    "nume": "Curtea Constitutionala",
+    "2025": 49661000,
+    "2026": 44350000,
+    "estimari_2027": 43998000,
+    "estimari_2028": 45408000,
+    "estimari_2029": 45408000,
+    "delta_pct": -10.69,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 14813000,
+      "2016": 12835000,
+      "2017": 20424000,
+      "2018": 26430000,
+      "2019": 30942000,
+      "2020": 31222000,
+      "2021": 28691000,
+      "2022": 31811000,
+      "2023": 38438000,
+      "2024": 30484000,
+      "2025": 49661000,
+      "2026": 44350000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 49661000,
+        "2026": 44350000
+      }
+    ]
+  },
+  {
+    "cod": "42",
+    "nume": "Consiliul National pentru Combaterea Discriminarii",
+    "2025": 11292000,
+    "2026": 35622000,
+    "estimari_2027": 13342000,
+    "estimari_2028": 11130000,
+    "estimari_2029": 11130000,
+    "delta_pct": 215.46,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 11997000,
+      "2016": 4353000,
+      "2017": 5224000,
+      "2018": 6320000,
+      "2019": 8620000,
+      "2020": 9073000,
+      "2021": 9346000,
+      "2022": 9296000,
+      "2023": 10382000,
+      "2024": 11059000,
+      "2025": 11292000,
+      "2026": 35622000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 11292000,
+        "2026": 35622000
+      }
+    ]
+  },
+  {
+    "cod": "44",
+    "nume": "Institutul Cultural Roman",
+    "2025": 38550000,
+    "2026": 35300000,
+    "estimari_2027": 35452000,
+    "estimari_2028": 36582000,
+    "estimari_2029": 36582000,
+    "delta_pct": -8.43,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 28200000,
+      "2016": 29047000,
+      "2017": 35000000,
+      "2018": 42187000,
+      "2019": 67896000,
+      "2020": 48477000,
+      "2021": 30390000,
+      "2022": 32856000,
+      "2023": 43994000,
+      "2024": 40314000,
+      "2025": 38550000,
+      "2026": 35300000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 38550000,
+        "2026": 35300000
+      }
+    ]
+  },
+  {
+    "cod": "43",
+    "nume": "Agentia Nationala de Presa AGERPRES",
+    "2025": 32517000,
+    "2026": 31224000,
+    "estimari_2027": 33112000,
+    "estimari_2028": 34139000,
+    "estimari_2029": 34189000,
+    "delta_pct": -3.98,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 19250000,
+      "2016": 19760000,
+      "2017": 21100000,
+      "2018": 23457000,
+      "2019": 24853000,
+      "2020": 29753000,
+      "2021": 27463000,
+      "2022": 27883000,
+      "2023": 30838000,
+      "2024": 31924000,
+      "2025": 32517000,
+      "2026": 31224000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6700",
+        "denumire": "CULTURA, RECREERE SI RELIGIE",
+        "2025": 32517000,
+        "2026": 31224000
+      }
+    ]
+  },
+  {
+    "cod": "55",
+    "nume": "Autoritatea Nationala pentru Restituirea Proprietatilor",
+    "2025": 32420000,
+    "2026": 30700000,
+    "estimari_2027": 32697000,
+    "estimari_2028": 33746000,
+    "estimari_2029": 33746000,
+    "delta_pct": -5.31,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 21891000,
+      "2016": 11218000,
+      "2017": 19208000,
+      "2018": 21352000,
+      "2019": 21591000,
+      "2020": 23767000,
+      "2021": 24771000,
+      "2022": 30700000,
+      "2023": 31954000,
+      "2024": 27279000,
+      "2025": 32420000,
+      "2026": 30700000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 32420000,
+        "2026": 30700000
+      }
+    ]
+  },
+  {
+    "cod": "10",
+    "nume": "Consiliul National pentru Studierea Arhivelor Securitatii",
+    "2025": 28800000,
+    "2026": 27846000,
+    "estimari_2027": 29657000,
+    "estimari_2028": 30609000,
+    "estimari_2029": 30609000,
+    "delta_pct": -3.31,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 11926000,
+      "2016": 12078000,
+      "2017": 15366000,
+      "2018": 16553000,
+      "2019": 18277000,
+      "2020": 23064000,
+      "2021": 23046000,
+      "2022": 24907000,
+      "2023": 26225000,
+      "2024": 27647000,
+      "2025": 28800000,
+      "2026": 27846000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 28800000,
+        "2026": 27846000
+      }
+    ]
+  },
+  {
+    "cod": "53",
+    "nume": "Autoritatea pentru Administrarea Activelor Statului",
+    "2025": 32140000,
+    "2026": 25045000,
+    "estimari_2027": 23799000,
+    "estimari_2028": 24562000,
+    "estimari_2029": 24562000,
+    "delta_pct": -22.08,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 18634000,
+      "2016": 19193000,
+      "2017": 17000000,
+      "2018": 17573000,
+      "2019": 21661000,
+      "2020": 22351000,
+      "2021": 23431000,
+      "2022": 32155000,
+      "2023": 31770000,
+      "2024": 21572000,
+      "2025": 32140000,
+      "2026": 25045000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 32140000,
+        "2026": 25045000
+      }
+    ]
+  },
+  {
+    "cod": "09",
+    "nume": "Avocatul Poporului",
+    "2025": 25980000,
+    "2026": 24249000,
+    "estimari_2027": 25722000,
+    "estimari_2028": 26547000,
+    "estimari_2029": 26547000,
+    "delta_pct": -6.66,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 9733000,
+      "2016": 7965000,
+      "2017": 13820000,
+      "2018": 19657000,
+      "2019": 23532000,
+      "2020": 24135000,
+      "2021": 22875000,
+      "2022": 24864000,
+      "2023": 26934000,
+      "2024": 24841000,
+      "2025": 25980000,
+      "2026": 24249000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 25980000,
+        "2026": 24249000
+      }
+    ]
+  },
+  {
+    "cod": "52",
+    "nume": "Consiliul National de Solutionare a Contestatiilor",
+    "2025": 17712000,
+    "2026": 22109000,
+    "estimari_2027": 37409000,
+    "estimari_2028": 18225000,
+    "estimari_2029": 18072000,
+    "delta_pct": 24.82,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 16780000,
+      "2016": 10275000,
+      "2017": 10981000,
+      "2018": 11767000,
+      "2019": 12722000,
+      "2020": 14533000,
+      "2021": 15618000,
+      "2022": 16583000,
+      "2023": 20511000,
+      "2024": 19384000,
+      "2025": 17712000,
+      "2026": 22109000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 17712000,
+        "2026": 22109000
+      }
+    ]
+  },
+  {
+    "cod": "41",
+    "nume": "Oficiul registrului national al informatiilor secrete de stat",
+    "2025": 16359000,
+    "2026": 15122000,
+    "estimari_2027": 14089000,
+    "estimari_2028": 14542000,
+    "estimari_2029": 14542000,
+    "delta_pct": -7.56,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 8373000,
+      "2016": 8625000,
+      "2017": 9977000,
+      "2018": 9858000,
+      "2019": 11160000,
+      "2020": 12931000,
+      "2021": 11471000,
+      "2022": 11702000,
+      "2023": 12952000,
+      "2024": 13067000,
+      "2025": 16359000,
+      "2026": 15122000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 16359000,
+        "2026": 15122000
+      }
+    ]
+  },
+  {
+    "cod": "51",
+    "nume": "Consiliul Economic si Social",
+    "2025": 12560000,
+    "2026": 14886000,
+    "estimari_2027": 13488000,
+    "estimari_2028": 13922000,
+    "estimari_2029": 13922000,
+    "delta_pct": 18.52,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 2716000,
+      "2016": 2799000,
+      "2017": 7879000,
+      "2018": 8475000,
+      "2019": 29602000,
+      "2020": 11930000,
+      "2021": 9303000,
+      "2022": 11440000,
+      "2023": 13839000,
+      "2024": 12542000,
+      "2025": 12560000,
+      "2026": 14886000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 12560000,
+        "2026": 14886000
+      }
+    ]
+  },
+  {
+    "cod": "06",
+    "nume": "Consiliul Legislativ",
+    "2025": 15382000,
+    "2026": 14869000,
+    "estimari_2027": 14960000,
+    "estimari_2028": 15442000,
+    "estimari_2029": 15442000,
+    "delta_pct": -3.34,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 5040000,
+      "2016": 5191000,
+      "2017": 8529000,
+      "2018": 9398000,
+      "2019": 11123000,
+      "2020": 11522000,
+      "2021": 12236000,
+      "2022": 13574000,
+      "2023": 15376000,
+      "2024": 14941000,
+      "2025": 15382000,
+      "2026": 14869000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 15382000,
+        "2026": 14869000
+      }
+    ]
+  },
+  {
+    "cod": "56",
+    "nume": "Academia Oamenilor de Stiinta din Romania",
+    "2025": 11845000,
+    "2026": 11136000,
+    "estimari_2027": 11444000,
+    "estimari_2028": 11606000,
+    "estimari_2029": 11606000,
+    "delta_pct": -5.99,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2017": 7564000,
+      "2018": 9979000,
+      "2019": 10659000,
+      "2022": 9952000,
+      "2023": 10527000,
+      "2024": 10900000,
+      "2025": 11845000,
+      "2026": 11136000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5300",
+        "denumire": "CERCETARE FUNDAMENTALA SI CERCETARE DEZVOLTARE",
+        "2025": 11845000,
+        "2026": 11136000
+      }
+    ]
+  },
+  {
+    "cod": "50",
+    "nume": "Autoritatea Nationala de Supraveghere a Prelucrarii Datelor cu Caracter Personal",
+    "2025": 6001000,
+    "2026": 6286000,
+    "estimari_2027": 6498000,
+    "estimari_2028": 6708000,
+    "estimari_2029": 6708000,
+    "delta_pct": 4.75,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 2994000,
+      "2016": 3082000,
+      "2017": 4585000,
+      "2018": 6436000,
+      "2019": 5820000,
+      "2020": 6219000,
+      "2021": 5039000,
+      "2022": 5336000,
+      "2023": 7400000,
+      "2024": 5990000,
+      "2025": 6001000,
+      "2026": 6286000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 6001000,
+        "2026": 6286000
+      }
+    ]
+  },
+  {
+    "cod": "58",
+    "nume": "Consiliul de Monitorizare a Implementarii Conventiei",
+    "2025": 5341000,
+    "2026": 4850000,
+    "estimari_2027": 4840000,
+    "estimari_2028": 4993000,
+    "estimari_2029": 4993000,
+    "delta_pct": -9.19,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2017": 1000000,
+      "2018": 4240000,
+      "2019": 4488000,
+      "2020": 3558000,
+      "2021": 3027000,
+      "2022": 5212000,
+      "2023": 5297000,
+      "2024": 5050000,
+      "2025": 5341000,
+      "2026": 4850000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "5100",
+        "denumire": "AUTORITATI PUBLICE SI ACTIUNI EXTERNE",
+        "2025": 5341000,
+        "2026": 4850000
+      }
+    ]
+  },
+  {
+    "cod": "39",
+    "nume": "Secretariatul de Stat pentru recunoasterea meritelor luptatorilor impotriva regimului comunist instaurat in Romania in perioada 1945-1989",
+    "2025": 4125000,
+    "2026": 4125000,
+    "estimari_2027": 4291000,
+    "estimari_2028": 4430000,
+    "estimari_2029": 4430000,
+    "delta_pct": 0.0,
+    "exclude_from_ranking": false,
+    "istoric": {
+      "2015": 2334000,
+      "2016": 1930000,
+      "2017": 3719000,
+      "2018": 2784000,
+      "2019": 3335000,
+      "2020": 3605000,
+      "2021": 4139000,
+      "2022": 5164000,
+      "2023": 5007000,
+      "2024": 5155000,
+      "2025": 4125000,
+      "2026": 4125000
+    },
+    "detalii_capitol": [
+      {
+        "capitol": "6800",
+        "denumire": "ASIGURARI SI ASISTENTA SOCIALA",
+        "2025": 4125000,
+        "2026": 4125000
+      }
+    ]
+  }
+]

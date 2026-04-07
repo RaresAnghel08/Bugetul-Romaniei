@@ -1,0 +1,62 @@
+{
+  "2015": {
+    "venituri_total": 107413041000,
+    "cheltuieli_total": 126532649000,
+    "deficit": -19119608000
+  },
+  "2016": {
+    "venituri_total": 109659476000,
+    "cheltuieli_total": 133851627000,
+    "deficit": -24192151000
+  },
+  "2017": {
+    "venituri_total": 117046581000,
+    "cheltuieli_total": 150159505000,
+    "deficit": -33112924000
+  },
+  "2018": {
+    "venituri_total": 141395499000,
+    "cheltuieli_total": 177171941000,
+    "deficit": -35776442000
+  },
+  "2019": {
+    "venituri_total": 164494130000,
+    "cheltuieli_total": 202781473000,
+    "deficit": -38287343000
+  },
+  "2020": {
+    "venituri_total": 167702382000,
+    "cheltuieli_total": 215224161000,
+    "deficit": -47521779000
+  },
+  "2021": {
+    "venituri_total": 173700780000,
+    "cheltuieli_total": 261050489000,
+    "deficit": -87349709000
+  },
+  "2022": {
+    "venituri_total": 216444690000,
+    "cheltuieli_total": 301729851000,
+    "deficit": -85285161000
+  },
+  "2023": {
+    "venituri_total": 275364504000,
+    "cheltuieli_total": 353314447000,
+    "deficit": -77949943000
+  },
+  "2024": {
+    "venituri_total": 308204963000,
+    "cheltuieli_total": 404238052000,
+    "deficit": -96033089000
+  },
+  "2025": {
+    "venituri_total": 357353033000,
+    "cheltuieli_total": 499582980000,
+    "deficit": -142229947000
+  },
+  "2026": {
+    "venituri_total": 390606840000,
+    "cheltuieli_total": 526291309000,
+    "deficit": -135684469000
+  }
+}

@@ -1,0 +1,60 @@
+comanda 
+
+dir > /o:d xml2019.txt
+
+lansata de la prompter dos 
+are ca rezultat afisarea tuturor fisierelor existente in directorul curent, 
+in fisierul tip txt, xml2019.txt, in ordinea datei.
+
+ Volume in drive J has no label.
+ Volume Serial Number is 5455-F5AB
+
+ Directory of J:\bug2019\xml_plin2019
+
+15.02.2019  14:06         4.379.390 INV2019_partea1_F29.xml
+15.02.2019  14:06         9.553.601 INV2019_partea2_F29.xml
+15.02.2019  14:07        10.219.269 INV2019_F28.xml
+18.02.2019  13:53           150.981 FNE2019_F04.xml
+18.02.2019  13:56         8.413.260 FNE2019_F20.xml
+18.02.2019  13:57        69.397.779 FNE2019_F21.xml
+18.02.2019  13:57         4.808.818 FNE2019_F22.xml
+18.02.2019  13:57            21.688 FNE2019_F22_PENSII.xml
+18.02.2019  13:58            47.579 FNE2019_F22_CNAS.xml
+18.02.2019  13:58           126.258 FNE2019_F22_SOMAJ.xml
+18.02.2019  13:58        28.682.336 FNE2019_F23.xml
+18.02.2019  13:59            42.683 FNE2019_F23_PENSII.xml
+18.02.2019  13:59           135.684 FNE2019_F23_CNAS.xml
+18.02.2019  13:59           517.522 FNE2019_F23_SOMAJ.xml
+18.02.2019  13:59         1.378.368 FNE2019_F24.xml
+18.02.2019  14:00         3.468.058 FNE2019_F25.xml
+18.02.2019  14:04           433.689 FNE2019_F05.xml
+21.02.2019  10:57         9.298.376 BP_fisa_cash.xml
+21.02.2019  10:58         1.749.176 BP_sinteza_cash.xml
+21.02.2019  10:59            66.781 BP_fisa_bass.xml
+21.02.2019  11:00            13.470 BP_sinteza_bass.xml
+21.02.2019  11:02           161.955 BP_fisa_bsom.xml
+21.02.2019  11:04            31.456 BP_sinteza_bsomaj.xml
+21.02.2019  11:05           101.915 BP_fisa_bsan.xml
+21.02.2019  11:05            20.128 BP_sinteza_bsan.xml
+21.02.2019  11:06           156.388 anexa1_bass.xml
+21.02.2019  11:07           416.126 anexa2_bass.xml
+21.02.2019  11:08            21.269 anexa3_bass.xml
+21.02.2019  11:09           138.940 anexa1_bsan.xml
+21.02.2019  11:10           259.018 anexa2_bsan.xml
+21.02.2019  11:11            21.241 anexa3_bsan.xml
+21.02.2019  11:12           183.101 anexa1_bsomaj.xml
+21.02.2019  11:12           432.948 anexa2_bsomaj.xml
+21.02.2019  11:13            21.248 anexa3_bsomaj.xml
+21.02.2019  11:14           115.860 F15_bsomaj.xml
+21.02.2019  11:15           829.218 anexa001_bugstat.xml
+21.02.2019  11:15         4.781.237 anexa002_bugstat.xml
+21.02.2019  11:16         8.151.392 f01_bugcash.xml
+21.02.2019  11:17        17.422.685 f02_bugcash.xml
+21.02.2019  11:18           608.865 f11_bugcash.xml
+21.02.2019  11:19         3.427.369 f13_bugcash.xml
+21.02.2019  11:20         1.085.853 f15_bugcash.xml
+18.03.2019  11:48    <DIR>          .
+18.03.2019  11:48    <DIR>          ..
+18.03.2019  11:48                34 XML2019.txt
+              43 File(s)    191.293.012 bytes
+               2 Dir(s)  59.375.198.208 bytes free

@@ -1,0 +1,1455 @@
+<?xml version="1.0" ?>
+<!DOCTYPE main [
+  <!ELEMENT main (DATA_RECORD*)>
+  <!ELEMENT DATA_RECORD (TITLU_RAPORT?,ANEXA?,COD_ORDONATOR?,ORDONATOR?,CAPITOL?,SUBCAPITOL?,PARAGRAF?,GRUPA?,ARTICOL?,ALINEAT?,DENUMIRE?,PROGRAM_2017?,ESTIMARI2018?,ESTIMARI2019?,ESTIMARI2020?)+>
+  <!ELEMENT TITLU_RAPORT (#PCDATA)>
+  <!ELEMENT ANEXA (#PCDATA)>
+  <!ELEMENT COD_ORDONATOR (#PCDATA)>
+  <!ELEMENT ORDONATOR (#PCDATA)>
+  <!ELEMENT CAPITOL (#PCDATA)>
+  <!ELEMENT SUBCAPITOL (#PCDATA)>
+  <!ELEMENT PARAGRAF (#PCDATA)>
+  <!ELEMENT GRUPA (#PCDATA)>
+  <!ELEMENT ARTICOL (#PCDATA)>
+  <!ELEMENT ALINEAT (#PCDATA)>
+  <!ELEMENT DENUMIRE (#PCDATA)>
+  <!ELEMENT PROGRAM_2017 (#PCDATA)>
+  <!ELEMENT ESTIMARI2018 (#PCDATA)>
+  <!ELEMENT ESTIMARI2019 (#PCDATA)>
+  <!ELEMENT ESTIMARI2020 (#PCDATA)>
+]>
+<main>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>0001</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <DENUMIRE>VENITURI - TOTAL</DENUMIRE>
+    <PROGRAM_2017>28.809.381</PROGRAM_2017>
+    <ESTIMARI2018>31.305.202</ESTIMARI2018>
+    <ESTIMARI2019>34.786.721</ESTIMARI2019>
+    <ESTIMARI2020>38.375.851</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>0002</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>I.VENITURI CURENTE</DENUMIRE>
+    <PROGRAM_2017>25.993.632</PROGRAM_2017>
+    <ESTIMARI2018>28.940.423</ESTIMARI2018>
+    <ESTIMARI2019>32.306.709</ESTIMARI2019>
+    <ESTIMARI2020>35.770.680</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>1205</CAPITOL>
+    <DENUMIRE>ALTE IMPOZITE SI TAXE GENERALE PE BUNURI SI SERVICII</DENUMIRE>
+    <PROGRAM_2017>2.421.310</PROGRAM_2017>
+    <ESTIMARI2018>2.481.843</ESTIMARI2018>
+    <ESTIMARI2019>2.538.925</ESTIMARI2019>
+    <ESTIMARI2020>2.594.782</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>1205</CAPITOL>
+    <SUBCAPITOL>09</SUBCAPITOL>
+    <DENUMIRE>Venituri din contributia datorata pentru medicamente finantate din Fondul National unic de asigurari sociale de sanatate si din bugetul Ministerului Sanatatii</DENUMIRE>
+    <PROGRAM_2017>1.498.000</PROGRAM_2017>
+    <ESTIMARI2018>1.535.450</ESTIMARI2018>
+    <ESTIMARI2019>1.570.765</ESTIMARI2019>
+    <ESTIMARI2020>1.605.322</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>1205</CAPITOL>
+    <SUBCAPITOL>14</SUBCAPITOL>
+    <DENUMIRE> Venituri din contributia datorata pentru contractele cost-volum/cost-volum-rezultat</DENUMIRE>
+    <PROGRAM_2017>923.310</PROGRAM_2017>
+    <ESTIMARI2018>946.393</ESTIMARI2018>
+    <ESTIMARI2019>968.160</ESTIMARI2019>
+    <ESTIMARI2020>989.460</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2000</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>B.CONTRIBUTII DE ASIGURARI</DENUMIRE>
+    <PROGRAM_2017>23.551.730</PROGRAM_2017>
+    <ESTIMARI2018>26.436.404</ESTIMARI2018>
+    <ESTIMARI2019>29.743.902</ESTIMARI2019>
+    <ESTIMARI2020>33.150.298</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2005</CAPITOL>
+    <DENUMIRE>CONTRIBUTIILE ANGAJATORILOR</DENUMIRE>
+    <PROGRAM_2017>11.805.519</PROGRAM_2017>
+    <ESTIMARI2018>13.331.016</ESTIMARI2018>
+    <ESTIMARI2019>15.019.774</ESTIMARI2019>
+    <ESTIMARI2020>16.760.078</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2005</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari sociale de sanatate datorate de angajatori</DENUMIRE>
+    <PROGRAM_2017>11.805.519</PROGRAM_2017>
+    <ESTIMARI2018>13.331.016</ESTIMARI2018>
+    <ESTIMARI2019>15.019.774</ESTIMARI2019>
+    <ESTIMARI2020>16.760.078</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <DENUMIRE>CONTRIBUTIILE ASIGURATILOR</DENUMIRE>
+    <PROGRAM_2017>11.746.211</PROGRAM_2017>
+    <ESTIMARI2018>13.105.388</ESTIMARI2018>
+    <ESTIMARI2019>14.724.128</ESTIMARI2019>
+    <ESTIMARI2020>16.390.220</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari sociale de sanatate datorate de asigurati</DENUMIRE>
+    <PROGRAM_2017>11.536.836</PROGRAM_2017>
+    <ESTIMARI2018>12.879.892</ESTIMARI2018>
+    <ESTIMARI2019>14.481.273</ESTIMARI2019>
+    <ESTIMARI2020>16.129.882</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>16</SUBCAPITOL>
+    <DENUMIRE> Contributia individuala de asigurari sociale de sanatate datorata de persoanele care realizeaza venituri din drepturi de proprietate intelectuala</DENUMIRE>
+    <PROGRAM_2017>12.775</PROGRAM_2017>
+    <ESTIMARI2018>13.758</ESTIMARI2018>
+    <ESTIMARI2019>14.817</ESTIMARI2019>
+    <ESTIMARI2020>15.883</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>17</SUBCAPITOL>
+    <DENUMIRE> Contributia individuala de asigurari sociale de sanatate datorata de persoanele care realizeaza venituri din activitati desfasurate in baza contractelor/conventiilor civile incheiate potrivit Codului civil, precum si a contractelor de agent</DENUMIRE>
+    <PROGRAM_2017>31.491</PROGRAM_2017>
+    <ESTIMARI2018>33.915</ESTIMARI2018>
+    <ESTIMARI2019>36.526</ESTIMARI2019>
+    <ESTIMARI2020>39.155</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>18</SUBCAPITOL>
+    <DENUMIRE> Contributia individuala de asigurari sociale de sanatate datorata de persoanele care realizeaza venituri din activitatea de expertiza contabila si tehnica, judiciara si extrajudiciara</DENUMIRE>
+    <PROGRAM_2017>93</PROGRAM_2017>
+    <ESTIMARI2018>100</ESTIMARI2018>
+    <ESTIMARI2019>107</ESTIMARI2019>
+    <ESTIMARI2020>114</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>19</SUBCAPITOL>
+    <DENUMIRE> Contributia individuala de asigurari sociale de sanatate datorata de persoanele care realizeaza venitul obtinut dintr-o asociere cu o microintreprindere care nu genereaza o persoana juridica</DENUMIRE>
+    <PROGRAM_2017>132</PROGRAM_2017>
+    <ESTIMARI2018>142</ESTIMARI2018>
+    <ESTIMARI2019>153</ESTIMARI2019>
+    <ESTIMARI2020>164</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>20</SUBCAPITOL>
+    <DENUMIRE> Contributia individuala de asigurari sociale de sanatate datorata de persoanele care realizeaza venituri, in regim de retinere la sursa a impozitului pe venit, din asocierile fara personalitate juridica</DENUMIRE>
+    <PROGRAM_2017>365</PROGRAM_2017>
+    <ESTIMARI2018>393</ESTIMARI2018>
+    <ESTIMARI2019>423</ESTIMARI2019>
+    <ESTIMARI2020>454</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>21</SUBCAPITOL>
+    <DENUMIRE> Contributia individuala de asigurari sociale de sanatate datorata de persoanele care realizeaza venituri, in regim de retinere la sursa a impozitului pe venit, din activitati agricole</DENUMIRE>
+    <PROGRAM_2017>59</PROGRAM_2017>
+    <ESTIMARI2018>64</ESTIMARI2018>
+    <ESTIMARI2019>68</ESTIMARI2019>
+    <ESTIMARI2020>73</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>22</SUBCAPITOL>
+    <DENUMIRE> Contributia individuala de asigurari sociale de sanatate datorata de persoanele care realizeaza venituri din arendarea bunurilor agricole</DENUMIRE>
+    <PROGRAM_2017>51.956</PROGRAM_2017>
+    <ESTIMARI2018>55.957</ESTIMARI2018>
+    <ESTIMARI2019>60.265</ESTIMARI2019>
+    <ESTIMARI2020>64.604</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>23</SUBCAPITOL>
+    <DENUMIRE> Contributii individuale datorate de persoanele care realizeaza venituri din cedarea folosintei bunurilor</DENUMIRE>
+    <PROGRAM_2017>112.500</PROGRAM_2017>
+    <ESTIMARI2018>121.163</ESTIMARI2018>
+    <ESTIMARI2019>130.492</ESTIMARI2019>
+    <ESTIMARI2020>139.887</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte contributii pentru asigurari sociale datorate de asigurati</DENUMIRE>
+    <PROGRAM_2017>4</PROGRAM_2017>
+    <ESTIMARI2018>4</ESTIMARI2018>
+    <ESTIMARI2019>4</ESTIMARI2019>
+    <ESTIMARI2020>4</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2900</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>C.VENITURI NEFISCALE</DENUMIRE>
+    <PROGRAM_2017>20.592</PROGRAM_2017>
+    <ESTIMARI2018>22.176</ESTIMARI2018>
+    <ESTIMARI2019>23.882</ESTIMARI2019>
+    <ESTIMARI2020>25.600</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3000</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>C1. VENITURI DIN PROPRIETATE</DENUMIRE>
+    <PROGRAM_2017>2.158</PROGRAM_2017>
+    <ESTIMARI2018>2.323</ESTIMARI2018>
+    <ESTIMARI2019>2.501</ESTIMARI2019>
+    <ESTIMARI2020>2.680</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3005</CAPITOL>
+    <DENUMIRE>VENITURI DIN PROPRIETATE</DENUMIRE>
+    <PROGRAM_2017>1.358</PROGRAM_2017>
+    <ESTIMARI2018>1.462</ESTIMARI2018>
+    <ESTIMARI2019>1.574</ESTIMARI2019>
+    <ESTIMARI2020>1.687</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3005</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte venituri din proprietate</DENUMIRE>
+    <PROGRAM_2017>1.358</PROGRAM_2017>
+    <ESTIMARI2018>1.462</ESTIMARI2018>
+    <ESTIMARI2019>1.574</ESTIMARI2019>
+    <ESTIMARI2020>1.687</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3105</CAPITOL>
+    <DENUMIRE>VENITURI DIN DOBANZI</DENUMIRE>
+    <PROGRAM_2017>800</PROGRAM_2017>
+    <ESTIMARI2018>861</ESTIMARI2018>
+    <ESTIMARI2019>927</ESTIMARI2019>
+    <ESTIMARI2020>993</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3105</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Alte venituri din dobanzi</DENUMIRE>
+    <PROGRAM_2017>800</PROGRAM_2017>
+    <ESTIMARI2018>861</ESTIMARI2018>
+    <ESTIMARI2019>927</ESTIMARI2019>
+    <ESTIMARI2020>993</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>C2.VANZARI DE BUNURI SI SERVICII</DENUMIRE>
+    <PROGRAM_2017>18.434</PROGRAM_2017>
+    <ESTIMARI2018>19.853</ESTIMARI2018>
+    <ESTIMARI2019>21.381</ESTIMARI2019>
+    <ESTIMARI2020>22.920</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3605</CAPITOL>
+    <DENUMIRE>DIVERSE VENITURI</DENUMIRE>
+    <PROGRAM_2017>18.434</PROGRAM_2017>
+    <ESTIMARI2018>19.853</ESTIMARI2018>
+    <ESTIMARI2019>21.381</ESTIMARI2019>
+    <ESTIMARI2020>22.920</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3605</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte venituri</DENUMIRE>
+    <PROGRAM_2017>18.434</PROGRAM_2017>
+    <ESTIMARI2018>19.853</ESTIMARI2018>
+    <ESTIMARI2019>21.381</ESTIMARI2019>
+    <ESTIMARI2020>22.920</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4100</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>IV SUBVENTII</DENUMIRE>
+    <PROGRAM_2017>2.815.749</PROGRAM_2017>
+    <ESTIMARI2018>2.364.779</ESTIMARI2018>
+    <ESTIMARI2019>2.480.012</ESTIMARI2019>
+    <ESTIMARI2020>2.605.171</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4200</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>SUBVENTII DE LA ALTE NIVELE ALE ADMINISTRATIEI PUBLICE</DENUMIRE>
+    <PROGRAM_2017>2.815.749</PROGRAM_2017>
+    <ESTIMARI2018>2.364.779</ESTIMARI2018>
+    <ESTIMARI2019>2.480.012</ESTIMARI2019>
+    <ESTIMARI2020>2.605.171</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <DENUMIRE>SUBVENTII DE LA BUGETUL DE STAT</DENUMIRE>
+    <PROGRAM_2017>2.684.676</PROGRAM_2017>
+    <ESTIMARI2018>2.223.780</ESTIMARI2018>
+    <ESTIMARI2019>2.338.103</ESTIMARI2019>
+    <ESTIMARI2020>2.462.362</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>23</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari de sanatate pentru persoane care executa o pedeapsa privativa de libertate sau arest preventiv</DENUMIRE>
+    <PROGRAM_2017>1.995</PROGRAM_2017>
+    <ESTIMARI2018>2.039</ESTIMARI2018>
+    <ESTIMARI2019>2.080</ESTIMARI2019>
+    <ESTIMARI2020>2.122</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>26</SUBCAPITOL>
+    <DENUMIRE> Subventii primite de bugetul fondului national unic de asigurari sociale de sanatate pentru echilibrare</DENUMIRE>
+    <PROGRAM_2017>617.526</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>27</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari de sanatate pentru persoanele aflate in concediu pentru cresterea copilului</DENUMIRE>
+    <PROGRAM_2017>173.673</PROGRAM_2017>
+    <ESTIMARI2018>181.048</ESTIMARI2018>
+    <ESTIMARI2019>186.680</ESTIMARI2019>
+    <ESTIMARI2020>192.338</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>30</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari de sanatate pentru pensionari</DENUMIRE>
+    <PROGRAM_2017>1.777.229</PROGRAM_2017>
+    <ESTIMARI2018>1.954.952</ESTIMARI2018>
+    <ESTIMARI2019>2.078.113</ESTIMARI2019>
+    <ESTIMARI2020>2.196.566</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>47</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari de sanatate pentru persoanele beneficiare de ajutor social</DENUMIRE>
+    <PROGRAM_2017>45.461</PROGRAM_2017>
+    <ESTIMARI2018>15.400</ESTIMARI2018>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>48</SUBCAPITOL>
+    <DENUMIRE>Contributii de asigurari de sanatate pentru cetatenii straini aflati in centrele de cazare</DENUMIRE>
+    <PROGRAM_2017>285</PROGRAM_2017>
+    <ESTIMARI2018>291</ESTIMARI2018>
+    <ESTIMARI2019>297</ESTIMARI2019>
+    <ESTIMARI2020>303</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>49</SUBCAPITOL>
+    <DENUMIRE>Contributii de asigurari de sanatate pentru personalul monahal al cultelor recunoscute</DENUMIRE>
+    <PROGRAM_2017>5.260</PROGRAM_2017>
+    <ESTIMARI2018>5.760</ESTIMARI2018>
+    <ESTIMARI2019>5.760</ESTIMARI2019>
+    <ESTIMARI2020>5.760</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE>Contributii de asigurari de sanatate pentru persoanele care se afla in executarea masurilor prevazute la art. 105,113,114 din Codul penal, precum si pentru persoanele care se afla in oerioada de aminare sau intrerupere a executarii pedepsei privative de libertate</DENUMIRE>
+    <PROGRAM_2017>300</PROGRAM_2017>
+    <ESTIMARI2018>500</ESTIMARI2018>
+    <ESTIMARI2019>600</ESTIMARI2019>
+    <ESTIMARI2020>700</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>53</SUBCAPITOL>
+    <DENUMIRE>Sume alocate din bugetul de stat, altele decat cele de echilibrare, prin bugetul Ministerului Sanatatii</DENUMIRE>
+    <PROGRAM_2017>62.300</PROGRAM_2017>
+    <ESTIMARI2018>63.100</ESTIMARI2018>
+    <ESTIMARI2019>63.839</ESTIMARI2019>
+    <ESTIMARI2020>63.839</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>72</SUBCAPITOL>
+    <DENUMIRE> Contributii individuale de asigurari de sanatate aferente indemnizatiei lunare acordate pe perioada concediului de acomodare in vederea adoptiei</DENUMIRE>
+    <PROGRAM_2017>647</PROGRAM_2017>
+    <ESTIMARI2018>690</ESTIMARI2018>
+    <ESTIMARI2019>734</ESTIMARI2019>
+    <ESTIMARI2020>734</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4305</CAPITOL>
+    <DENUMIRE>SUBVENTII DE LA ALTE ADMINISTRATII</DENUMIRE>
+    <PROGRAM_2017>131.073</PROGRAM_2017>
+    <ESTIMARI2018>140.999</ESTIMARI2018>
+    <ESTIMARI2019>141.909</ESTIMARI2019>
+    <ESTIMARI2020>142.809</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4305</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari de sanatate pentru persoane care executa o pedeapsa privativa de libertate sau arest preventive</DENUMIRE>
+    <PROGRAM_2017>44.700</PROGRAM_2017>
+    <ESTIMARI2018>54.500</ESTIMARI2018>
+    <ESTIMARI2019>55.400</ESTIMARI2019>
+    <ESTIMARI2020>56.300</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4305</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari de sanatate pentru persoanele aflate in concediu pentru cresterea copilului</DENUMIRE>
+    <PROGRAM_2017>130</PROGRAM_2017>
+    <ESTIMARI2018>130</ESTIMARI2018>
+    <ESTIMARI2019>140</ESTIMARI2019>
+    <ESTIMARI2020>140</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4305</CAPITOL>
+    <SUBCAPITOL>06</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari de sanatate pentru persoane care se afla in concediu medical din cauza de accidente de munca si boli profesionale</DENUMIRE>
+    <PROGRAM_2017>732</PROGRAM_2017>
+    <ESTIMARI2018>841</ESTIMARI2018>
+    <ESTIMARI2019>841</ESTIMARI2019>
+    <ESTIMARI2020>841</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4305</CAPITOL>
+    <SUBCAPITOL>12</SUBCAPITOL>
+    <DENUMIRE> Sume alocate din veniturile proprii ale Ministerului Sanatatii</DENUMIRE>
+    <PROGRAM_2017>85.398</PROGRAM_2017>
+    <ESTIMARI2018>85.398</ESTIMARI2018>
+    <ESTIMARI2019>85.398</ESTIMARI2019>
+    <ESTIMARI2020>85.398</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4305</CAPITOL>
+    <SUBCAPITOL>13</SUBCAPITOL>
+    <DENUMIRE> Contributii  din sumele alocate sistemului de asigurari pentru accidente de munca si boli profesionale, pentru concedii si indemnizatii datorate persoanelor aflate in incapacitate temporara de munca din cauza accident de munca sau boala profesionala</DENUMIRE>
+    <PROGRAM_2017>113</PROGRAM_2017>
+    <ESTIMARI2018>130</ESTIMARI2018>
+    <ESTIMARI2019>130</ESTIMARI2019>
+    <ESTIMARI2020>130</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>0001</CAPITOL>
+    <SUBCAPITOL>08</SUBCAPITOL>
+    <DENUMIRE>FONDURI EXTERNE NERAMBURSABILE TOTAL VENITURI</DENUMIRE>
+    <PROGRAM_2017>424</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4808</CAPITOL>
+    <DENUMIRE>SUME PRIMITE DE LA UE/ALTI DONATORI IN CONTUL PLATILOR EFECTUATE SI PREFINANTARI AFERENTE CADRULUI FINANCIAR 2014-2020</DENUMIRE>
+    <PROGRAM_2017>424</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4808</CAPITOL>
+    <SUBCAPITOL>15</SUBCAPITOL>
+    <DENUMIRE> Alte programe comunitare finantate in perioada 2014-2020 &#40;APC&#41;</DENUMIRE>
+    <PROGRAM_2017>424</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <DENUMIRE>TOTAL GENERAL</DENUMIRE>
+    <PROGRAM_2017>28.809.805</PROGRAM_2017>
+    <ESTIMARI2018>29.918.606</ESTIMARI2018>
+    <ESTIMARI2019>30.189.345</ESTIMARI2019>
+    <ESTIMARI2020>32.066.033</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>01</GRUPA>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <PROGRAM_2017>28.792.218</PROGRAM_2017>
+    <ESTIMARI2018>29.898.376</ESTIMARI2018>
+    <ESTIMARI2019>30.176.972</ESTIMARI2019>
+    <ESTIMARI2020>32.053.387</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <DENUMIRE>TITLUL I CHELTUIELI DE PERSONAL</DENUMIRE>
+    <PROGRAM_2017>269.040</PROGRAM_2017>
+    <ESTIMARI2018>275.725</ESTIMARI2018>
+    <ESTIMARI2019>282.067</ESTIMARI2019>
+    <ESTIMARI2020>288.272</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <DENUMIRE>TITLUL II BUNURI SI SERVICII</DENUMIRE>
+    <PROGRAM_2017>25.086.219</PROGRAM_2017>
+    <ESTIMARI2018>26.088.721</ESTIMARI2018>
+    <ESTIMARI2019>26.101.197</ESTIMARI2019>
+    <ESTIMARI2020>27.705.431</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>30</GRUPA>
+    <DENUMIRE>TITLUL III DOBANZI</DENUMIRE>
+    <PROGRAM_2017>4.000</PROGRAM_2017>
+    <ESTIMARI2018>4.100</ESTIMARI2018>
+    <ESTIMARI2019>4.194</ESTIMARI2019>
+    <ESTIMARI2020>4.286</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>51</GRUPA>
+    <DENUMIRE>TITLUL VI TRANSFERURI INTRE UNITATI ALE ADMINISTRATIEI PUBLICE</DENUMIRE>
+    <PROGRAM_2017>1.800.000</PROGRAM_2017>
+    <ESTIMARI2018>1.845.000</ESTIMARI2018>
+    <ESTIMARI2019>1.887.436</ESTIMARI2019>
+    <ESTIMARI2020>1.928.960</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>57</GRUPA>
+    <DENUMIRE>TITLUL IX ASISTENTA SOCIALA</DENUMIRE>
+    <PROGRAM_2017>1.631.861</PROGRAM_2017>
+    <ESTIMARI2018>1.684.807</ESTIMARI2018>
+    <ESTIMARI2019>1.902.054</ESTIMARI2019>
+    <ESTIMARI2020>2.126.413</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>58</GRUPA>
+    <DENUMIRE>TITLUL X PROIECTE CU FINANTARE DIN FONDURI EXTERNE NERAMBURSABILE AFERENTE CADRULUI FINANCIAR 2014-2020</DENUMIRE>
+    <PROGRAM_2017>1.076</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>59</GRUPA>
+    <DENUMIRE>TITLUL XI  ALTE CHELTUIELI</DENUMIRE>
+    <PROGRAM_2017>22</PROGRAM_2017>
+    <ESTIMARI2018>23</ESTIMARI2018>
+    <ESTIMARI2019>24</ESTIMARI2019>
+    <ESTIMARI2020>25</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>70</GRUPA>
+    <DENUMIRE>CHELTUIELI DE CAPITAL</DENUMIRE>
+    <PROGRAM_2017>17.587</PROGRAM_2017>
+    <ESTIMARI2018>20.230</ESTIMARI2018>
+    <ESTIMARI2019>12.373</ESTIMARI2019>
+    <ESTIMARI2020>12.646</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5000</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <DENUMIRE>TITLUL XIII ACTIVE NEFINANCIARE</DENUMIRE>
+    <PROGRAM_2017>17.587</PROGRAM_2017>
+    <ESTIMARI2018>20.230</ESTIMARI2018>
+    <ESTIMARI2019>12.373</ESTIMARI2019>
+    <ESTIMARI2020>12.646</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <DENUMIRE>CHELTUIELI - TOTAL</DENUMIRE>
+    <PROGRAM_2017>28.809.381</PROGRAM_2017>
+    <ESTIMARI2018>29.918.606</ESTIMARI2018>
+    <ESTIMARI2019>30.189.345</ESTIMARI2019>
+    <ESTIMARI2020>32.066.033</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>01</GRUPA>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <PROGRAM_2017>28.792.132</PROGRAM_2017>
+    <ESTIMARI2018>29.898.376</ESTIMARI2018>
+    <ESTIMARI2019>30.176.972</ESTIMARI2019>
+    <ESTIMARI2020>32.053.387</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <DENUMIRE>TITLUL I CHELTUIELI DE PERSONAL</DENUMIRE>
+    <PROGRAM_2017>269.000</PROGRAM_2017>
+    <ESTIMARI2018>275.725</ESTIMARI2018>
+    <ESTIMARI2019>282.067</ESTIMARI2019>
+    <ESTIMARI2020>288.272</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <DENUMIRE>TITLUL II BUNURI SI SERVICII</DENUMIRE>
+    <PROGRAM_2017>25.086.173</PROGRAM_2017>
+    <ESTIMARI2018>26.088.721</ESTIMARI2018>
+    <ESTIMARI2019>26.101.197</ESTIMARI2019>
+    <ESTIMARI2020>27.705.431</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>30</GRUPA>
+    <DENUMIRE>TITLUL III DOBANZI</DENUMIRE>
+    <PROGRAM_2017>4.000</PROGRAM_2017>
+    <ESTIMARI2018>4.100</ESTIMARI2018>
+    <ESTIMARI2019>4.194</ESTIMARI2019>
+    <ESTIMARI2020>4.286</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>51</GRUPA>
+    <DENUMIRE>TITLUL VI TRANSFERURI INTRE UNITATI ALE ADMINISTRATIEI PUBLICE</DENUMIRE>
+    <PROGRAM_2017>1.800.000</PROGRAM_2017>
+    <ESTIMARI2018>1.845.000</ESTIMARI2018>
+    <ESTIMARI2019>1.887.436</ESTIMARI2019>
+    <ESTIMARI2020>1.928.960</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>57</GRUPA>
+    <DENUMIRE>TITLUL IX ASISTENTA SOCIALA</DENUMIRE>
+    <PROGRAM_2017>1.631.861</PROGRAM_2017>
+    <ESTIMARI2018>1.684.807</ESTIMARI2018>
+    <ESTIMARI2019>1.902.054</ESTIMARI2019>
+    <ESTIMARI2020>2.126.413</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>58</GRUPA>
+    <DENUMIRE>TITLUL X PROIECTE CU FINANTARE DIN FONDURI EXTERNE NERAMBURSABILE AFERENTE CADRULUI FINANCIAR 2014-2020</DENUMIRE>
+    <PROGRAM_2017>1.076</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>59</GRUPA>
+    <DENUMIRE>TITLUL XI  ALTE CHELTUIELI</DENUMIRE>
+    <PROGRAM_2017>22</PROGRAM_2017>
+    <ESTIMARI2018>23</ESTIMARI2018>
+    <ESTIMARI2019>24</ESTIMARI2019>
+    <ESTIMARI2020>25</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>70</GRUPA>
+    <DENUMIRE>CHELTUIELI DE CAPITAL</DENUMIRE>
+    <PROGRAM_2017>17.249</PROGRAM_2017>
+    <ESTIMARI2018>20.230</ESTIMARI2018>
+    <ESTIMARI2019>12.373</ESTIMARI2019>
+    <ESTIMARI2020>12.646</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <DENUMIRE>TITLUL XIII ACTIVE NEFINANCIARE</DENUMIRE>
+    <PROGRAM_2017>17.249</PROGRAM_2017>
+    <ESTIMARI2018>20.230</ESTIMARI2018>
+    <ESTIMARI2019>12.373</ESTIMARI2019>
+    <ESTIMARI2020>12.646</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>Partea a III-a CHELTUIELI SOCIAL-CULTURALE</DENUMIRE>
+    <PROGRAM_2017>28.809.381</PROGRAM_2017>
+    <ESTIMARI2018>29.918.606</ESTIMARI2018>
+    <ESTIMARI2019>30.189.345</ESTIMARI2019>
+    <ESTIMARI2020>32.066.033</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>01</GRUPA>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <PROGRAM_2017>28.792.132</PROGRAM_2017>
+    <ESTIMARI2018>29.898.376</ESTIMARI2018>
+    <ESTIMARI2019>30.176.972</ESTIMARI2019>
+    <ESTIMARI2020>32.053.387</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <DENUMIRE>TITLUL I CHELTUIELI DE PERSONAL</DENUMIRE>
+    <PROGRAM_2017>269.000</PROGRAM_2017>
+    <ESTIMARI2018>275.725</ESTIMARI2018>
+    <ESTIMARI2019>282.067</ESTIMARI2019>
+    <ESTIMARI2020>288.272</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <DENUMIRE>TITLUL II BUNURI SI SERVICII</DENUMIRE>
+    <PROGRAM_2017>25.086.173</PROGRAM_2017>
+    <ESTIMARI2018>26.088.721</ESTIMARI2018>
+    <ESTIMARI2019>26.101.197</ESTIMARI2019>
+    <ESTIMARI2020>27.705.431</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>30</GRUPA>
+    <DENUMIRE>TITLUL III DOBANZI</DENUMIRE>
+    <PROGRAM_2017>4.000</PROGRAM_2017>
+    <ESTIMARI2018>4.100</ESTIMARI2018>
+    <ESTIMARI2019>4.194</ESTIMARI2019>
+    <ESTIMARI2020>4.286</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>51</GRUPA>
+    <DENUMIRE>TITLUL VI TRANSFERURI INTRE UNITATI ALE  ADMINISTRATIEI PUBLICE</DENUMIRE>
+    <PROGRAM_2017>1.800.000</PROGRAM_2017>
+    <ESTIMARI2018>1.845.000</ESTIMARI2018>
+    <ESTIMARI2019>1.887.436</ESTIMARI2019>
+    <ESTIMARI2020>1.928.960</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>57</GRUPA>
+    <DENUMIRE>TITLUL IX ASISTENTA SOCIALA</DENUMIRE>
+    <PROGRAM_2017>1.631.861</PROGRAM_2017>
+    <ESTIMARI2018>1.684.807</ESTIMARI2018>
+    <ESTIMARI2019>1.902.054</ESTIMARI2019>
+    <ESTIMARI2020>2.126.413</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>58</GRUPA>
+    <DENUMIRE>TITLUL X PROIECTE CU FINANTARE DIN FONDURI EXTERNE NERAMBURSABILE AFERENTE CADRULUI FINANCIAR 2014-2020</DENUMIRE>
+    <PROGRAM_2017>1.076</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>70</GRUPA>
+    <DENUMIRE>CHELTUIELI DE CAPITAL</DENUMIRE>
+    <PROGRAM_2017>17.249</PROGRAM_2017>
+    <ESTIMARI2018>20.230</ESTIMARI2018>
+    <ESTIMARI2019>12.373</ESTIMARI2019>
+    <ESTIMARI2020>12.646</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <DENUMIRE>TITLUL XIII ACTIVE NEFINANCIARE</DENUMIRE>
+    <PROGRAM_2017>17.249</PROGRAM_2017>
+    <ESTIMARI2018>20.230</ESTIMARI2018>
+    <ESTIMARI2019>12.373</ESTIMARI2019>
+    <ESTIMARI2020>12.646</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <DENUMIRE>SANATATE</DENUMIRE>
+    <PROGRAM_2017>27.177.520</PROGRAM_2017>
+    <ESTIMARI2018>28.233.799</ESTIMARI2018>
+    <ESTIMARI2019>28.287.291</ESTIMARI2019>
+    <ESTIMARI2020>29.939.620</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>01</GRUPA>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <PROGRAM_2017>27.160.271</PROGRAM_2017>
+    <ESTIMARI2018>28.213.569</ESTIMARI2018>
+    <ESTIMARI2019>28.274.918</ESTIMARI2019>
+    <ESTIMARI2020>29.926.974</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <DENUMIRE>TITLUL I CHELTUIELI DE PERSONAL</DENUMIRE>
+    <PROGRAM_2017>269.000</PROGRAM_2017>
+    <ESTIMARI2018>275.725</ESTIMARI2018>
+    <ESTIMARI2019>282.067</ESTIMARI2019>
+    <ESTIMARI2020>288.272</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <DENUMIRE>TITLUL II BUNURI SI SERVICII</DENUMIRE>
+    <PROGRAM_2017>25.086.173</PROGRAM_2017>
+    <ESTIMARI2018>26.088.721</ESTIMARI2018>
+    <ESTIMARI2019>26.101.197</ESTIMARI2019>
+    <ESTIMARI2020>27.705.431</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>30</GRUPA>
+    <DENUMIRE>TITLUL III DOBANZI</DENUMIRE>
+    <PROGRAM_2017>4.000</PROGRAM_2017>
+    <ESTIMARI2018>4.100</ESTIMARI2018>
+    <ESTIMARI2019>4.194</ESTIMARI2019>
+    <ESTIMARI2020>4.286</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>51</GRUPA>
+    <DENUMIRE>TITLUL VI TRANSFERURI INTRE UNITATI ALE ADMINISTRATIEI PUBLICE</DENUMIRE>
+    <PROGRAM_2017>1.800.000</PROGRAM_2017>
+    <ESTIMARI2018>1.845.000</ESTIMARI2018>
+    <ESTIMARI2019>1.887.436</ESTIMARI2019>
+    <ESTIMARI2020>1.928.960</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>58</GRUPA>
+    <DENUMIRE>TITLUL X PROIECTE CU FINANTARE DIN FONDURI EXTERNE NERAMBURSABILE AFERENTE CADRULUI FINANCIAR 2014-2020</DENUMIRE>
+    <PROGRAM_2017>1.076</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>59</GRUPA>
+    <DENUMIRE>TITLUL XI  ALTE CHELTUIELI</DENUMIRE>
+    <PROGRAM_2017>22</PROGRAM_2017>
+    <ESTIMARI2018>23</ESTIMARI2018>
+    <ESTIMARI2019>24</ESTIMARI2019>
+    <ESTIMARI2020>25</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>70</GRUPA>
+    <DENUMIRE>CHELTUIELI DE CAPITAL</DENUMIRE>
+    <PROGRAM_2017>17.249</PROGRAM_2017>
+    <ESTIMARI2018>20.230</ESTIMARI2018>
+    <ESTIMARI2019>12.373</ESTIMARI2019>
+    <ESTIMARI2020>12.646</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <DENUMIRE>TITLUL XIII ACTIVE NEFINANCIARE</DENUMIRE>
+    <PROGRAM_2017>17.249</PROGRAM_2017>
+    <ESTIMARI2018>20.230</ESTIMARI2018>
+    <ESTIMARI2019>12.373</ESTIMARI2019>
+    <ESTIMARI2020>12.646</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6805</CAPITOL>
+    <DENUMIRE>ASIGURARI SI ASISTENTA SOCIALA</DENUMIRE>
+    <PROGRAM_2017>1.631.861</PROGRAM_2017>
+    <ESTIMARI2018>1.684.807</ESTIMARI2018>
+    <ESTIMARI2019>1.902.054</ESTIMARI2019>
+    <ESTIMARI2020>2.126.413</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6805</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>01</GRUPA>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <PROGRAM_2017>1.631.861</PROGRAM_2017>
+    <ESTIMARI2018>1.684.807</ESTIMARI2018>
+    <ESTIMARI2019>1.902.054</ESTIMARI2019>
+    <ESTIMARI2020>2.126.413</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6805</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>57</GRUPA>
+    <DENUMIRE>TITLUL IX ASISTENTA SOCIALA</DENUMIRE>
+    <PROGRAM_2017>1.631.861</PROGRAM_2017>
+    <ESTIMARI2018>1.684.807</ESTIMARI2018>
+    <ESTIMARI2019>1.902.054</ESTIMARI2019>
+    <ESTIMARI2020>2.126.413</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>9905</CAPITOL>
+    <DENUMIRE>EXCEDENT&#40;+&#41;/DEFICIT&#40;-&#41;</DENUMIRE>
+    <ESTIMARI2018>1.386.596</ESTIMARI2018>
+    <ESTIMARI2019>4.597.376</ESTIMARI2019>
+    <ESTIMARI2020>6.309.818</ESTIMARI2020>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <DENUMIRE>FONDURI EXTERNE NERAMBURSABILE</DENUMIRE>
+    <PROGRAM_2017>424</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>01</GRUPA>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <PROGRAM_2017>86</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <DENUMIRE>TITLUL I CHELTUIELI DE PERSONAL</DENUMIRE>
+    <PROGRAM_2017>40</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <DENUMIRE>TITLUL II BUNURI SI SERVICII</DENUMIRE>
+    <PROGRAM_2017>46</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>70</GRUPA>
+    <DENUMIRE>CHELTUIELI DE CAPITAL</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <DENUMIRE>TITLUL XIII ACTIVE NEFINANCIARE</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <DENUMIRE>SANATATE</DENUMIRE>
+    <PROGRAM_2017>424</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>01</GRUPA>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <PROGRAM_2017>86</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <DENUMIRE>TITLUL I CHELTUIELI DE PERSONAL</DENUMIRE>
+    <PROGRAM_2017>40</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <DENUMIRE>TITLUL II BUNURI SI SERVICII</DENUMIRE>
+    <PROGRAM_2017>46</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>70</GRUPA>
+    <DENUMIRE>CHELTUIELI DE CAPITAL</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Sinteza veniturilor si cheltuielilor alocate pe surse si pe titluri</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/01</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <DENUMIRE>TITLUL XIII ACTIVE NEFINANCIARE</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+</main>

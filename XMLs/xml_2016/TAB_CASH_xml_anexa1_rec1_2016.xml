@@ -1,0 +1,1658 @@
+<?xml version="1.0" ?>
+<!DOCTYPE main [
+  <!ELEMENT main (DATA_RECORD*)>
+  <!ELEMENT DATA_RECORD (TITLU_RAPORT?,ANEXA?,COD_ORDONATOR?,ORDONATOR?,CAPITOL?,SUBCAPITOL?,PARAGRAF?,DENUMIRE?,INFLUENTE?)+>
+  <!ELEMENT TITLU_RAPORT (#PCDATA)>
+  <!ELEMENT ANEXA (#PCDATA)>
+  <!ELEMENT COD_ORDONATOR (#PCDATA)>
+  <!ELEMENT ORDONATOR (#PCDATA)>
+  <!ELEMENT CAPITOL (#PCDATA)>
+  <!ELEMENT SUBCAPITOL (#PCDATA)>
+  <!ELEMENT PARAGRAF (#PCDATA)>
+  <!ELEMENT DENUMIRE (#PCDATA)>
+  <!ELEMENT INFLUENTE (#PCDATA)>
+]>
+<main>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0001</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE>VENITURI - TOTAL</DENUMIRE>
+    <INFLUENTE>2.951.190</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0002</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>I.VENITURI CURENTE</DENUMIRE>
+    <INFLUENTE>3.012.747</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0003</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>A.VENITURI FISCALE</DENUMIRE>
+    <INFLUENTE>1.629.399</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0004</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>A1.IMPOZIT PE VENIT, PROFIT SI CASTIGURI DIN CAPITAL</DENUMIRE>
+    <INFLUENTE>1.884.722</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0005</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>A11.IMPOZIT PE VENIT, PROFIT SI CASTIGURI DIN CAPITAL DE LA PERSOANE JURIDICE</DENUMIRE>
+    <INFLUENTE>1.452.662</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0101</CAPITOL>
+    <DENUMIRE>IMPOZIT PE PROFIT</DENUMIRE>
+    <INFLUENTE>1.053.651</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0101</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Impozit pe profit de la agentii economici</DENUMIRE>
+    <INFLUENTE>1.355.453</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0101</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Impozit pe profit de la bancile comerciale</DENUMIRE>
+    <INFLUENTE>-301.802</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0201</CAPITOL>
+    <DENUMIRE>ALTE IMPOZITE PE VENIT, PROFIT SI CASTIGURI DIN CAPITAL DE LA PERSOANE JURIDICE</DENUMIRE>
+    <INFLUENTE>399.011</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0201</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Impozitul pe profit obtinut din activitati comerciale ilicite sau din nerespectarea Legii privind protectia consumatorului</DENUMIRE>
+    <INFLUENTE>-110</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0201</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Impozit pe dividende datorat de persoane juridice</DENUMIRE>
+    <INFLUENTE>22.642</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0201</CAPITOL>
+    <SUBCAPITOL>04</SUBCAPITOL>
+    <DENUMIRE> Impozitul pe  reprezentante</DENUMIRE>
+    <INFLUENTE>-306</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0201</CAPITOL>
+    <SUBCAPITOL>06</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venitul microintreprinderilor</DENUMIRE>
+    <INFLUENTE>376.785</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0300</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>A12.IMPOZIT PE VENIT, PROFIT SI CASTIGURI DIN CAPITAL DE LA PERSOANE FIZICE</DENUMIRE>
+    <INFLUENTE>357.724</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <DENUMIRE>IMPOZIT PE VENIT</DENUMIRE>
+    <INFLUENTE>927.232</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din activitati independente</DENUMIRE>
+    <INFLUENTE>43.166</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din salarii</DENUMIRE>
+    <INFLUENTE>352.665</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din cedarea folosintei bunurilor</DENUMIRE>
+    <INFLUENTE>32.926</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>04</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din dividende</DENUMIRE>
+    <INFLUENTE>593.310</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din dobanzi</DENUMIRE>
+    <INFLUENTE>-208.015</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>06</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din pensii</DENUMIRE>
+    <INFLUENTE>130.715</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>07</SUBCAPITOL>
+    <DENUMIRE> Impozit pe veniturile din premii</DENUMIRE>
+    <INFLUENTE>-2.442</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>08</SUBCAPITOL>
+    <DENUMIRE> Impozit pe veniturile din economii sub forma de dobanda realizate in Belgia, Luxemburg si Austria de persoane fizice romane rezidente fiscal in Romania</DENUMIRE>
+    <INFLUENTE>-1.490</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>09</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din transferul titlurilor de valoare</DENUMIRE>
+    <INFLUENTE>20.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>10</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din operatiuni de vanzare-cumparare de valuta la termen, pe baza de contract, precum si orice alte operatiuni similare</DENUMIRE>
+    <INFLUENTE>-254</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>11</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din valorificarea drepturilor de proprietate intelectuala</DENUMIRE>
+    <INFLUENTE>-2.916</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>13</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din activitati agricole</DENUMIRE>
+    <INFLUENTE>-42.914</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>15</SUBCAPITOL>
+    <DENUMIRE> Impozit pe veniturile din activitatile de expertiza contabila, tehnica judiciara si extrajudiciara</DENUMIRE>
+    <INFLUENTE>-304</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>16</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din activitati desfasurate in baza contractelor/ conventiilor civile incheiate potrivit Codului civil precum si a contractelor de agent</DENUMIRE>
+    <INFLUENTE>-136.543</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>17</SUBCAPITOL>
+    <DENUMIRE> Impozit pe onorariul avocatiilor si notarilor publici</DENUMIRE>
+    <INFLUENTE>-158</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>18</SUBCAPITOL>
+    <DENUMIRE> Impozitul pe veniturile din transferul proprietatilor imobiliare din patrimoniul personal</DENUMIRE>
+    <INFLUENTE>59.893</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>19</SUBCAPITOL>
+    <DENUMIRE> Sume virate pentru sponsorizarea entitatilor non-profit</DENUMIRE>
+    <INFLUENTE>-5.223</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>21</SUBCAPITOL>
+    <DENUMIRE> Impozit pe veniturile din arenda bunurilor agricole</DENUMIRE>
+    <INFLUENTE>18.612</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>22</SUBCAPITOL>
+    <DENUMIRE> Impozit pe veniturile din jocuri de noroc</DENUMIRE>
+    <INFLUENTE>-16.588</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Impozit pe venituri din alte surse</DENUMIRE>
+    <INFLUENTE>-11.146</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0301</CAPITOL>
+    <SUBCAPITOL>60</SUBCAPITOL>
+    <DENUMIRE> Regularizari</DENUMIRE>
+    <INFLUENTE>103.938</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0401</CAPITOL>
+    <DENUMIRE>COTE SI SUME DEFALCATE DIN IMPOZITUL PE VENIT &#40;SE SCAD&#41;</DENUMIRE>
+    <INFLUENTE>-569.508</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0401</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Cote defalcate din impozitul pe venit &#40;se scad&#41;</DENUMIRE>
+    <INFLUENTE>-569.508</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0500</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>A13. ALTE IMPOZITE PE VENIT, PROFIT SI CASTIGURI DIN CAPITAL</DENUMIRE>
+    <INFLUENTE>74.336</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0501</CAPITOL>
+    <DENUMIRE>ALTE IMPOZITE PE VENIT, PROFIT SI CASTIGURI DIN CAPITAL</DENUMIRE>
+    <INFLUENTE>74.336</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0501</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Impozit pe veniturile realizate de persoanele nerezidente</DENUMIRE>
+    <INFLUENTE>74.336</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0600</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>A2.IMPOZIT PE SALARII - TOTAL</DENUMIRE>
+    <INFLUENTE>74</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0601</CAPITOL>
+    <DENUMIRE>IMPOZIT PE SALARII - TOTAL</DENUMIRE>
+    <INFLUENTE>74</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0601</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Impozit pe salarii</DENUMIRE>
+    <INFLUENTE>74</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0700</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>A3.IMPOZITE SI TAXE PE PROPRIETATE</DENUMIRE>
+    <INFLUENTE>-86.134</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0701</CAPITOL>
+    <DENUMIRE>IMPOZITE SI TAXE PE PROPRIETATE</DENUMIRE>
+    <INFLUENTE>-86.134</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0701</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Taxe judiciare de timbru, taxe de timbru pentru activitatea notariala si alte taxe de timbru</DENUMIRE>
+    <INFLUENTE>18.842</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>0701</CAPITOL>
+    <SUBCAPITOL>04</SUBCAPITOL>
+    <DENUMIRE> Impozit pe constructii</DENUMIRE>
+    <INFLUENTE>-104.976</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1000</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>A4.IMPOZITE SI TAXE PE BUNURI SI SERVICII</DENUMIRE>
+    <INFLUENTE>-374.142</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1001</CAPITOL>
+    <DENUMIRE>TAXA PE VALOAREA ADAUGATA</DENUMIRE>
+    <INFLUENTE>406.337</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1101</CAPITOL>
+    <DENUMIRE>SUME DEFALCATE DIN TVA</DENUMIRE>
+    <INFLUENTE>-655.003</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1101</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Sume defalcate din taxa pe valoarea adaugata pentru finantarea cheltuielilor descentralizate la nivelul judetelor &#40;se scad&#41;</DENUMIRE>
+    <INFLUENTE>-75.045</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1101</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Sume defalcate din taxa pe valoarea adaugata pentru finantarea cheltuielilor descentralizate la nivelul comunelor, oraselor, municipiilor,sectoarelor si Municipiului Bucuresti &#40;se scad&#41;</DENUMIRE>
+    <INFLUENTE>-586.314</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1101</CAPITOL>
+    <SUBCAPITOL>06</SUBCAPITOL>
+    <DENUMIRE> Sume defalcate din taxa pe valoarea adaugata pentru echilibrarea bugetelor locale &#40;se scad&#41;</DENUMIRE>
+    <INFLUENTE>-211</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1101</CAPITOL>
+    <SUBCAPITOL>09</SUBCAPITOL>
+    <DENUMIRE> Sume defalcate din  taxa pe valoare adaugata pentru finantarea invatamantului particular sau confesional acreditat &#40;se scad&#41;</DENUMIRE>
+    <INFLUENTE>6.567</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1201</CAPITOL>
+    <DENUMIRE>ALTE IMPOZITE SI TAXE GENERALE PE BUNURI  SI SERVICII</DENUMIRE>
+    <INFLUENTE>-211.057</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1201</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Impozit pe titeiul din productia interna si gazele naturale</DENUMIRE>
+    <INFLUENTE>53</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1201</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Taxa de dezvoltare cuprinsa in tariful energiei electrice si termice -Restante anii anteriori</DENUMIRE>
+    <INFLUENTE>2</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1201</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <DENUMIRE> Taxe de autorizare pentru comercializarea alcoolului, bauturilor alcoolice, produselor din tutun si a cafelei</DENUMIRE>
+    <INFLUENTE>17</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1201</CAPITOL>
+    <SUBCAPITOL>11</SUBCAPITOL>
+    <DENUMIRE>Taxa pe venituri suplimentare obtinute ca urmare a dereglementarii preturilor din sectorul gazelor naturale.</DENUMIRE>
+    <INFLUENTE>-181.034</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1201</CAPITOL>
+    <SUBCAPITOL>12</SUBCAPITOL>
+    <DENUMIRE>Taxa speciala pentru exploatarea resurselor naturale</DENUMIRE>
+    <INFLUENTE>-16.812</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1201</CAPITOL>
+    <SUBCAPITOL>13</SUBCAPITOL>
+    <DENUMIRE>Taxa pe monopolul din sectorul energiei electrice si a gazului metan</DENUMIRE>
+    <INFLUENTE>-12.805</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1201</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte impozite si taxe generale pe cifra de afaceri, vanzari si valoare adaugata</DENUMIRE>
+    <INFLUENTE>-478</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1401</CAPITOL>
+    <DENUMIRE>ACCIZE</DENUMIRE>
+    <INFLUENTE>180.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1501</CAPITOL>
+    <DENUMIRE>TAXE PE SERVICII SPECIFICE</DENUMIRE>
+    <INFLUENTE>8</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1501</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte taxe pe servicii specifice</DENUMIRE>
+    <INFLUENTE>8</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1601</CAPITOL>
+    <DENUMIRE>TAXE PE UTILIZAREA BUNURILOR, AUTORIZAREA UTILIZARII BUNURILOR SAU PE  DESFASURAREA DE ACTIVITATI</DENUMIRE>
+    <INFLUENTE>-94.427</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1601</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Taxe pentru jocurile de noroc</DENUMIRE>
+    <INFLUENTE>-148.913</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1601</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Taxe si tarife pentru eliberarea de licente si autorizatii de functionare</DENUMIRE>
+    <INFLUENTE>65.090</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1601</CAPITOL>
+    <SUBCAPITOL>04</SUBCAPITOL>
+    <DENUMIRE> Taxe pe activitatea de prospectiune, explorare si exploatare a resurselor minerale</DENUMIRE>
+    <INFLUENTE>-5.938</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1601</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <DENUMIRE> Taxa asupra unor activitati daunatoare sanatatii si din publicitatea lor</DENUMIRE>
+    <INFLUENTE>118</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1601</CAPITOL>
+    <SUBCAPITOL>06</SUBCAPITOL>
+    <DENUMIRE> Taxa de timbru social asupra jocurilor de noroc</DENUMIRE>
+    <INFLUENTE>-34</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1601</CAPITOL>
+    <SUBCAPITOL>07</SUBCAPITOL>
+    <DENUMIRE> Taxe pentru prestatiile efectuate si pentru eliberarea autorizatiilor de transport in trafic international</DENUMIRE>
+    <INFLUENTE>243</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1601</CAPITOL>
+    <SUBCAPITOL>08</SUBCAPITOL>
+    <DENUMIRE> Taxe speciale pentru autoturisme si autovehicule la prima inmatriculare in Romania</DENUMIRE>
+    <INFLUENTE>-3.057</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1601</CAPITOL>
+    <SUBCAPITOL>10</SUBCAPITOL>
+    <DENUMIRE> Taxa de poluare pentru autivehicule, de compensat/restituit</DENUMIRE>
+    <INFLUENTE>-1.855</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1601</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte taxe pe utilizarea bunurilor, autorizarea utilizarii bunurilor sau pe desfasurare de activitati</DENUMIRE>
+    <INFLUENTE>-81</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1700</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>A5.IMPOZIT PE COMERTUL EXTERIOR SI TRANZACTIILE INTERNATIONALE</DENUMIRE>
+    <INFLUENTE>178.881</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1701</CAPITOL>
+    <DENUMIRE>VENITURI INCADRATE IN RESURSELE PROPRII ALE BUGETULUI UNIUNII EUROPENE</DENUMIRE>
+    <INFLUENTE>178.881</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1701</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Taxe vamale</DENUMIRE>
+    <INFLUENTE>179.747</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1701</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Contributii in sectorul zaharului</DENUMIRE>
+    <INFLUENTE>-866</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1800</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>A6.ALTE IMPOZITE SI TAXE FISCALE</DENUMIRE>
+    <INFLUENTE>25.998</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1801</CAPITOL>
+    <DENUMIRE>ALTE IMPOZITE SI TAXE FISCALE</DENUMIRE>
+    <INFLUENTE>25.998</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1801</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Majorari de intarziere aferente taxelor vamale, taxelor agricole si taxelor anti-dumping</DENUMIRE>
+    <INFLUENTE>25.726</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1801</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Taxe vamale din sumele datorate pana la data de 31.12.2006</DENUMIRE>
+    <INFLUENTE>240</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>1801</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte impozite si taxe</DENUMIRE>
+    <INFLUENTE>32</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>2000</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>B.CONTRIBUTII DE ASIGURARI</DENUMIRE>
+    <INFLUENTE>535.486</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>2001</CAPITOL>
+    <DENUMIRE>CONTRIBUTIILE ANGAJATORILOR</DENUMIRE>
+    <INFLUENTE>-40.434</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>2001</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <DENUMIRE> Varsaminte de la persoane juridice, pentru persoane cu handicap neincadrate</DENUMIRE>
+    <INFLUENTE>-40.434</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>2101</CAPITOL>
+    <DENUMIRE>CONTRIBUTIILE ASIGURATILOR</DENUMIRE>
+    <INFLUENTE>575.920</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>2101</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte contributii pentru asigurari sociale datorate de asigurati</DENUMIRE>
+    <INFLUENTE>575.920</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>2900</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>C.VENITURI NEFISCALE</DENUMIRE>
+    <INFLUENTE>847.862</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3000</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>C1.VENITURI DIN PROPRIETATE</DENUMIRE>
+    <INFLUENTE>186.737</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3001</CAPITOL>
+    <DENUMIRE>VENITURI DIN PROPRIETATE</DENUMIRE>
+    <INFLUENTE>-483.572</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3001</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Varsaminte din profitul net al regiilor autonome</DENUMIRE>
+    <INFLUENTE>-68.619</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3001</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Incasari din cota retinuta, conform codului penal</DENUMIRE>
+    <INFLUENTE>-52</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3001</CAPITOL>
+    <SUBCAPITOL>04</SUBCAPITOL>
+    <DENUMIRE> Varsaminte din veniturile nete al Bancii Nationale  a Romaniei</DENUMIRE>
+    <INFLUENTE>-154.540</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3001</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <DENUMIRE> Venituri din concesiuni si inchirieri</DENUMIRE>
+    <INFLUENTE>-13.377</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3001</CAPITOL>
+    <SUBCAPITOL>08</SUBCAPITOL>
+    <DENUMIRE> Venituri din dividende</DENUMIRE>
+    <INFLUENTE>-541.341</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3001</CAPITOL>
+    <SUBCAPITOL>11</SUBCAPITOL>
+    <DENUMIRE>Venituri din vanzarea certificatelor de emisii  de gaze cu efect de sera</DENUMIRE>
+    <INFLUENTE>291.824</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3001</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte venituri din proprietate</DENUMIRE>
+    <INFLUENTE>2.533</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3101</CAPITOL>
+    <DENUMIRE>VENITURI DIN DOBANZI</DENUMIRE>
+    <INFLUENTE>670.309</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3101</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Alte venituri din dobanzi</DENUMIRE>
+    <INFLUENTE>670.309</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3300</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>C2.VANZARI DE BUNURI SI SERVICII</DENUMIRE>
+    <INFLUENTE>661.125</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <DENUMIRE>VENITURI DIN PRESTARI DE SERVICII SI ALTE ACTIVITATI</DENUMIRE>
+    <INFLUENTE>-28.874</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Taxe consulare</DENUMIRE>
+    <INFLUENTE>-31.469</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Venituri din taxe pentru prestatii vamale</DENUMIRE>
+    <INFLUENTE>-9</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>04</SUBCAPITOL>
+    <DENUMIRE> Taxe si tarife pentru analize si servicii  efectuate de laboratoare</DENUMIRE>
+    <INFLUENTE>-152</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <DENUMIRE> Taxe si alte venituri in invatamant</DENUMIRE>
+    <INFLUENTE>-74</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>06</SUBCAPITOL>
+    <DENUMIRE> Venituri din expertiza tehnica judiciara si extrajudiciara</DENUMIRE>
+    <INFLUENTE>148</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>08</SUBCAPITOL>
+    <DENUMIRE> Venituri din prestari de servicii</DENUMIRE>
+    <INFLUENTE>18.493</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>09</SUBCAPITOL>
+    <DENUMIRE> Taxe si alte venituri din protectia mediului</DENUMIRE>
+    <INFLUENTE>2.880</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>17</SUBCAPITOL>
+    <DENUMIRE> Venituri din organizarea de cursuri de calificare si conversie profesionala, specializare si perfectionare</DENUMIRE>
+    <INFLUENTE>968</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>20</SUBCAPITOL>
+    <DENUMIRE> Venituri din cercetare</DENUMIRE>
+    <INFLUENTE>-63</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>23</SUBCAPITOL>
+    <DENUMIRE> Venituri din timbrul judiciar</DENUMIRE>
+    <INFLUENTE>-165</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>25</SUBCAPITOL>
+    <DENUMIRE> Venituri din recuperarea cheltuielilor judiciare avansate de stat</DENUMIRE>
+    <INFLUENTE>9.050</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>26</SUBCAPITOL>
+    <DENUMIRE> Venituri din despagubiri</DENUMIRE>
+    <INFLUENTE>73</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>29</SUBCAPITOL>
+    <DENUMIRE> Tarife incasate pentru emiterea unei solutii fiscale individuale anticipate si pentru emiterea sau modificarea unui acord de pret in avans</DENUMIRE>
+    <INFLUENTE>580</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3301</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte venituri din prestari de servicii si alte activitati</DENUMIRE>
+    <INFLUENTE>-29.134</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3401</CAPITOL>
+    <DENUMIRE>VENITURI DIN TAXE ADMINISTRATIVE, ELIBERARI PERMISE</DENUMIRE>
+    <INFLUENTE>-56.849</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3401</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Venituri din taxe pentru eliberari de permise si certificate</DENUMIRE>
+    <INFLUENTE>-620</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3401</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte venituri din taxe administrative, eliberari permise</DENUMIRE>
+    <INFLUENTE>-56.229</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3501</CAPITOL>
+    <DENUMIRE>AMENZI, PENALITATI SI CONFISCARI</DENUMIRE>
+    <INFLUENTE>109.160</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3501</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Venituri din amenzi si alte sanctiuni aplicate potrivit dispozitiilor legale</DENUMIRE>
+    <INFLUENTE>56.725</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3501</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Penalitati pentru nedepunerea sau depunerea cu intarziere declaratiei de impozite si taxe</DENUMIRE>
+    <INFLUENTE>102</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3501</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Incasari din valorificarea bunurilor confiscate, abandonate si alte sume constatate odata cu confiscarea potrivit legii</DENUMIRE>
+    <INFLUENTE>40.398</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3501</CAPITOL>
+    <SUBCAPITOL>04</SUBCAPITOL>
+    <DENUMIRE> Majorari de intarziere pentru venituri nevarsate la termen</DENUMIRE>
+    <INFLUENTE>-457</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3501</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <DENUMIRE> Amenzi judiciare</DENUMIRE>
+    <INFLUENTE>2.534</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3501</CAPITOL>
+    <SUBCAPITOL>06</SUBCAPITOL>
+    <DENUMIRE> Incasari rezultate din valorificarea bunurilor confiscate ca urmare a savarsirii infractiunilor la regimul drogurilor si precursorilor</DENUMIRE>
+    <INFLUENTE>668</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3501</CAPITOL>
+    <SUBCAPITOL>07</SUBCAPITOL>
+    <DENUMIRE>Penalitati datorate in cazul esalonarilor la plata</DENUMIRE>
+    <INFLUENTE>8.250</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3501</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte amenzi, penalitati si confiscari</DENUMIRE>
+    <INFLUENTE>940</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <DENUMIRE>DIVERSE VENITURI</DENUMIRE>
+    <INFLUENTE>637.688</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Venituri din aplicarea prescriptiei extinctive</DENUMIRE>
+    <INFLUENTE>769</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Venituri din recuperarea cheltuielilor de judecata, imputatii si despagubiri</DENUMIRE>
+    <INFLUENTE>582</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Sume din recuperarea debitelor provenite din drepturile necuvenite</DENUMIRE>
+    <INFLUENTE>5.609</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>04</SUBCAPITOL>
+    <DENUMIRE> Venituri din producerea riscurilor asigurate</DENUMIRE>
+    <INFLUENTE>-159.590</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <DENUMIRE> Varsaminte din veniturile si/sau disponibilitatile institutiilor publice</DENUMIRE>
+    <INFLUENTE>5.714</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>11</SUBCAPITOL>
+    <DENUMIRE> Venituri din ajutoare de stat recuperate</DENUMIRE>
+    <INFLUENTE>-3.450</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>14</SUBCAPITOL>
+    <DENUMIRE> Venituri din recuperarea cheltuielilor efectuate in cursul procesului de executare silita</DENUMIRE>
+    <INFLUENTE>-879</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>16</SUBCAPITOL>
+    <DENUMIRE> Sume reprezentand ajutorul comunitar pentru furnizarea laptelui, produselor lactate si a fructelor in institutiile scolare</DENUMIRE>
+    <INFLUENTE>-51.891</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>17</SUBCAPITOL>
+    <DENUMIRE> Venituri din sume virate eronat in conturile de disponibilitati ale institutiilor publice reorganizate</DENUMIRE>
+    <INFLUENTE>-40</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>18</SUBCAPITOL>
+    <DENUMIRE> Sume provenind din executarea silita a debitelor reprezentand  contravaloarea lucrarilor  de regenerare neexecutate de proprietarii de paduri</DENUMIRE>
+    <INFLUENTE>-20</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>19</SUBCAPITOL>
+    <DENUMIRE> Venituri din recuperarea creantelor fiscale</DENUMIRE>
+    <INFLUENTE>-393</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>20</SUBCAPITOL>
+    <DENUMIRE> Varsaminte din reducerea drepturilor salariale conform Legii nr. 118/2010</DENUMIRE>
+    <INFLUENTE>-4.160</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>21</SUBCAPITOL>
+    <DENUMIRE> Sume restituite aferente veniturilor incasate</DENUMIRE>
+    <INFLUENTE>104</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>24</SUBCAPITOL>
+    <DENUMIRE> Venituri din compensarea creantelor din despagubiri</DENUMIRE>
+    <INFLUENTE>-275</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>26</SUBCAPITOL>
+    <DENUMIRE> Venituri din compensarea creantelor din despagubiri conform OUG 83/2014</DENUMIRE>
+    <INFLUENTE>-604</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>27</SUBCAPITOL>
+    <DENUMIRE> Venituri din comisionul perceput de catre inspectoratele teritoriale de munca, datorat pana la data de 31 decembrie 2010</DENUMIRE>
+    <INFLUENTE>1.073</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>28</SUBCAPITOL>
+    <DENUMIRE> Comision de risc aferent programului de stimulare a cupararii de autoturisme</DENUMIRE>
+    <INFLUENTE>-15</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>29</SUBCAPITOL>
+    <DENUMIRE> Sume aferente contributiilor proprii ale beneficiarilor finali ai proiectelor</DENUMIRE>
+    <INFLUENTE>-519</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>32</SUBCAPITOL>
+    <DENUMIRE> Sume provenite din finantarea bugetara a anilor precedenti</DENUMIRE>
+    <INFLUENTE>805.900</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3601</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte venituri</DENUMIRE>
+    <INFLUENTE>39.773</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3900</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>II.VENITURI DIN CAPITAL</DENUMIRE>
+    <INFLUENTE>-60.613</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3901</CAPITOL>
+    <DENUMIRE>VENITURI DIN VALORIFICAREA UNOR BUNURI</DENUMIRE>
+    <INFLUENTE>-60.613</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3901</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Venituri din valorificarea unor bunuri ale institutiilor publice</DENUMIRE>
+    <INFLUENTE>-16.157</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3901</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Venituri din valorificarea stocurilor de rezerve de stat si de mobilizare</DENUMIRE>
+    <INFLUENTE>1.572</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3901</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Venituri din vanzarea locuintelor construite din fondurile statului</DENUMIRE>
+    <INFLUENTE>-29.400</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3901</CAPITOL>
+    <SUBCAPITOL>06</SUBCAPITOL>
+    <DENUMIRE> Venituri obtinute in procesul de stingere a creantelor bugetare</DENUMIRE>
+    <INFLUENTE>-11.770</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3901</CAPITOL>
+    <SUBCAPITOL>07</SUBCAPITOL>
+    <DENUMIRE> Venituri din vanzarea unor bunuri apartinand domeniului privat al statului sau a unitatilor administativ-teritoriale</DENUMIRE>
+    <INFLUENTE>-78</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3901</CAPITOL>
+    <SUBCAPITOL>09</SUBCAPITOL>
+    <DENUMIRE> Venituri rezultate din garantiile acordate si platitite institutiilor de credit in cadrul programului &#34;Prima casa&#34;</DENUMIRE>
+    <INFLUENTE>2.851</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>3901</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte venituri din valorificarea unor bunuri</DENUMIRE>
+    <INFLUENTE>-7.631</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>4000</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>III.OPERATIUNI FINANCIARE</DENUMIRE>
+    <INFLUENTE>-944</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>4001</CAPITOL>
+    <DENUMIRE>INCASARI DIN RAMBURSAREA IMPRUMUTURILOR  ACORDATE</DENUMIRE>
+    <INFLUENTE>-944</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>4001</CAPITOL>
+    <SUBCAPITOL>04</SUBCAPITOL>
+    <DENUMIRE> Incasari din rambursarea imprumuturilor din fondul de redresare financiara</DENUMIRE>
+    <INFLUENTE>-82</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>4001</CAPITOL>
+    <SUBCAPITOL>07</SUBCAPITOL>
+    <DENUMIRE> Incasari din rambursarea microcreditelor de la persoane fizice si juridice</DENUMIRE>
+    <INFLUENTE>-1.026</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influente asupra veniturilor bugetului de stat</TITLU_RAPORT>
+    <ANEXA>Anexa nr.1</ANEXA>
+    <COD_ORDONATOR>00</COD_ORDONATOR>
+    <ORDONATOR>Total</ORDONATOR>
+    <CAPITOL>4001</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Incasari din rambursarea altor imprumuturi acordate</DENUMIRE>
+    <INFLUENTE>164</INFLUENTE>
+  </DATA_RECORD>
+</main>

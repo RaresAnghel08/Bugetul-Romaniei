@@ -1,0 +1,414 @@
+<?xml version="1.0" ?>
+<!DOCTYPE main [
+  <!ELEMENT main (DATA_RECORD*)>
+  <!ELEMENT DATA_RECORD (TITLU_RAPORT?,ANEXA?,COD_ORDONATOR?,ORDONATOR?,CAPITOL?,SUBCAPITOL?,PARAGRAF?,GRUPA?,ARTICOL?,ALINEAT?,DENUMIRE?,PROGRAM_2017?,ESTIMARI2018?,ESTIMARI2019?,ESTIMARI2020?)+>
+  <!ELEMENT TITLU_RAPORT (#PCDATA)>
+  <!ELEMENT ANEXA (#PCDATA)>
+  <!ELEMENT COD_ORDONATOR (#PCDATA)>
+  <!ELEMENT ORDONATOR (#PCDATA)>
+  <!ELEMENT CAPITOL (#PCDATA)>
+  <!ELEMENT SUBCAPITOL (#PCDATA)>
+  <!ELEMENT PARAGRAF (#PCDATA)>
+  <!ELEMENT GRUPA (#PCDATA)>
+  <!ELEMENT ARTICOL (#PCDATA)>
+  <!ELEMENT ALINEAT (#PCDATA)>
+  <!ELEMENT DENUMIRE (#PCDATA)>
+  <!ELEMENT PROGRAM_2017 (#PCDATA)>
+  <!ELEMENT ESTIMARI2018 (#PCDATA)>
+  <!ELEMENT ESTIMARI2019 (#PCDATA)>
+  <!ELEMENT ESTIMARI2020 (#PCDATA)>
+]>
+<main>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <DENUMIRE>FONDURI EXTERNE NERAMBURSABILE</DENUMIRE>
+    <PROGRAM_2017>424</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>01</GRUPA>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <PROGRAM_2017>86</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <DENUMIRE>TITLUL I CHELTUIELI DE PERSONAL</DENUMIRE>
+    <PROGRAM_2017>40</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <DENUMIRE>Cheltuieli salariale in bani</DENUMIRE>
+    <PROGRAM_2017>40</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <ALINEAT>01</ALINEAT>
+    <DENUMIRE> Salarii de baza</DENUMIRE>
+    <PROGRAM_2017>35</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <ALINEAT>13</ALINEAT>
+    <DENUMIRE> Indemnizatii de delegare</DENUMIRE>
+    <PROGRAM_2017>5</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <DENUMIRE>TITLUL II BUNURI SI SERVICII</DENUMIRE>
+    <PROGRAM_2017>46</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <DENUMIRE>Bunuri si servicii</DENUMIRE>
+    <PROGRAM_2017>37</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <ALINEAT>30</ALINEAT>
+    <DENUMIRE> Alte bunuri si servicii pentru intretinere si functionare</DENUMIRE>
+    <PROGRAM_2017>37</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <ARTICOL>30</ARTICOL>
+    <DENUMIRE>Alte cheltuieli</DENUMIRE>
+    <PROGRAM_2017>9</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <ARTICOL>30</ARTICOL>
+    <ALINEAT>04</ALINEAT>
+    <DENUMIRE> Chirii</DENUMIRE>
+    <PROGRAM_2017>9</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>70</GRUPA>
+    <DENUMIRE>CHELTUIELI DE CAPITAL</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <DENUMIRE>TITLUL XIII ACTIVE NEFINANCIARE</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <DENUMIRE> Active fixe</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5008</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <ALINEAT>02</ALINEAT>
+    <DENUMIRE> Masini, echipamente si mijloace de transport</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <DENUMIRE>SANATATE</DENUMIRE>
+    <PROGRAM_2017>424</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>01</GRUPA>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <PROGRAM_2017>86</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <DENUMIRE>TITLUL I CHELTUIELI DE PERSONAL</DENUMIRE>
+    <PROGRAM_2017>40</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <DENUMIRE> Cheltuieli salariale in bani</DENUMIRE>
+    <PROGRAM_2017>40</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <ALINEAT>01</ALINEAT>
+    <DENUMIRE>  Salarii de baza</DENUMIRE>
+    <PROGRAM_2017>35</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>10</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <ALINEAT>13</ALINEAT>
+    <DENUMIRE>  Indemnizatii de delegare</DENUMIRE>
+    <PROGRAM_2017>5</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <DENUMIRE>TITLUL II BUNURI SI SERVICII</DENUMIRE>
+    <PROGRAM_2017>46</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <DENUMIRE> Bunuri si servicii</DENUMIRE>
+    <PROGRAM_2017>37</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <ALINEAT>30</ALINEAT>
+    <DENUMIRE>  Alte bunuri si servicii pentru intretinere si functionare</DENUMIRE>
+    <PROGRAM_2017>37</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <ARTICOL>30</ARTICOL>
+    <DENUMIRE> Alte cheltuieli</DENUMIRE>
+    <PROGRAM_2017>9</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>20</GRUPA>
+    <ARTICOL>30</ARTICOL>
+    <ALINEAT>04</ALINEAT>
+    <DENUMIRE>  Chirii</DENUMIRE>
+    <PROGRAM_2017>9</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>70</GRUPA>
+    <DENUMIRE>CHELTUIELI DE CAPITAL</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <DENUMIRE>TITLUL XIII ACTIVE NEFINANCIARE</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <DENUMIRE> Active fixe</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <GRUPA>71</GRUPA>
+    <ARTICOL>01</ARTICOL>
+    <ALINEAT>02</ALINEAT>
+    <DENUMIRE>  Masini, echipamente si mijloace de transport</DENUMIRE>
+    <PROGRAM_2017>338</PROGRAM_2017>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Bugetul pe capitole, subcapitole, paragrafe, titluri de cheltuieli articole si alineate</TITLU_RAPORT>
+    <ANEXA>Anexa nr.11/03</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6608</CAPITOL>
+    <SUBCAPITOL>01</SUBCAPITOL>
+    <DENUMIRE> Administratie centrala</DENUMIRE>
+    <PROGRAM_2017>424</PROGRAM_2017>
+  </DATA_RECORD>
+</main>

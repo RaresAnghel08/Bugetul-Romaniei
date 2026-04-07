@@ -1,0 +1,398 @@
+<?xml version="1.0" ?>
+<!DOCTYPE main [
+  <!ELEMENT main (DATA_RECORD*)>
+  <!ELEMENT DATA_RECORD (TITLU_RAPORT?,ANEXA?,COD_ORDONATOR?,ORDONATOR?,CAPITOL?,SUBCAPITOL?,PARAGRAF?,TITLU?,DENUMIRE?,INFLUENTE?)+>
+  <!ELEMENT TITLU_RAPORT (#PCDATA)>
+  <!ELEMENT ANEXA (#PCDATA)>
+  <!ELEMENT COD_ORDONATOR (#PCDATA)>
+  <!ELEMENT ORDONATOR (#PCDATA)>
+  <!ELEMENT CAPITOL (#PCDATA)>
+  <!ELEMENT SUBCAPITOL (#PCDATA)>
+  <!ELEMENT PARAGRAF (#PCDATA)>
+  <!ELEMENT TITLU (#PCDATA)>
+  <!ELEMENT DENUMIRE (#PCDATA)>
+  <!ELEMENT INFLUENTE (#PCDATA)>
+]>
+<main>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>0001</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <DENUMIRE>VENITURI - TOTAL</DENUMIRE>
+    <INFLUENTE>271.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>0002</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>I.VENITURI CURENTE</DENUMIRE>
+    <INFLUENTE>63.848</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2000</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>B.CONTRIBUTII DE ASIGURARI</DENUMIRE>
+    <INFLUENTE>38.475</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2005</CAPITOL>
+    <DENUMIRE>CONTRIBUTIILE ANGAJATORILOR</DENUMIRE>
+    <INFLUENTE>10.868</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2005</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari sociale de sanatate datorate de angajatori</DENUMIRE>
+    <INFLUENTE>10.868</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <DENUMIRE>CONTRIBUTIILE ASIGURATILOR</DENUMIRE>
+    <INFLUENTE>27.607</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari sociale de sanatate datorate de asigurati</DENUMIRE>
+    <INFLUENTE>27.607</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>19</SUBCAPITOL>
+    <DENUMIRE> Contributia individuala de asigurari sociale de sanatate datorata de persoanele care realizeaza venitul obtinut dintr-o asociere cu o microintreprindere care nu genereaza o persoana juridica</DENUMIRE>
+    <INFLUENTE>150</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2105</CAPITOL>
+    <SUBCAPITOL>21</SUBCAPITOL>
+    <DENUMIRE> Contributia individuala de asigurari sociale de sanatate datorata de persoanele care realizeaza venituri, in regim de retinere la sursa a impozitului pe venit, din activitati agricole</DENUMIRE>
+    <INFLUENTE>-150</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>2900</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>C.VENITURI NEFISCALE</DENUMIRE>
+    <INFLUENTE>25.373</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3000</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>C1. VENITURI DIN PROPRIETATE</DENUMIRE>
+    <INFLUENTE>750</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3005</CAPITOL>
+    <DENUMIRE>VENITURI DIN PROPRIETATE</DENUMIRE>
+    <INFLUENTE>400</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3005</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte venituri din proprietate</DENUMIRE>
+    <INFLUENTE>400</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3105</CAPITOL>
+    <DENUMIRE>VENITURI DIN DOBANZI</DENUMIRE>
+    <INFLUENTE>350</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3105</CAPITOL>
+    <SUBCAPITOL>03</SUBCAPITOL>
+    <DENUMIRE> Alte venituri din dobanzi</DENUMIRE>
+    <INFLUENTE>350</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>C2.VANZARI DE BUNURI SI SERVICII</DENUMIRE>
+    <INFLUENTE>24.623</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3605</CAPITOL>
+    <DENUMIRE>DIVERSE VENITURI</DENUMIRE>
+    <INFLUENTE>24.623</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3605</CAPITOL>
+    <SUBCAPITOL>32</SUBCAPITOL>
+    <DENUMIRE> Sume provenite din finantarea bugetara a anilor precedenti</DENUMIRE>
+    <INFLUENTE>25.373</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>3605</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE> Alte venituri</DENUMIRE>
+    <INFLUENTE>-750</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4100</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>IV SUBVENTII</DENUMIRE>
+    <INFLUENTE>207.152</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4200</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>SUBVENTII DE LA ALTE NIVELE ALE ADMINISTRATIEI PUBLICE</DENUMIRE>
+    <INFLUENTE>207.152</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <DENUMIRE>SUBVENTII DE LA BUGETUL DE STAT</DENUMIRE>
+    <INFLUENTE>202.152</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>26</SUBCAPITOL>
+    <DENUMIRE> Subventii primite de bugetul fondului national unic de asigurari sociale de sanatate pentru echilibrare</DENUMIRE>
+    <INFLUENTE>32.088</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>27</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari de sanatate pentru persoanele aflate in concediu pentru cresterea copilului</DENUMIRE>
+    <INFLUENTE>114</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>30</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari de sanatate pentru pensionari</DENUMIRE>
+    <INFLUENTE>170.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4205</CAPITOL>
+    <SUBCAPITOL>50</SUBCAPITOL>
+    <DENUMIRE>Contributii de asigurari de sanatate pentru persoanele care se afla in executarea masurilor prevazute la art. 105,113,114 din Codul penal, precum si pentru persoanele care se afla in oerioada de aminare sau intrerupere a executarii pedepsei privative de libertate</DENUMIRE>
+    <INFLUENTE>-50</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4305</CAPITOL>
+    <DENUMIRE>SUBVENTII DE LA ALTE ADMINISTRATII</DENUMIRE>
+    <INFLUENTE>5.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>4305</CAPITOL>
+    <SUBCAPITOL>02</SUBCAPITOL>
+    <DENUMIRE> Contributii de asigurari de sanatate pentru persoane care executa o pedeapsa privativa de libertate sau arest preventive</DENUMIRE>
+    <INFLUENTE>5.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <DENUMIRE>CHELTUIELI - TOTAL</DENUMIRE>
+    <INFLUENTE>271.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>01</TITLU>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <INFLUENTE>271.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>5005</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>51</TITLU>
+    <DENUMIRE>TITLUL VI TRANSFERURI INTRE UNITATI ALE ADMINISTRATIEI PUBLICE</DENUMIRE>
+    <INFLUENTE>271.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <DENUMIRE>Partea a III-a CHELTUIELI SOCIAL-CULTURALE</DENUMIRE>
+    <INFLUENTE>271.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>01</TITLU>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <INFLUENTE>271.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6600</CAPITOL>
+    <SUBCAPITOL>05</SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>51</TITLU>
+    <DENUMIRE>TITLUL VI TRANSFERURI INTRE UNITATI ALE  ADMINISTRATIEI PUBLICE</DENUMIRE>
+    <INFLUENTE>271.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <DENUMIRE>SANATATE</DENUMIRE>
+    <INFLUENTE>271.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>01</TITLU>
+    <DENUMIRE>CHELTUIELI CURENTE</DENUMIRE>
+    <INFLUENTE>271.000</INFLUENTE>
+  </DATA_RECORD>
+  <DATA_RECORD>
+    <TITLU_RAPORT>Influentele asupra bugetului de venituri si cheltuieli </TITLU_RAPORT>
+    <ANEXA>Anexa nr.6</ANEXA>
+    <COD_ORDONATOR>01</COD_ORDONATOR>
+    <ORDONATOR>Casa Nationala de Asigurari de Sanatate</ORDONATOR>
+    <CAPITOL>6605</CAPITOL>
+    <SUBCAPITOL>  </SUBCAPITOL>
+    <PARAGRAF>  </PARAGRAF>
+    <TITLU>51</TITLU>
+    <DENUMIRE>TITLUL VI TRANSFERURI INTRE UNITATI ALE ADMINISTRATIEI PUBLICE</DENUMIRE>
+    <INFLUENTE>271.000</INFLUENTE>
+  </DATA_RECORD>
+</main>
