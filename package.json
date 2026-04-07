@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "counter:batch": "node scripts/counter-batch.mjs"
   },
   "repository": {
     "type": "git",

@@ -25,7 +25,7 @@ function App() {
     <div className="app-shell">
       <header className="topbar">
         <div className="brand-wrap">
-          <p className="brand-kicker">demobuget.ro</p>
+          <p className="brand-kicker">bugetul-romaniei.ro</p>
           <h1 className="brand-title">Bugetul Romaniei</h1>
         </div>
 
@@ -61,7 +61,7 @@ function App() {
       <footer className="site-footer panel">
         <div className="site-footer-grid">
           <div>
-            <p className="site-footer-brand">demobuget.ro</p>
+            <p className="site-footer-brand">bugetul-romaniei.ro</p>
             <p className="landing-copy">
               Proiect civic independent care transforma fisierele XML bugetare oficiale in
               vizualizari clare pentru comparatii rapide intre ani, ministere si investitii.
@@ -176,7 +176,7 @@ function App() {
         <p className="site-footer-credit">
           Built by{" "}
           <a
-            className="site-footer-link"
+            className="site-footer-link site-footer-credit-name"
             href="https://www.linkedin.com/in/raresanghel/"
             target="_blank"
             rel="noreferrer noopener"

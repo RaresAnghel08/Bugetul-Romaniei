@@ -46,6 +46,28 @@ Server implicit: `http://localhost:5173`
 npm run build
 ```
 
+## Script counter up/down
+
+Ruleaza operatii de `up` si `down` pe CounterAPI pentru un `n` configurabil.
+
+```bash
+npm run counter:batch -- --n 5 --mode both
+```
+
+Optiuni:
+
+- `--n <numar>`: numarul de operatii (obligatoriu, integer pozitiv)
+- `--mode up|down|both`: tipul operatiilor (`both` este implicit)
+- `--delay-ms <numar>`: pauza intre request-uri, utila la rate-limit
+
+Exemple:
+
+```bash
+npm run counter:batch -- --n 10 --mode up
+npm run counter:batch -- --n 10 --mode down
+npm run counter:batch -- --n 3 --mode both --delay-ms 120
+```
+
 ## Preview build
 
 ```bash

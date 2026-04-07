@@ -1093,8 +1093,21 @@ body {
 .site-footer-credit {
   margin: 6px 0 0;
   color: #d8e9ff;
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   line-height: 1.45;
+  text-align: center;
+}
+
+.site-footer-credit .site-footer-credit-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--accent-teal);
+  margin-left: 6px;
+}
+
+.site-footer-credit .site-footer-credit-name:hover {
+  color: #9ff3eb;
+  text-decoration: underline;
 }
 
 .reveal-on-load {
