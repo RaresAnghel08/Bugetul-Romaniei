@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import overviewJson from "../../data/overview.json";
 import ministereJson from "../../data/ministere.json";
 import investitiiJson from "../../data/investitii.json";
+import { Seo } from "../components/Seo";
 import { formatMld } from "../lib/format";
+import { SITE_NAME, toAbsoluteSiteUrl } from "../lib/seo";
 import { getVisitorSnapshotFromStorage, refreshVisitorSnapshot } from "../lib/visitorCounter";
 import type { InvestitieRecord, MinisterRecord, OverviewData } from "../types";
 
@@ -41,8 +43,47 @@ export const LandingPage = () => {
     Math.max(0, totalVisits ?? 0)
   );
 
+  const seoDescription =
+    "Dashboard civic pentru analiza bugetului Romaniei 2025-2026: overview national, ministere, investitii si comparatii rapide pe date oficiale.";
+
+  const seoJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: `${SITE_NAME} - Dashboard Civic`,
+      url: toAbsoluteSiteUrl("/"),
+      inLanguage: "ro-RO",
+      description: seoDescription,
+      isPartOf: {
+        "@type": "WebSite",
+        name: SITE_NAME,
+        url: toAbsoluteSiteUrl("/"),
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      name: "Bugetul Romaniei 2025-2026",
+      description: "Date bugetare agregate din surse publice oficiale, transformate in vizualizari interactive.",
+      inLanguage: "ro-RO",
+      url: toAbsoluteSiteUrl("/"),
+      creator: {
+        "@type": "Person",
+        name: "Rares Anghel",
+      },
+      keywords: ["buget", "ministere", "investitii", "romania", "transparenta"],
+    },
+  ];
+
   return (
     <section className="page-grid">
+      <Seo
+        title="Bugetul Romaniei | Dashboard Civic Bugetar 2025-2026"
+        description={seoDescription}
+        path="/"
+        jsonLd={seoJsonLd}
+      />
+
       <section className="landing-hero panel reveal-on-load">
         <div className="landing-hero-grid">
           <div>

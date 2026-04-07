@@ -12,7 +12,9 @@ import {
 import overviewJson from "../../data/overview.json";
 import ministereJson from "../../data/ministere.json";
 import { DeltaBadge } from "../components/DeltaBadge";
+import { Seo } from "../components/Seo";
 import { formatAxisBudget, formatMld, formatPct } from "../lib/format";
+import { toAbsoluteSiteUrl } from "../lib/seo";
 import type { MinisterRecord, OverviewData } from "../types";
 
 const overview = overviewJson as OverviewData;
@@ -31,9 +33,20 @@ export const OverviewPage = () => {
   const latest = latestYear ? overview[String(latestYear)] : undefined;
   const previous = previousYear ? overview[String(previousYear)] : undefined;
 
+  const seoTitle = "Overview Bugetar Romania | Bugetul Romaniei";
+  const seoDescription =
+    "Vezi evolutia veniturilor, cheltuielilor si deficitului bugetar din Romania, cu comparatii anuale si top variatii pe ministere.";
+  const seoPath = "/overview";
+
   if (!latestYear || !latest) {
     return (
       <section className="panel">
+        <Seo
+          title="Overview indisponibil | Bugetul Romaniei"
+          description="Datele pentru pagina de overview bugetar nu sunt disponibile momentan."
+          path={seoPath}
+          noIndex
+        />
         <h2 className="panel-title">Overview indisponibil</h2>
         <p>Nu exista date suficiente pentru a afisa evolutia bugetara.</p>
       </section>
@@ -102,8 +115,36 @@ export const OverviewPage = () => {
     .sort((a, b) => (a.delta_pct ?? 999) - (b.delta_pct ?? 999))
     .slice(0, 5);
 
+  const seoJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Overview Bugetar Romania",
+    inLanguage: "ro-RO",
+    url: toAbsoluteSiteUrl(seoPath),
+    description: seoDescription,
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Acasa",
+          item: toAbsoluteSiteUrl("/"),
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Overview",
+          item: toAbsoluteSiteUrl(seoPath),
+        },
+      ],
+    },
+  };
+
   return (
     <section className="page-grid">
+      <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+
       <section className="panel overview-hero reveal-on-load">
         <p className="ministere-kicker">Panorama bugetara</p>
         <h2 className="ministere-title">Overview {years[0]}-{latestYear}</h2>

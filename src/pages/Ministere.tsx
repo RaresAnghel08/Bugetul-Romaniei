@@ -13,7 +13,9 @@ import {
 } from "recharts";
 import ministereJson from "../../data/ministere.json";
 import { DeltaBadge } from "../components/DeltaBadge";
+import { Seo } from "../components/Seo";
 import { formatMld } from "../lib/format";
+import { toAbsoluteSiteUrl } from "../lib/seo";
 import { useDebouncedValue } from "../lib/useDebouncedValue";
 import type { MinisterRecord } from "../types";
 
@@ -127,8 +129,24 @@ export const MinisterePage = () => {
     setSortDirection(key === "nume" ? "asc" : "desc");
   };
 
+  const seoPath = "/ministere";
+  const seoTitle = "Ministere Romania | Bugetul Romaniei";
+  const seoDescription =
+    "Compara bugetele ministerelor pentru 2025 si 2026, vezi top institutii, variatii procentuale si evolutie istorica.";
+  const seoJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Ministere Romania",
+    inLanguage: "ro-RO",
+    url: toAbsoluteSiteUrl(seoPath),
+    description: seoDescription,
+    about: "Bugete ministere 2025-2026",
+  };
+
   return (
     <section className="page-grid">
+      <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+
       <section className="panel ministere-hero ministere-hero-upgraded reveal-on-load">
         <div className="ministere-hero-grid">
           <div>

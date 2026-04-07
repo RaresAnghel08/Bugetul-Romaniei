@@ -14,7 +14,9 @@ import { Link, useParams } from "react-router-dom";
 import ministereJson from "../../data/ministere.json";
 import programeJson from "../../data/programe.json";
 import { AISummary } from "../components/AISummary";
+import { Seo } from "../components/Seo";
 import { formatAxisBudget, formatMld, formatMil } from "../lib/format";
+import { toAbsoluteSiteUrl } from "../lib/seo";
 import type { MinisterRecord, ProgramRecord } from "../types";
 
 const ministere = ministereJson as MinisterRecord[];
@@ -23,6 +25,7 @@ const programe = programeJson as ProgramRecord[];
 export const MinisterPage = () => {
   const { cod } = useParams();
   const minister = ministere.find((item) => item.cod === cod);
+  const seoPath = cod ? `/minister/${cod}` : "/minister";
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -31,6 +34,12 @@ export const MinisterPage = () => {
   if (!minister) {
     return (
       <section className="panel">
+        <Seo
+          title="Minister inexistent | Bugetul Romaniei"
+          description="Ministerul cautat nu exista in setul de date local disponibil."
+          path={seoPath}
+          noIndex
+        />
         <h2 className="panel-title">Minister inexistent</h2>
         <p>Codul solicitat nu exista in datele locale.</p>
         <Link className="primary-btn inline-btn" to="/ministere">
@@ -84,8 +93,26 @@ export const MinisterPage = () => {
     .sort((a, b) => (b.program_2026 ?? 0) - (a.program_2026 ?? 0))
     .slice(0, 12);
 
+  const seoTitle = `${minister.nume} | Bugetul Romaniei`;
+  const seoDescription = `Analiza bugetului pentru ${minister.nume}: evolutie istorica, top capitole bugetare si programe asociate.`;
+  const seoJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "GovernmentOrganization",
+    name: minister.nume,
+    identifier: minister.cod,
+    description: seoDescription,
+    url: toAbsoluteSiteUrl(seoPath),
+    parentOrganization: {
+      "@type": "Organization",
+      name: "Bugetul Romaniei",
+      url: toAbsoluteSiteUrl("/"),
+    },
+  };
+
   return (
     <section className="page-grid">
+      <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+
       <section className="panel">
         <div className="panel-header-row">
           <div>

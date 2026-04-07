@@ -1,6 +1,15 @@
+import { Seo } from "../components/Seo";
+
 export const ConfidentialitatePage = () => {
   return (
     <section className="page-grid">
+      <Seo
+        title="Confidentialitate | Bugetul Romaniei"
+        description="Politica de confidentialitate pentru platforma civica Bugetul Romaniei."
+        path="/confidentialitate"
+        noIndex
+      />
+
       <section className="panel legal-hero reveal-on-load">
         <p className="ministere-kicker">Document legal</p>
         <h2 className="ministere-title">Confidentialitate</h2>

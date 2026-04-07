@@ -5,7 +5,8 @@
   "description": "Dashboard civic pentru analiza Bugetului Romaniei 2025-2026",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "seo:sitemap": "node scripts/generate-sitemap.mjs",
+    "build": "npm run seo:sitemap && tsc -b && vite build",
     "preview": "vite preview",
     "counter:batch": "node scripts/counter-batch.mjs"
   },

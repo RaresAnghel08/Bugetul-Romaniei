@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bugetul-romaniei.ro/sitemap.xml

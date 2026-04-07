@@ -1,6 +1,15 @@
+import { Seo } from "../components/Seo";
+
 export const TermeniPage = () => {
   return (
     <section className="page-grid">
+      <Seo
+        title="Termeni si Conditii | Bugetul Romaniei"
+        description="Termenii de utilizare ai platformei civice Bugetul Romaniei."
+        path="/termeni"
+        noIndex
+      />
+
       <section className="panel legal-hero reveal-on-load">
         <p className="ministere-kicker">Document legal</p>
         <h2 className="ministere-title">Termeni si Conditii</h2>

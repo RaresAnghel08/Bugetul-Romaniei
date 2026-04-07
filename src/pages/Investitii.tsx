@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import investitiiJson from "../../data/investitii.json";
+import { Seo } from "../components/Seo";
 import { formatMldAlways, formatPct } from "../lib/format";
+import { toAbsoluteSiteUrl } from "../lib/seo";
 import type { InvestitieRecord } from "../types";
 
 const investitii = investitiiJson as InvestitieRecord[];
@@ -120,8 +122,24 @@ export const InvestitiiPage = () => {
 
   const growthLabel = growthPct === null ? "-" : `${growthEmoji} ${formatPct(growthPct, 1)}`;
 
+  const seoPath = "/investitii";
+  const seoTitle = "Investitii Publice | Bugetul Romaniei";
+  const seoDescription =
+    "Analizeaza investitiile publice pe ministere si surse de finantare, cu totaluri 2026, variatii vs 2025 si distributia obiectivelor.";
+  const seoJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "Investitii publice Romania",
+    inLanguage: "ro-RO",
+    url: toAbsoluteSiteUrl(seoPath),
+    description: seoDescription,
+    variableMeasured: ["program_2026", "preliminat_2025", "cheltuit_pana_2024"],
+  };
+
   return (
     <section className="page-grid">
+      <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+
       <section className="panel investitii-hero reveal-on-load">
         <div className="investitii-hero-top">
           <div className="investitii-hero-intro">
