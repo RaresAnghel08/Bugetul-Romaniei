@@ -95,41 +95,11 @@ function App() {
               <li>
                 <a
                   className="site-footer-link"
-                  href="https://github.com/RaresAnghel08/Bugetul-Romaniei/tree/main/XMLs"
+                  href="https://mfinante.gov.ro/domenii/buget"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
                   Surse XML
-                </a>
-              </li>
-              <li>
-                <a
-                  className="site-footer-link"
-                  href="https://github.com/RaresAnghel08/Bugetul-Romaniei/tree/main/data"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  Date JSON generate
-                </a>
-              </li>
-              <li>
-                <a
-                  className="site-footer-link"
-                  href="https://docs.counterapi.dev/javascript/quick-start/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  CounterAPI docs
-                </a>
-              </li>
-              <li>
-                <a
-                  className="site-footer-link"
-                  href="https://github.com/RaresAnghel08/Bugetul-Romaniei"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  Cod sursa
                 </a>
               </li>
             </ul>
@@ -140,14 +110,14 @@ function App() {
             <ul className="site-footer-list">
               <li>Proiect civic</li>
               <li>
-                <a className="site-footer-link" href="https://www.anaf.ro" target="_blank" rel="noreferrer noopener">
-                  anaf.ro
+                <a className="site-footer-link" href="https://mfinante.gov.ro/" target="_blank" rel="noreferrer noopener">
+                  Ministerul Finantelor
                 </a>
               </li>
               <li>
                 <a
                   className="site-footer-link"
-                  href="https://github.com/RaresAnghel08/Bugetul-Romaniei/issues"
+                  href="https://www.linkedin.com/in/raresanghel/"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
