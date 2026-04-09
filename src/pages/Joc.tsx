@@ -8,6 +8,8 @@ import {
   submitScore,
 } from "../lib/gameDb";
 import { formatMld } from "../lib/format";
+import { Seo } from "../components/Seo";
+import { SITE_NAME, toAbsoluteSiteUrl } from "../lib/seo";
 import type { MinisterRecord } from "../types";
 
 // Only use ministries that have a 2026 budget and aren't excluded from ranking
@@ -81,6 +83,26 @@ export function JocPage() {
 
   const countedRef = useRef(false);
   const finalScoreRef = useRef(0);
+
+  const seoTitle = "Bugetul Romaniei | Ce Minister Esti? - Mini-joc";
+  const seoDescription =
+    "Joaca 'Ce Minister Esti?' — ghiceste daca bugetul ministerului din dreapta este mai mare sau mai mic decat cel din stanga. Clasament Top 10 si highscore local.";
+  const seoPath = "/joc";
+  const seoJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: `${SITE_NAME} - Mini-joc 'Ce Minister Esti?'`,
+      url: toAbsoluteSiteUrl(seoPath),
+      inLanguage: "ro-RO",
+      description: seoDescription,
+      isPartOf: {
+        "@type": "WebSite",
+        name: SITE_NAME,
+        url: toAbsoluteSiteUrl("/"),
+      },
+    },
+  ];
 
   // ── Game Control ───────────────────────────────────────────────────────────
 
@@ -193,6 +215,7 @@ export function JocPage() {
   if (phase === "menu") {
     return (
       <div className="joc-page">
+        <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
         <div className="joc-menu">
           <p className="joc-menu-kicker">Mini-joc bugetar</p>
           <h1 className="joc-menu-title">Ce Minister Esti?</h1>
@@ -216,6 +239,7 @@ export function JocPage() {
   if (phase === "leaderboard") {
     return (
       <div className="joc-page">
+        <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
         <div className="joc-leaderboard-wrap">
           <h2 className="joc-lb-title">Clasament Top 10</h2>
           {totalPlayers !== null && (
@@ -268,6 +292,7 @@ export function JocPage() {
     const s = finalScoreRef.current;
     return (
       <div className="joc-page">
+        <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
         <div className="joc-gameover">
           <p className="joc-go-kicker">Joc terminat</p>
           <div className="joc-go-score-box">
@@ -348,6 +373,7 @@ export function JocPage() {
 
   return (
     <div className="joc-page joc-page--arena">
+      <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
       {/* Score bar */}
       <div className="joc-scorebar">
         <span className="joc-scorebar-item">
