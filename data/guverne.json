@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ponta-iv",
+    "premier": "Victor Ponta",
+    "partid": "PSD",
+    "culoare": "#dc2626",
+    "ani": ["2015"]
+  },
+  {
+    "id": "ciolos",
+    "premier": "Dacian Cioloș",
+    "partid": "Tehnocratic",
+    "culoare": "#64748b",
+    "ani": ["2016"]
+  },
+  {
+    "id": "grindeanu-tudose",
+    "premier": "Grindeanu / Tudose",
+    "partid": "PSD",
+    "culoare": "#dc2626",
+    "ani": ["2017"]
+  },
+  {
+    "id": "dancila",
+    "premier": "Viorica Dăncilă",
+    "partid": "PSD",
+    "culoare": "#dc2626",
+    "ani": ["2018", "2019"]
+  },
+  {
+    "id": "orban",
+    "premier": "Ludovic Orban",
+    "partid": "PNL",
+    "culoare": "#d97706",
+    "ani": ["2020"]
+  },
+  {
+    "id": "citu",
+    "premier": "Florin Cîțu",
+    "partid": "PNL",
+    "culoare": "#d97706",
+    "ani": ["2021"]
+  },
+  {
+    "id": "ciuca",
+    "premier": "Nicolae Ciucă",
+    "partid": "PNL/PSD",
+    "culoare": "#7c3aed",
+    "ani": ["2022", "2023"]
+  },
+  {
+    "id": "ciolacu",
+    "premier": "Marcel Ciolacu",
+    "partid": "PSD/PNL",
+    "culoare": "#dc2626",
+    "ani": ["2024", "2025"]
+  },
+  {
+    "id": "bolojan",
+    "premier": "Ilie Bolojan",
+    "partid": "PNL",
+    "culoare": "#d97706",
+    "ani": ["2026"]
+  }
+]

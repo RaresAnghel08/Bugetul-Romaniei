@@ -4,26 +4,39 @@ import {
   CartesianGrid,
   Line,
   LineChart,
+  ReferenceArea,
   ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
 } from "recharts";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import ministereJson from "../../data/ministere.json";
 import programeJson from "../../data/programe.json";
+import guverneJson from "../../data/guverne.json";
 import { AISummary } from "../components/AISummary";
 import { Seo } from "../components/Seo";
-import { formatAxisBudget, formatMld, formatMil } from "../lib/format";
+import { formatAxisValuta, formatMldValuta, formatMil } from "../lib/format";
 import { toAbsoluteSiteUrl } from "../lib/seo";
+import { convertRON, type Moneda } from "../lib/cursValutar";
 import type { MinisterRecord, ProgramRecord } from "../types";
+
+interface GuvData {
+  id: string;
+  premier: string;
+  partid: string;
+  culoare: string;
+  ani: string[];
+}
 
 const ministere = ministereJson as MinisterRecord[];
 const programe = programeJson as ProgramRecord[];
+const guverne = guverneJson as GuvData[];
 
 export const MinisterPage = () => {
   const { cod } = useParams();
+  const [moneda, setMoneda] = useState<Moneda>("RON");
   const minister = ministere.find((item) => item.cod === cod);
   const seoPath = cod ? `/minister/${cod}` : "/minister";
 
@@ -52,7 +65,10 @@ export const MinisterPage = () => {
   const lineData = Object.entries(minister.istoric ?? {})
     .filter(([year, value]) => /^\d{4}$/.test(year) && typeof value === "number" && value > 0)
     .sort((a, b) => Number(a[0]) - Number(b[0]))
-    .map(([year, value]) => ({ an: year, valoare: value }));
+    .map(([year, value]) => ({
+      an: year,
+      valoare: convertRON(value, year, moneda),
+    }));
 
   const firstYear = lineData[0]?.an ?? "-";
   const lastYear = lineData[lineData.length - 1]?.an ?? "-";
@@ -85,7 +101,7 @@ export const MinisterPage = () => {
 
   const chartCapitole = topCapitole.map((cap) => ({
     capitol: cap.denumire.length > 24 ? `${cap.denumire.slice(0, 24)}...` : cap.denumire,
-    valoare: cap["2026"],
+    valoare: convertRON(cap["2026"], "2026", moneda),
   }));
 
   const programeMinister = programe
@@ -118,9 +134,12 @@ export const MinisterPage = () => {
           <div>
             <p className="muted">Minister #{minister.cod}</p>
             <h2 className="panel-title">{minister.nume}</h2>
-            <p className="headline-value">Buget total 2026: {formatMld(minister["2026"] ?? null)}</p>
+            <p className="headline-value">
+              Buget total 2026: {formatMldValuta(minister["2026"] ?? null, moneda)}
+            </p>
             <p className="muted">
-              2025: {formatMld(minister["2025"] ?? null)} {"->"} 2026: {formatMld(minister["2026"] ?? null)}
+              2025: {formatMldValuta(minister["2025"] ?? null, moneda)}{" "}
+              {"->"} 2026: {formatMldValuta(minister["2026"] ?? null, moneda)}
             </p>
           </div>
           <div>
@@ -131,7 +150,21 @@ export const MinisterPage = () => {
       </section>
 
       <section className="panel">
-        <h3 className="panel-title">Evolutie {firstYear}-{lastYear}</h3>
+        <div className="panel-toolbar">
+          <h3 className="panel-title">Evolutie {firstYear}-{lastYear}</h3>
+          <div className="moneda-toggle">
+            {(["RON", "EUR", "USD"] as Moneda[]).map((m) => (
+              <button
+                key={m}
+                type="button"
+                className={`moneda-btn ${moneda === m ? "moneda-btn--active" : ""}`}
+                onClick={() => setMoneda(m)}
+              >
+                {m}
+              </button>
+            ))}
+          </div>
+        </div>
         <div className="chart-wrap medium">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={lineData} margin={{ left: 26, right: 12, top: 12, bottom: 8 }}>
@@ -142,10 +175,10 @@ export const MinisterPage = () => {
                 tickMargin={8}
                 tick={{ fill: "#f7f7f7" }}
                 axisLine={{ stroke: "#4e4f66" }}
-                tickFormatter={(v) => formatAxisBudget(v)}
+                tickFormatter={(v) => formatAxisValuta(v, moneda)}
               />
               <Tooltip
-                formatter={(value) => formatMld(Number(value))}
+                formatter={(value) => [formatMldValuta(Number(value), moneda)]}
                 contentStyle={{
                   background: "#101226",
                   border: "1px solid #3e4261",
@@ -153,6 +186,18 @@ export const MinisterPage = () => {
                   color: "#fff",
                 }}
               />
+              {/* Benzi colorate pe perioade de guvernare */}
+              {guverne.map((g) => (
+                <ReferenceArea
+                  key={g.id}
+                  x1={g.ani[0]}
+                  x2={g.ani[g.ani.length - 1]}
+                  fill={g.culoare}
+                  fillOpacity={0.07}
+                  stroke={g.culoare}
+                  strokeOpacity={0.2}
+                />
+              ))}
               <Line
                 type="monotone"
                 dataKey="valoare"
@@ -176,7 +221,7 @@ export const MinisterPage = () => {
                 type="number"
                 tick={{ fill: "#f7f7f7" }}
                 axisLine={{ stroke: "#4e4f66" }}
-                tickFormatter={(v) => formatAxisBudget(v)}
+                tickFormatter={(v) => formatAxisValuta(v, moneda)}
               />
               <YAxis
                 dataKey="capitol"
@@ -186,7 +231,7 @@ export const MinisterPage = () => {
                 axisLine={{ stroke: "#4e4f66" }}
               />
               <Tooltip
-                formatter={(value) => formatMld(Number(value))}
+                formatter={(value) => [formatMldValuta(Number(value), moneda)]}
                 contentStyle={{
                   background: "#101226",
                   border: "1px solid #3e4261",

@@ -1277,3 +1277,713 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ═══════════════════════════════════════════════════════
+   JOC PAGE — "Ce Minister Esti?" budget game
+   ═══════════════════════════════════════════════════════ */
+
+.joc-page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 130px);
+}
+
+/* ── Menu ─────────────────────────────────────────────── */
+
+.joc-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.joc-menu-kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent-cyan);
+}
+
+.joc-menu-title {
+  margin: 0;
+  font-family: "Literata", Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  background: linear-gradient(120deg, #67e8f9, #2ec4b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.joc-menu-desc {
+  margin: 0;
+  max-width: 520px;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
+
+.joc-menu-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+/* ── Shared buttons ───────────────────────────────────── */
+
+.joc-primary-btn {
+  padding: 13px 32px;
+  background: linear-gradient(120deg, #67e8f9, #2ec4b6);
+  color: #07131a;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+  letter-spacing: 0.04em;
+  transition: opacity 150ms;
+}
+
+.joc-primary-btn:hover {
+  opacity: 0.88;
+}
+
+.joc-secondary-btn {
+  padding: 13px 32px;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+  transition: border-color 150ms;
+}
+
+.joc-secondary-btn:hover {
+  border-color: rgba(34, 211, 238, 0.5);
+}
+
+.joc-btn-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ── Score bar ────────────────────────────────────────── */
+
+.joc-scorebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(10, 11, 20, 0.92);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.joc-scorebar-item {
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.joc-scorebar-val {
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.joc-scorebar-hs {
+  color: var(--accent-teal);
+}
+
+/* ── Arena / split screen ─────────────────────────────── */
+
+.joc-page--arena {
+  gap: 0;
+}
+
+.joc-split {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 56px 1fr;
+  min-height: 460px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--panel-border);
+}
+
+/* ── Ministry cards ───────────────────────────────────── */
+
+.joc-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 28px;
+  overflow: hidden;
+  transition: opacity 350ms;
+}
+
+.joc-card--dimmed {
+  opacity: 0.55;
+  filter: saturate(0.4);
+}
+
+.joc-card-bg-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  font-weight: 900;
+  font-family: "Literata", Georgia, serif;
+  color: rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+  line-height: 1;
+  text-align: center;
+  padding: 20px;
+  word-break: break-word;
+}
+
+.joc-card-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.joc-ministry-name {
+  margin: 0;
+  font-size: clamp(0.8rem, 1.4vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 280px;
+  line-height: 1.35;
+}
+
+.joc-divider {
+  width: 100%;
+  max-width: 200px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 4px 0;
+}
+
+.joc-budget-label {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.joc-budget-value {
+  margin: 0;
+  font-family: "Literata", Georgia, serif;
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ── Guess buttons ────────────────────────────────────── */
+
+.joc-guess-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 210px;
+}
+
+.joc-guess-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+  transition: transform 120ms, opacity 120ms;
+}
+
+.joc-guess-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.joc-guess-btn--higher {
+  background: #16a34a;
+  color: #fff;
+}
+
+.joc-guess-btn--lower {
+  background: #dc2626;
+  color: #fff;
+}
+
+.joc-guess-arrow {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* ── VS badge ─────────────────────────────────────────── */
+
+.joc-vs-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0c0d14;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 900;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+/* ── Result overlays ──────────────────────────────────── */
+
+.joc-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  animation: joc-fade-in 220ms ease;
+}
+
+.joc-overlay--correct {
+  background: rgba(22, 163, 74, 0.38);
+}
+
+.joc-overlay--wrong {
+  background: rgba(220, 38, 38, 0.38);
+}
+
+.joc-overlay-icon {
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 900;
+  color: #fff;
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.4));
+}
+
+@keyframes joc-fade-in {
+  from { opacity: 0; transform: scale(0.7); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── Game over screen ─────────────────────────────────── */
+
+.joc-gameover {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
+  padding: 48px 20px;
+}
+
+.joc-go-kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--danger);
+}
+
+.joc-go-score-box {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 28px 56px;
+}
+
+.joc-go-score-label {
+  margin: 0 0 4px;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.joc-go-score-val {
+  margin: 0 0 4px;
+  font-family: "Literata", Georgia, serif;
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  font-weight: 700;
+  color: var(--accent-cyan);
+}
+
+.joc-go-title {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.joc-name-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.joc-name-prompt {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.joc-name-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.joc-name-input {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--panel-border);
+  background: var(--bg-2);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: "Sora", sans-serif;
+  width: 220px;
+  transition: border-color 150ms;
+}
+
+.joc-name-input:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+}
+
+.joc-submit-btn {
+  padding: 10px 22px;
+  background: var(--accent-teal);
+  color: #07131a;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+  transition: opacity 150ms;
+}
+
+.joc-submit-btn:hover {
+  opacity: 0.88;
+}
+
+.joc-submit-msg {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.joc-submit-success { color: #4ade80; }
+.joc-submit-muted   { color: var(--muted); }
+.joc-submit-error   { color: var(--danger); }
+
+.joc-go-highscore {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* ── Leaderboard ──────────────────────────────────────── */
+
+.joc-leaderboard-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 16px;
+  max-width: 640px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.joc-lb-title {
+  margin: 0;
+  font-family: "Literata", Georgia, serif;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  text-align: center;
+}
+
+.joc-lb-stats {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.joc-lb-loading {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.joc-lb-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.joc-lb-table th,
+.joc-lb-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--panel-border);
+  font-size: 0.9rem;
+}
+
+.joc-lb-table th {
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.joc-lb-rank {
+  font-weight: 700;
+  width: 40px;
+}
+
+.joc-lb-score {
+  font-family: "Literata", Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.joc-lb-title-cell {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.joc-lb-rank-1 td { color: #fbbf24; }
+.joc-lb-rank-2 td { color: #d4d4d4; }
+.joc-lb-rank-3 td { color: #cd7f32; }
+.joc-lb-rank-4 td { color: var(--text); }
+
+/* ── Responsive ───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .joc-split {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 36px 1fr;
+    min-height: 560px;
+  }
+
+  .joc-vs-badge {
+    writing-mode: horizontal-tb;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .joc-card {
+    padding: 28px 20px;
+  }
+
+  .joc-go-score-box {
+    padding: 20px 36px;
+  }
+
+  .joc-name-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .joc-name-input {
+    width: 100%;
+  }
+
+  .joc-lb-table th:last-child,
+  .joc-lb-table td:last-child {
+    display: none;
+  }
+}
+
+/* ── Chart controls (moneda toggle + guvern filter) ─────── */
+
+.chart-controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.chart-controls-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chart-controls-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+/* ── Moneda toggle ──────────────────────────────────────── */
+
+.moneda-toggle {
+  display: flex;
+  gap: 4px;
+}
+
+.moneda-btn {
+  padding: 5px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  font-family: "Sora", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+
+.moneda-btn:hover {
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.moneda-btn--active {
+  background: linear-gradient(120deg, #22d3ee22, #2ec4b622);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+
+/* ── Panel toolbar (title + controls in one row) ────────── */
+
+.panel-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.panel-toolbar .panel-title {
+  margin-bottom: 0;
+}
+
+/* ── Guvern chips ────────────────────────────────────────── */
+
+.guvern-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.guvern-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  font-family: "Sora", sans-serif;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+
+.guvern-chip:hover {
+  color: var(--text);
+}
+
+.guvern-chip--active {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.guvern-chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Culori per guvern */
+.guvern-chip[data-id="ponta-iv"] { border-color: rgba(220, 38, 38, 0.4); }
+.guvern-chip[data-id="ponta-iv"] .guvern-chip-dot { background: #dc2626; }
+.guvern-chip[data-id="ponta-iv"].guvern-chip--active { border-color: #dc2626; background: rgba(220, 38, 38, 0.13); }
+
+.guvern-chip[data-id="ciolos"] { border-color: rgba(100, 116, 139, 0.4); }
+.guvern-chip[data-id="ciolos"] .guvern-chip-dot { background: #64748b; }
+.guvern-chip[data-id="ciolos"].guvern-chip--active { border-color: #64748b; background: rgba(100, 116, 139, 0.13); }
+
+.guvern-chip[data-id="grindeanu-tudose"] { border-color: rgba(220, 38, 38, 0.4); }
+.guvern-chip[data-id="grindeanu-tudose"] .guvern-chip-dot { background: #dc2626; }
+.guvern-chip[data-id="grindeanu-tudose"].guvern-chip--active { border-color: #dc2626; background: rgba(220, 38, 38, 0.13); }
+
+.guvern-chip[data-id="dancila"] { border-color: rgba(220, 38, 38, 0.4); }
+.guvern-chip[data-id="dancila"] .guvern-chip-dot { background: #dc2626; }
+.guvern-chip[data-id="dancila"].guvern-chip--active { border-color: #dc2626; background: rgba(220, 38, 38, 0.13); }
+
+.guvern-chip[data-id="orban"] { border-color: rgba(217, 119, 6, 0.4); }
+.guvern-chip[data-id="orban"] .guvern-chip-dot { background: #d97706; }
+.guvern-chip[data-id="orban"].guvern-chip--active { border-color: #d97706; background: rgba(217, 119, 6, 0.13); }
+
+.guvern-chip[data-id="citu"] { border-color: rgba(217, 119, 6, 0.4); }
+.guvern-chip[data-id="citu"] .guvern-chip-dot { background: #d97706; }
+.guvern-chip[data-id="citu"].guvern-chip--active { border-color: #d97706; background: rgba(217, 119, 6, 0.13); }
+
+.guvern-chip[data-id="ciuca"] { border-color: rgba(124, 58, 237, 0.4); }
+.guvern-chip[data-id="ciuca"] .guvern-chip-dot { background: #7c3aed; }
+.guvern-chip[data-id="ciuca"].guvern-chip--active { border-color: #7c3aed; background: rgba(124, 58, 237, 0.13); }
+
+.guvern-chip[data-id="ciolacu"] { border-color: rgba(220, 38, 38, 0.4); }
+.guvern-chip[data-id="ciolacu"] .guvern-chip-dot { background: #dc2626; }
+.guvern-chip[data-id="ciolacu"].guvern-chip--active { border-color: #dc2626; background: rgba(220, 38, 38, 0.13); }
+
+.guvern-chip[data-id="bolojan"] { border-color: rgba(217, 119, 6, 0.4); }
+.guvern-chip[data-id="bolojan"] .guvern-chip-dot { background: #d97706; }
+.guvern-chip[data-id="bolojan"].guvern-chip--active { border-color: #d97706; background: rgba(217, 119, 6, 0.13); }
+
+/* ── Chart footnote ─────────────────────────────────────── */
+
+.chart-footnote {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
