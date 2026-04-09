@@ -1,3 +1,6 @@
+import type { Moneda } from "./cursValutar";
+import { simbolMoneda } from "./cursValutar";
+
 const leiFormatter = new Intl.NumberFormat("ro-RO", {
   style: "currency",
   currency: "RON",
@@ -74,4 +77,36 @@ export const formatAxisBudget = (value: number | string): string => {
   }
 
   return `${compactNumber(num / 1_000_000)} mil`;
+};
+
+export const formatMldValuta = (
+  value: number | null | undefined,
+  moneda: Moneda
+): string => {
+  if (value === null || value === undefined) return "-";
+  if (moneda === "RON") return formatMld(value);
+
+  const simbol = simbolMoneda(moneda);
+  const abs = Math.abs(value);
+  if (abs >= 1_000_000_000) {
+    return `${simbol}${compactNumber(value / 1_000_000_000)} mld`;
+  }
+  return `${simbol}${compactNumber(value / 1_000_000)} mil`;
+};
+
+export const formatAxisValuta = (
+  value: number | string,
+  moneda: Moneda
+): string => {
+  if (moneda === "RON") return formatAxisBudget(value);
+
+  const num = Number(value);
+  if (!Number.isFinite(num)) return "-";
+
+  const simbol = simbolMoneda(moneda);
+  const abs = Math.abs(num);
+  if (abs >= 1_000_000_000) {
+    return `${simbol}${compactNumber(num / 1_000_000_000)} mld`;
+  }
+  return `${simbol}${compactNumber(num / 1_000_000)} mil`;
 };
