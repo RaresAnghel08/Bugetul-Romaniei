@@ -36,13 +36,33 @@ function getGradient(cod: string): string {
   return CARD_GRADIENTS[Math.abs(parseInt(cod, 10)) % CARD_GRADIENTS.length];
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
+function pickRight(
+  fixedLeft: MinisterRecord,
+  currentScore: number,
+  recentCods: string[]
+): MinisterRecord {
+  const excluded = new Set([fixedLeft.cod, ...recentCods]);
+  let candidates = POOL.filter((m) => !excluded.has(m.cod));
+  if (candidates.length < 3) candidates = POOL.filter((m) => m.cod !== fixedLeft.cod);
+
+  const lv = fixedLeft["2026"] ?? 1;
+  const t = 6 / (currentScore + 6); // 1=easy → 0=hard
+  const target = Math.log(1.3) + t * (Math.log(300) - Math.log(1.3));
+  const sigma = 1.8;
+
+  const weights = candidates.map((m) => {
+    const rv = m["2026"] ?? 1;
+    const logRatio = Math.log(Math.max(lv, rv) / Math.min(lv, rv));
+    return Math.exp(-0.5 * Math.pow((logRatio - target) / sigma, 2));
+  });
+
+  const total = weights.reduce((a, b) => a + b, 0);
+  let rand = Math.random() * total;
+  for (let i = 0; i < candidates.length; i++) {
+    rand -= weights[i];
+    if (rand <= 0) return candidates[i];
   }
-  return a;
+  return candidates[candidates.length - 1];
 }
 
 function getScoreTitle(score: number): string {
@@ -67,8 +87,9 @@ type SubmitStatus = "idle" | "loading" | "inserted" | "updated" | "skipped" | "e
 
 export function JocPage() {
   const [phase, setPhase] = useState<Phase>("menu");
-  const [deck, setDeck] = useState<MinisterRecord[]>([]);
-  const [pointer, setPointer] = useState(0);
+  const [left, setLeft] = useState<MinisterRecord | null>(null);
+  const [right, setRight] = useState<MinisterRecord | null>(null);
+  const [recentCods, setRecentCods] = useState<string[]>([]);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(() =>
     parseInt(localStorage.getItem("joc-highscore") ?? "0", 10)
@@ -107,8 +128,11 @@ export function JocPage() {
   // ── Game Control ───────────────────────────────────────────────────────────
 
   const startGame = useCallback(() => {
-    setDeck(shuffle(POOL));
-    setPointer(0);
+    const initialLeft = POOL[Math.floor(Math.random() * POOL.length)];
+    const initialRight = pickRight(initialLeft, 0, []);
+    setLeft(initialLeft);
+    setRight(initialRight);
+    setRecentCods([initialLeft.cod]);
     setScore(0);
     setSubmitStatus("idle");
     setPlayerName("");
@@ -118,10 +142,8 @@ export function JocPage() {
 
   const handleGuess = useCallback(
     (guess: "higher" | "lower") => {
-      if (phase !== "playing") return;
+      if (phase !== "playing" || !left || !right) return;
 
-      const left = deck[pointer];
-      const right = deck[pointer + 1];
       const lv = left["2026"] ?? 0;
       const rv = right["2026"] ?? 0;
 
@@ -133,30 +155,25 @@ export function JocPage() {
         setPhase("result-correct");
 
         setTimeout(() => {
-          const nextPointer = pointer + 1;
-          if (nextPointer + 1 >= deck.length) {
-            // Reshuffle when we exhaust the deck
-            setDeck(shuffle(POOL));
-            setPointer(0);
-          } else {
-            setPointer(nextPointer);
-          }
+          const newLeft = right;
+          const newRecentCods = [...recentCods, left.cod].slice(-4);
+          const newRight = pickRight(newLeft, newScore, newRecentCods);
+          setLeft(newLeft);
+          setRight(newRight);
+          setRecentCods(newRecentCods);
           setPhase("playing");
         }, 1100);
       } else {
         setPhase("result-wrong");
 
         setTimeout(() => {
-          // Track final score via ref so the gameover handlers can read it
           finalScoreRef.current = score;
 
-          // Update high score
           if (score > highScore) {
             setHighScore(score);
             localStorage.setItem("joc-highscore", String(score));
           }
 
-          // Count this player once
           if (!countedRef.current) {
             countedRef.current = true;
             void incrementTotalPlayers();
@@ -166,7 +183,7 @@ export function JocPage() {
         }, 1400);
       }
     },
-    [phase, deck, pointer, score, highScore]
+    [phase, left, right, score, highScore, recentCods]
   );
 
   // ── Leaderboard ────────────────────────────────────────────────────────────
@@ -206,8 +223,6 @@ export function JocPage() {
 
   // ── Derived values ─────────────────────────────────────────────────────────
 
-  const left = deck[pointer] ?? null;
-  const right = deck[pointer + 1] ?? null;
   const isResult = phase === "result-correct" || phase === "result-wrong";
 
   // ── Renders ────────────────────────────────────────────────────────────────
