@@ -5,6 +5,7 @@ import { OverviewPage } from "./pages/Overview";
 import { MinisterePage } from "./pages/Ministere";
 import { MinisterPage } from "./pages/Minister";
 import { InvestitiiPage } from "./pages/Investitii";
+import { JocPage } from "./pages/Joc";
 import { TermeniPage } from "./pages/Termeni";
 import { ConfidentialitatePage } from "./pages/Confidentialitate";
 import { trackSiteVisit } from "./lib/visitorCounter";
@@ -14,6 +15,7 @@ const navItems = [
   { to: "/overview", label: "Overview" },
   { to: "/ministere", label: "Ministere" },
   { to: "/investitii", label: "Investitii" },
+  { to: "/joc", label: "🎮 Joc" },
 ];
 
 function App() {
@@ -52,6 +54,7 @@ function App() {
           <Route path="/ministere" element={<MinisterePage />} />
           <Route path="/minister/:cod" element={<MinisterPage />} />
           <Route path="/investitii" element={<InvestitiiPage />} />
+          <Route path="/joc" element={<JocPage />} />
           <Route path="/termeni" element={<TermeniPage />} />
           <Route path="/confidentialitate" element={<ConfidentialitatePage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
