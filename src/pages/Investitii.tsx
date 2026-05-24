@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import investitiiJson from "../../data/investitii.json";
 import { Seo } from "../components/Seo";
 import { formatMldAlways, formatPct } from "../lib/format";
@@ -18,8 +19,20 @@ interface InvestitiiGroup {
 }
 
 export const InvestitiiPage = () => {
-  const [minister, setMinister] = useState("toate");
-  const [sursa, setSursa] = useState("toate");
+  const [searchParams] = useSearchParams();
+
+  // Initialize from URL params
+  const [minister, setMinister] = useState(() => searchParams.get("org") ?? "toate");
+  const [sursa, setSursa] = useState(() => searchParams.get("sursa") ?? "toate");
+
+  // Sync filters to URL (replaceState — no history entry)
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (minister !== "toate") params.set("org", minister);
+    if (sursa !== "toate") params.set("sursa", sursa);
+    const qs = params.toString();
+    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  }, [minister, sursa]);
 
   const ministere = useMemo(
     () => ["toate", ...new Set(investitii.map((item) => item.ordonator))],
@@ -73,7 +86,6 @@ export const InvestitiiPage = () => {
         });
         continue;
       }
-
       existing.total2026 += row.program_2026;
       existing.total2025 += row.preliminat_2025;
       existing.cheltuit2024 += row.cheltuit_pana_2024;
@@ -101,26 +113,49 @@ export const InvestitiiPage = () => {
       : null;
 
   const toneForPct = (value: number | null): "positive" | "negative" | "neutral" => {
-    if (value === null || Number.isNaN(value) || value === 0) {
-      return "neutral";
-    }
+    if (value === null || Number.isNaN(value) || value === 0) return "neutral";
     return value > 0 ? "positive" : "negative";
   };
 
   const emojiForTone = (tone: "positive" | "negative" | "neutral"): string => {
-    if (tone === "positive") {
-      return "📈";
-    }
-    if (tone === "negative") {
-      return "📉";
-    }
+    if (tone === "positive") return "📈";
+    if (tone === "negative") return "📉";
     return "➖";
   };
 
   const growthTone = toneForPct(growthPct);
   const growthEmoji = emojiForTone(growthTone);
-
   const growthLabel = growthPct === null ? "-" : `${growthEmoji} ${formatPct(growthPct, 1)}`;
+
+  // Task 3: CSV download from currently filtered data
+  const downloadCsv = () => {
+    const header = [
+      "Ordonator",
+      "Sursa",
+      "Indicator",
+      "Total",
+      "Cheltuit pana 2024",
+      "Preliminat 2025",
+      "Program 2026",
+    ];
+    const rows = filtered.map((item) => [
+      `"${item.ordonator.replace(/"/g, '""')}"`,
+      `"${item.sursa.replace(/"/g, '""')}"`,
+      `"${item.indicator.replace(/"/g, '""')}"`,
+      item.total,
+      item.cheltuit_pana_2024,
+      item.preliminat_2025,
+      item.program_2026,
+    ]);
+    const csv = [header, ...rows].map((r) => r.join(",")).join("\n");
+    const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "investitii-bugetul-romaniei.csv";
+    a.click();
+    URL.revokeObjectURL(url);
+  };
 
   const seoPath = "/investitii";
   const seoTitle = "Investitii Publice | Bugetul Romaniei";
@@ -204,6 +239,14 @@ export const InvestitiiPage = () => {
           </article>
         </div>
       </section>
+
+      {/* Task 3: CSV button above groups */}
+      <div className="panel-header-row" style={{ padding: "0 2px" }}>
+        <p className="muted">{filtered.length} înregistrări în filtrul curent</p>
+        <button type="button" className="ghost-btn" onClick={downloadCsv}>
+          ⬇ CSV
+        </button>
+      </div>
 
       <section className="investitii-groups-grid">
         {grouped.map((group) => {

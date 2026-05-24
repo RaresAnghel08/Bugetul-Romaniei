@@ -2,6 +2,7 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
+  Legend,
   Line,
   LineChart,
   ReferenceArea,
@@ -17,7 +18,7 @@ import programeJson from "../../data/programe.json";
 import guverneJson from "../../data/guverne.json";
 import { AISummary } from "../components/AISummary";
 import { Seo } from "../components/Seo";
-import { formatAxisValuta, formatMldValuta, formatMil } from "../lib/format";
+import { formatAxisValuta, formatMld, formatMldValuta, formatMil } from "../lib/format";
 import { toAbsoluteSiteUrl } from "../lib/seo";
 import { convertRON, type Moneda } from "../lib/cursValutar";
 import type { MinisterRecord, ProgramRecord } from "../types";
@@ -62,6 +63,7 @@ export const MinisterPage = () => {
     );
   }
 
+  // Historic data points (2015-2026)
   const lineData = Object.entries(minister.istoric ?? {})
     .filter(([year, value]) => /^\d{4}$/.test(year) && typeof value === "number" && value > 0)
     .sort((a, b) => Number(a[0]) - Number(b[0]))
@@ -72,6 +74,32 @@ export const MinisterPage = () => {
 
   const firstYear = lineData[0]?.an ?? "-";
   const lastYear = lineData[lineData.length - 1]?.an ?? "-";
+
+  // Merge historic + estimates into a single trend series
+  const estimateEntries = (
+    [
+      { an: "2027", raw: minister.estimari_2027 },
+      { an: "2028", raw: minister.estimari_2028 },
+      { an: "2029", raw: minister.estimari_2029 },
+    ] as { an: string; raw: number | null }[]
+  ).filter((e): e is { an: string; raw: number } => e.raw !== null);
+
+  const hasEstimate = estimateEntries.length > 0;
+
+  const trendData = [
+    ...lineData.map((pt) => ({
+      an: pt.an,
+      valoare: pt.valoare as number | null,
+      // Share the 2026 value with the estimates series so the dashed line
+      // visually bridges from the end of the solid line with no gap.
+      estimat: hasEstimate && pt.an === "2026" ? (pt.valoare as number | null) : null,
+    })),
+    ...estimateEntries.map((e) => ({
+      an: e.an,
+      valoare: null as number | null,
+      estimat: convertRON(e.raw, "2026", moneda),
+    })),
+  ];
 
   const ministerDelta =
     minister.delta_pct === null
@@ -99,18 +127,29 @@ export const MinisterPage = () => {
     .sort((a, b) => b["2026"] - a["2026"])
     .slice(0, 5);
 
-  const chartCapitole = topCapitole.map((cap) => ({
-    capitol: cap.denumire.length > 24 ? `${cap.denumire.slice(0, 24)}...` : cap.denumire,
-    valoare: convertRON(cap["2026"], "2026", moneda),
-  }));
+  // All capitols side-by-side 2025 vs 2026
+  const chartCapitoleDual = [...minister.detalii_capitol]
+    .sort((a, b) => b["2026"] - a["2026"])
+    .map((cap) => ({
+      capitol: cap.denumire.length > 40 ? `${cap.denumire.slice(0, 40)}...` : cap.denumire,
+      buget2025: convertRON(cap["2025"], "2025", moneda),
+      buget2026: convertRON(cap["2026"], "2026", moneda),
+    }));
 
   const programeMinister = programe
     .filter((program) => program.ordonator_cod === minister.cod)
     .sort((a, b) => (b.program_2026 ?? 0) - (a.program_2026 ?? 0))
     .slice(0, 12);
 
-  const seoTitle = `${minister.nume} | Bugetul Romaniei`;
-  const seoDescription = `Analiza bugetului pentru ${minister.nume}: evolutie istorica, top capitole bugetare si programe asociate.`;
+  // Task 4: unique per-minister SEO
+  const seoTitle = `${minister.nume} | Bugetul României 2026`;
+  const seoDescription =
+    minister.delta_pct !== null
+      ? `Bugetul ${minister.nume} în 2026: ${formatMld(minister["2026"])}, variație ${
+          minister.delta_pct >= 0 ? "+" : ""
+        }${minister.delta_pct.toFixed(1)}% față de 2025. Evoluție completă 2015-2026.`
+      : `Bugetul ${minister.nume} în 2026: ${formatMld(minister["2026"])}. Evoluție completă 2015-2026.`;
+
   const seoJsonLd = {
     "@context": "https://schema.org",
     "@type": "GovernmentOrganization",
@@ -124,6 +163,15 @@ export const MinisterPage = () => {
       url: toAbsoluteSiteUrl("/"),
     },
   };
+
+  const tooltipStyle = {
+    background: "#101226",
+    border: "1px solid #3e4261",
+    borderRadius: "10px",
+    color: "#fff",
+  };
+
+  const capitolChartHeight = Math.max(260, chartCapitoleDual.length * 56);
 
   return (
     <section className="page-grid">
@@ -149,9 +197,13 @@ export const MinisterPage = () => {
         </div>
       </section>
 
+      {/* Task 1: Evolution chart with estimates */}
       <section className="panel">
         <div className="panel-toolbar">
-          <h3 className="panel-title">Evolutie {firstYear}-{lastYear}</h3>
+          <h3 className="panel-title">
+            Evoluție {firstYear}–{lastYear}
+            {hasEstimate ? " + estimări 2027–2029" : ""}
+          </h3>
           <div className="moneda-toggle">
             {(["RON", "EUR", "USD"] as Moneda[]).map((m) => (
               <button
@@ -167,7 +219,7 @@ export const MinisterPage = () => {
         </div>
         <div className="chart-wrap medium">
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={lineData} margin={{ left: 26, right: 12, top: 12, bottom: 8 }}>
+            <LineChart data={trendData} margin={{ left: 26, right: 12, top: 12, bottom: 8 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
               <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
               <YAxis
@@ -178,15 +230,15 @@ export const MinisterPage = () => {
                 tickFormatter={(v) => formatAxisValuta(v, moneda)}
               />
               <Tooltip
-                formatter={(value) => [formatMldValuta(Number(value), moneda)]}
-                contentStyle={{
-                  background: "#101226",
-                  border: "1px solid #3e4261",
-                  borderRadius: "10px",
-                  color: "#fff",
-                }}
+                formatter={(value, name) => [
+                  formatMldValuta(Number(value), moneda),
+                  name === "valoare" ? "Buget" : "Estimare",
+                ]}
+                contentStyle={tooltipStyle}
               />
-              {/* Benzi colorate pe perioade de guvernare */}
+              <Legend
+                formatter={(value) => (value === "valoare" ? "Buget" : "Estimare")}
+              />
               {guverne.map((g) => (
                 <ReferenceArea
                   key={g.id}
@@ -201,21 +253,37 @@ export const MinisterPage = () => {
               <Line
                 type="monotone"
                 dataKey="valoare"
-                stroke="#22d3ee"
+                stroke="var(--accent-cyan)"
                 strokeWidth={3}
                 dot={{ r: 4, strokeWidth: 0, fill: "#f4f4f4" }}
                 connectNulls
               />
+              {hasEstimate && (
+                <Line
+                  type="monotone"
+                  dataKey="estimat"
+                  stroke="var(--accent-amber)"
+                  strokeWidth={2}
+                  strokeDasharray="6 4"
+                  dot={{ r: 4, strokeWidth: 0, fill: "#f59e0b" }}
+                  connectNulls
+                />
+              )}
             </LineChart>
           </ResponsiveContainer>
         </div>
       </section>
 
+      {/* Task 1: Capitol breakdown — grouped 2025 vs 2026 */}
       <section className="panel">
-        <h3 className="panel-title">Top capitole bugetare (2026)</h3>
-        <div className="chart-wrap medium">
+        <h3 className="panel-title">Capitole bugetare: 2025 vs 2026</h3>
+        <div className="chart-wrap" style={{ height: capitolChartHeight }}>
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={chartCapitole} layout="vertical" margin={{ left: 8, right: 14, top: 10, bottom: 8 }}>
+            <BarChart
+              data={chartCapitoleDual}
+              layout="vertical"
+              margin={{ left: 8, right: 14, top: 10, bottom: 8 }}
+            >
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
               <XAxis
                 type="number"
@@ -226,20 +294,30 @@ export const MinisterPage = () => {
               <YAxis
                 dataKey="capitol"
                 type="category"
-                width={220}
+                width={230}
                 tick={{ fill: "#f7f7f7", fontSize: 11 }}
                 axisLine={{ stroke: "#4e4f66" }}
               />
               <Tooltip
-                formatter={(value) => [formatMldValuta(Number(value), moneda)]}
-                contentStyle={{
-                  background: "#101226",
-                  border: "1px solid #3e4261",
-                  borderRadius: "10px",
-                  color: "#fff",
-                }}
+                formatter={(value, name) => [
+                  formatMldValuta(Number(value), moneda),
+                  name === "buget2025" ? "2025" : "2026",
+                ]}
+                contentStyle={tooltipStyle}
               />
-              <Bar dataKey="valoare" fill="#f59e0b" radius={[0, 8, 8, 0]} />
+              <Legend formatter={(value) => (value === "buget2025" ? "2025" : "2026")} />
+              <Bar
+                dataKey="buget2025"
+                name="buget2025"
+                fill="var(--accent-teal)"
+                radius={[0, 4, 4, 0]}
+              />
+              <Bar
+                dataKey="buget2026"
+                name="buget2026"
+                fill="var(--accent-amber)"
+                radius={[0, 4, 4, 0]}
+              />
             </BarChart>
           </ResponsiveContainer>
         </div>

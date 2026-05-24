@@ -1,6 +1,6 @@
 import Fuse from "fuse.js";
-import { useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useMemo, useState } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import {
   Legend,
   PolarAngleAxis,
@@ -24,19 +24,38 @@ const ministere = ministereJson as MinisterRecord[];
 type SortKey = "nume" | "2025" | "2026" | "delta_pct";
 type SortDirection = "asc" | "desc";
 
+const VALID_SORT_KEYS: SortKey[] = ["nume", "2025", "2026", "delta_pct"];
+
 const shortInstitutionName = (name: string): string => {
-  if (name.length <= 24) {
-    return name;
-  }
+  if (name.length <= 24) return name;
   return `${name.slice(0, 24)}...`;
 };
 
 export const MinisterePage = () => {
   const navigate = useNavigate();
-  const [query, setQuery] = useState("");
+  const [searchParams] = useSearchParams();
+
+  // Initialize state from URL params
+  const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
+  const [sortKey, setSortKey] = useState<SortKey>(() => {
+    const s = searchParams.get("sort");
+    return VALID_SORT_KEYS.includes(s as SortKey) ? (s as SortKey) : "2026";
+  });
+  const [sortDirection, setSortDirection] = useState<SortDirection>(() => {
+    return searchParams.get("dir") === "asc" ? "asc" : "desc";
+  });
+
   const debouncedQuery = useDebouncedValue(query, 200);
-  const [sortKey, setSortKey] = useState<SortKey>("2026");
-  const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
+
+  // Sync filters to URL (replaceState — no history entry)
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (query) params.set("q", query);
+    if (sortKey !== "2026") params.set("sort", sortKey);
+    if (sortDirection !== "desc") params.set("dir", sortDirection);
+    const qs = params.toString();
+    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  }, [query, sortKey, sortDirection]);
 
   const rankedByBudget = useMemo(
     () => [...ministere].sort((a, b) => (b["2026"] ?? 0) - (a["2026"] ?? 0)),
@@ -54,9 +73,7 @@ export const MinisterePage = () => {
   );
 
   const filtered = useMemo(() => {
-    if (!debouncedQuery.trim()) {
-      return ministere;
-    }
+    if (!debouncedQuery.trim()) return ministere;
     return fuse.search(debouncedQuery).map((result) => result.item);
   }, [debouncedQuery, fuse]);
 
@@ -64,11 +81,7 @@ export const MinisterePage = () => {
     const rows = [...filtered];
     rows.sort((a, b) => {
       const mult = sortDirection === "asc" ? 1 : -1;
-
-      if (sortKey === "nume") {
-        return a.nume.localeCompare(b.nume, "ro") * mult;
-      }
-
+      if (sortKey === "nume") return a.nume.localeCompare(b.nume, "ro") * mult;
       const av = a[sortKey] ?? 0;
       const bv = b[sortKey] ?? 0;
       return (av - bv) * mult;
@@ -80,7 +93,6 @@ export const MinisterePage = () => {
     () => ministere.reduce((sum, row) => sum + (row["2025"] ?? 0), 0),
     []
   );
-
   const total2026 = useMemo(
     () => ministere.reduce((sum, row) => sum + (row["2026"] ?? 0), 0),
     []
@@ -91,20 +103,18 @@ export const MinisterePage = () => {
     deltaTotal === null ? "-" : `${deltaTotal >= 0 ? "+" : ""}${deltaTotal.toFixed(1)}%`;
   const growthEmoji = deltaTotal === null ? "➖" : deltaTotal >= 0 ? "📈" : "📉";
   const growthTone = deltaTotal === null ? "neutral" : deltaTotal >= 0 ? "positive" : "negative";
+
   const topMinister = useMemo(
     () => rankedByBudget.find((row) => (row["2026"] ?? 0) > 0) ?? null,
     [rankedByBudget]
   );
-
   const featuredMinistries = useMemo(() => rankedByBudget.slice(0, 13), [rankedByBudget]);
 
   const availableYears = useMemo(() => {
     const years = new Set<number>();
     for (const minister of rankedByBudget) {
       for (const yearKey of Object.keys(minister.istoric ?? {})) {
-        if (/^\d{4}$/.test(yearKey)) {
-          years.add(Number(yearKey));
-        }
+        if (/^\d{4}$/.test(yearKey)) years.add(Number(yearKey));
       }
     }
     return [...years].sort((a, b) => a - b);
@@ -123,10 +133,30 @@ export const MinisterePage = () => {
   const toggleSort = (key: SortKey) => {
     if (key === sortKey) {
       setSortDirection((prev) => (prev === "asc" ? "desc" : "asc"));
-      return;
+    } else {
+      setSortKey(key);
+      setSortDirection(key === "nume" ? "asc" : "desc");
     }
-    setSortKey(key);
-    setSortDirection(key === "nume" ? "asc" : "desc");
+  };
+
+  // Task 3: CSV download from currently filtered+sorted data
+  const downloadCsv = () => {
+    const header = ["Cod", "Nume", "Buget 2025 (lei)", "Buget 2026 (lei)", "Variatie %"];
+    const rows = sorted.map((m) => [
+      m.cod,
+      `"${m.nume.replace(/"/g, '""')}"`,
+      m["2025"] ?? "",
+      m["2026"] ?? "",
+      m.delta_pct !== null ? m.delta_pct.toFixed(2) : "",
+    ]);
+    const csv = [header, ...rows].map((r) => r.join(",")).join("\n");
+    const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "ministere-bugetul-romaniei.csv";
+    a.click();
+    URL.revokeObjectURL(url);
   };
 
   const seoPath = "/ministere";
@@ -268,13 +298,18 @@ export const MinisterePage = () => {
       <section className="panel">
         <div className="panel-header-row">
           <h2 className="panel-title">Ministere 2025 vs 2026</h2>
-          <input
-            className="search-input"
-            type="search"
-            placeholder="Cauta minister..."
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-          />
+          <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+            <input
+              className="search-input"
+              type="search"
+              placeholder="Cauta minister..."
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+            <button type="button" className="ghost-btn" onClick={downloadCsv}>
+              ⬇ CSV
+            </button>
+          </div>
         </div>
 
         <div className="table-wrap">
