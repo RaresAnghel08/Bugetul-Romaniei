@@ -1985,3 +1985,128 @@ body {
   font-size: 0.78rem;
   color: var(--muted);
 }
+
+/* ── Comparator combobox ─────────────────────────────────── */
+
+.comparator-combobox {
+  position: relative;
+}
+
+.comparator-selected {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  padding: 8px 10px;
+  background: var(--bg-2);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  min-height: 44px;
+}
+
+.comparator-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px 4px 6px;
+  border-radius: 6px;
+  border: 1px solid;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.8rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.comparator-chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.comparator-chip-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  padding: 0 0 0 2px;
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.comparator-chip-remove:hover {
+  color: var(--text);
+}
+
+.comparator-search-input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-size: 0.88rem;
+  min-width: 200px;
+  flex: 1;
+  padding: 2px 0;
+}
+
+.comparator-search-input::placeholder {
+  color: var(--muted);
+}
+
+.comparator-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--bg-2);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  list-style: none;
+  padding: 4px 0;
+  margin: 0;
+  z-index: 100;
+  max-height: 260px;
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.comparator-dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.comparator-dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.comparator-dropdown-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.comparator-dropdown-amount {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+}
+
+.comparator-quick-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.comparator-quick-chip {
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  min-height: unset;
+}

@@ -8,6 +8,7 @@ import { InvestitiiPage } from "./pages/Investitii";
 import { JocPage } from "./pages/Joc";
 import { TermeniPage } from "./pages/Termeni";
 import { ConfidentialitatePage } from "./pages/Confidentialitate";
+import { ComparatorPage } from "./pages/Comparator";
 import { DesprePage } from "./pages/Despre";
 import { NotFoundPage } from "./pages/NotFound";
 import { trackSiteVisit } from "./lib/visitorCounter";
@@ -16,6 +17,7 @@ const navItems = [
   { to: "/", label: "Acasa" },
   { to: "/overview", label: "Overview" },
   { to: "/ministere", label: "Ministere" },
+  { to: "/comparator", label: "Compară ministere" },
   { to: "/investitii", label: "Investitii" },
   { to: "/joc", label: "🎮 Joc" },
 ];
@@ -59,6 +61,7 @@ function App() {
           <Route path="/joc" element={<JocPage />} />
           <Route path="/termeni" element={<TermeniPage />} />
           <Route path="/confidentialitate" element={<ConfidentialitatePage />} />
+          <Route path="/comparator" element={<ComparatorPage />} />
           <Route path="/despre" element={<DesprePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
