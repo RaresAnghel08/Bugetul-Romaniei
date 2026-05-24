@@ -5,7 +5,7 @@ const rootDir = process.cwd();
 const publicDir = resolve(rootDir, "public");
 const ministerePath = resolve(rootDir, "data", "ministere.json");
 
-const siteUrl = (process.env.SITE_URL || process.env.VITE_SITE_URL || "https://bugetul-romaniei.vercel.app").replace(
+const siteUrl = (process.env.SITE_URL || process.env.VITE_SITE_URL || "https://bugetul-romaniei.com").replace(
   /\/+$/,
   ""
 );
@@ -17,6 +17,7 @@ const staticRoutes = [
   { path: "/overview", priority: "0.9", changefreq: "weekly" },
   { path: "/ministere", priority: "0.9", changefreq: "weekly" },
   { path: "/investitii", priority: "0.9", changefreq: "weekly" },
+  { path: "/joc", priority: "0.8", changefreq: "weekly" },
 ];
 
 const toAbsoluteUrl = (path) => {

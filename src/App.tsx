@@ -27,7 +27,7 @@ function App() {
     <div className="app-shell">
       <header className="topbar">
         <div className="brand-wrap">
-          <p className="brand-kicker">bugetul-romaniei.ro</p>
+          <p className="brand-kicker">bugetul-romaniei.com</p>
           <h1 className="brand-title">Bugetul Romaniei</h1>
         </div>
 
@@ -64,7 +64,7 @@ function App() {
       <footer className="site-footer panel">
         <div className="site-footer-grid">
           <div>
-            <p className="site-footer-brand">bugetul-romaniei.ro</p>
+            <p className="site-footer-brand">bugetul-romaniei.com</p>
             <p className="landing-copy">
               Proiect civic independent care transforma fisierele XML bugetare oficiale in
               vizualizari clare pentru comparatii rapide intre ani, ministere si investitii.
