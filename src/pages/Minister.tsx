@@ -84,11 +84,15 @@ export const MinisterPage = () => {
     ] as { an: string; raw: number | null }[]
   ).filter((e): e is { an: string; raw: number } => e.raw !== null);
 
+  const hasEstimate = estimateEntries.length > 0;
+
   const trendData = [
     ...lineData.map((pt) => ({
       an: pt.an,
       valoare: pt.valoare as number | null,
-      estimat: null as number | null,
+      // Share the 2026 value with the estimates series so the dashed line
+      // visually bridges from the end of the solid line with no gap.
+      estimat: hasEstimate && pt.an === "2026" ? (pt.valoare as number | null) : null,
     })),
     ...estimateEntries.map((e) => ({
       an: e.an,
@@ -96,8 +100,6 @@ export const MinisterPage = () => {
       estimat: convertRON(e.raw, "2026", moneda),
     })),
   ];
-
-  const hasEstimate = estimateEntries.length > 0;
 
   const ministerDelta =
     minister.delta_pct === null

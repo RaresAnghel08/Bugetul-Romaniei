@@ -104,7 +104,9 @@ export const ComparatorPage = () => {
         </p>
       </section>
 
-      <section className="panel">
+      {/* position+zIndex lift the stacking context above sibling panels so
+          the absolute-positioned dropdown floats over the chart below */}
+      <section className="panel" style={{ position: "relative", zIndex: 10 }}>
         <h3 className="panel-title">Selectează ministere</h3>
 
         <div className="comparator-combobox">
