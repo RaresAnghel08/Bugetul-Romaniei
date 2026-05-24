@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, NavLink, Navigate, Route, Routes } from "react-router-dom";
+import { Link, NavLink, Route, Routes } from "react-router-dom";
 import { LandingPage } from "./pages/Landing";
 import { OverviewPage } from "./pages/Overview";
 import { MinisterePage } from "./pages/Ministere";
@@ -8,6 +8,8 @@ import { InvestitiiPage } from "./pages/Investitii";
 import { JocPage } from "./pages/Joc";
 import { TermeniPage } from "./pages/Termeni";
 import { ConfidentialitatePage } from "./pages/Confidentialitate";
+import { DesprePage } from "./pages/Despre";
+import { NotFoundPage } from "./pages/NotFound";
 import { trackSiteVisit } from "./lib/visitorCounter";
 
 const navItems = [
@@ -57,7 +59,8 @@ function App() {
           <Route path="/joc" element={<JocPage />} />
           <Route path="/termeni" element={<TermeniPage />} />
           <Route path="/confidentialitate" element={<ConfidentialitatePage />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/despre" element={<DesprePage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
 
@@ -138,6 +141,10 @@ function App() {
           <span className="site-footer-separator">|</span>
           <Link className="site-footer-link" to="/confidentialitate">
             Confidentialitate
+          </Link>
+          <span className="site-footer-separator">|</span>
+          <Link className="site-footer-link" to="/despre">
+            Despre proiect
           </Link>
         </div>
 

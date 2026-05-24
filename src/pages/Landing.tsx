@@ -176,6 +176,21 @@ export const LandingPage = () => {
           Datele provin din anexele XML oficiale si sunt procesate local intr-un pipeline Python,
           apoi servite in frontend-ul React pentru cautare, comparatii pe ani si drill-down pe ministere.
         </p>
+        <p className="landing-copy">
+          Datele provin din{" "}
+          <a
+            href="https://mfinante.gov.ro/domenii/buget"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="site-footer-link"
+          >
+            anexele XML oficiale publicate de Ministerul Finanțelor Publice
+          </a>
+          .
+        </p>
+        <Link className="ghost-btn inline-btn" to="/despre" style={{ marginTop: "0.75rem", display: "inline-block" }}>
+          Despre proiect
+        </Link>
       </section>
     </section>
   );
