@@ -1,5 +1,7 @@
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
+import { vitePrerenderPlugin } from "vite-prerender-plugin";
+import path from "node:path";
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
@@ -9,7 +11,14 @@ export default defineConfig(({ mode }) => {
   const upstreamBasePath = `/v2/${workspace}/${counterName}`;
 
   return {
-    plugins: [react()],
+    plugins: [
+      react(),
+      vitePrerenderPlugin({
+        prerenderScript: path.resolve(process.cwd(), "src/prerender.ts"),
+        renderTarget: "#root",
+        additionalPrerenderRoutes: ["/overview", "/ministere", "/investitii", "/joc"],
+      }),
+    ],
     server: {
       fs: {
         allow: [".."],
