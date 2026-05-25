@@ -40,6 +40,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 18px 18px 34px;
+  overflow-x: hidden;
 }
 
 .topbar {
@@ -336,6 +337,17 @@ body {
 .data-table.compact th,
 .data-table.compact td {
   padding: 8px 7px;
+}
+
+.programe-table {
+  width: 100%;
+}
+
+.programe-table td,
+.programe-table th {
+  word-break: break-word;
+  white-space: normal;
+  min-width: 0;
 }
 
 .th-btn {
@@ -714,6 +726,8 @@ body {
   font-size: 1.1rem;
   line-height: 1.28;
   color: #ecf9ff;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .ministere-kicker {
@@ -734,6 +748,39 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
+}
+
+/* ── Radar mobile fallback list (shown instead of chart at ≤640px) ── */
+
+.radar-mobile-fallback {
+  display: grid;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.radar-mobile-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.88rem;
+}
+
+.radar-mobile-name {
+  color: var(--muted);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 12px;
+}
+
+.radar-mobile-val {
+  font-family: "Literata", Georgia, serif;
+  color: var(--accent-cyan);
+  white-space: nowrap;
 }
 
 .minister-card {
@@ -775,7 +822,6 @@ body {
 .chart-stable {
   min-height: 360px;
   min-width: 0;
-  overflow: hidden;
 }
 
 .ministere-big-sums {
@@ -1205,13 +1251,31 @@ body {
   }
 }
 
-@media (max-width: 720px) {
-  .app-shell {
-    padding: 12px;
+/* Navbar: scrollable pill row in the 641–860px dead zone */
+@media (min-width: 641px) and (max-width: 860px) {
+  .topnav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
   }
 
-  .cards-grid {
-    grid-template-columns: 1fr;
+  .topnav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topnav-link {
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-size: 0.82rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 860px) {
+  .app-shell {
+    padding: 12px;
   }
 
   .panel-header-row {
@@ -1248,14 +1312,6 @@ body {
     white-space: normal;
   }
 
-  .ministere-cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .investitii-kpi-row {
-    grid-template-columns: 1fr;
-  }
-
   .investitii-filter-row {
     grid-template-columns: 1fr;
   }
@@ -1274,8 +1330,73 @@ body {
     max-width: 100%;
   }
 
-  .site-footer-grid {
+  /* Minister detail hero — stack variatie below name */
+  .minister-hero-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Moneda toggle compact */
+  .moneda-toggle {
+    flex-wrap: wrap;
+  }
+
+  .moneda-btn {
+    padding: 5px 10px;
+    font-size: 0.78rem;
+  }
+
+  /* Panel toolbar stacks vertically */
+  .panel-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .panel-toolbar .panel-title {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  /* Fix 3 — ministere hero overflow in 641–860px range */
+  .ministere-hero {
+    padding: 16px;
+    overflow: hidden;
+  }
+
+  .ministere-hero-grid {
     grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .ministere-hero-grid > div,
+  .ministere-hero-metrics-grid {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .landing-copy {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Fix 4 — panels stay within grid column */
+  .page-grid > section,
+  .page-grid > div {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  /* Fix 5 — footer 2 columns */
+  .site-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Fix 6 — investitii KPI row: 2 columns */
+  .investitii-kpi-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1381,6 +1502,62 @@ body {
 
   .investitii-group-title {
     max-width: 100%;
+  }
+
+  /* Fix 1 — ministere hero overflow */
+  .ministere-hero {
+    padding: 14px;
+    overflow: hidden;
+  }
+
+  .ministere-hero-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .ministere-hero-grid > div,
+  .ministere-hero-metrics-grid {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .landing-copy {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Fix 6 — all direct children of page-grid stay within column */
+  .page-grid > section,
+  .page-grid > div {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  /* Fix 7 — panel toolbar collapses on mobile */
+  .panel-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .panel-toolbar .panel-title {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .moneda-toggle {
+    flex-wrap: wrap;
+  }
+
+  /* Fix 8 — governo chips compact */
+  .guvern-chips {
+    gap: 4px;
+  }
+
+  .guvern-chip {
+    font-size: 0.72rem;
+    padding: 4px 8px;
   }
 }
 

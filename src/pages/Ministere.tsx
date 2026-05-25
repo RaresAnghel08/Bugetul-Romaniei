@@ -120,6 +120,16 @@ export const MinisterePage = () => {
     return [...years].sort((a, b) => a - b);
   }, [rankedByBudget]);
 
+  const [isNarrow, setIsNarrow] = useState(() =>
+    typeof window !== 'undefined' && window.innerWidth < 640
+  );
+
+  useEffect(() => {
+    const handleResize = () => setIsNarrow(window.innerWidth < 640);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const radarData = useMemo(
     () =>
       rankedByBudget.slice(0, 8).map((row) => ({
@@ -218,57 +228,68 @@ export const MinisterePage = () => {
         </div>
       </section>
 
-      <section className="panel" style={{ minWidth: 0, overflow: 'hidden' }}>
+      <section className="panel" style={{ minWidth: 0 }}>
         <div className="panel-header-row stack-mobile">
           <div>
             <h2 className="panel-title">Radar pe instituții</h2>
             <p className="muted">Top 8 instituții după alocarea 2026, comparativ cu 2025</p>
           </div>
         </div>
-        <div className="chart-wrap tall chart-stable" style={{ minWidth: 0, width: "100%" }}>
-          <ResponsiveContainer width="100%" height="100%" minWidth={0}>
-            <RadarChart data={radarData} outerRadius="72%">
-              <PolarGrid stroke="rgba(255,255,255,0.18)" />
-              <PolarAngleAxis dataKey="institutie" tick={{ fill: "#e5e7eb", fontSize: 11 }} />
-              <PolarRadiusAxis
-                tick={{ fill: "#c7cedf", fontSize: 11 }}
-                tickFormatter={(value) =>
-                  Number(value) >= 1
-                    ? `${Number(value).toFixed(1)} mld`
-                    : `${(Number(value) * 1000).toFixed(0)} mil`
-                }
-              />
-              <Tooltip
-                formatter={(value) =>
-                  Number(value) >= 1
-                    ? `${Number(value).toFixed(1)} mld lei`
-                    : `${(Number(value) * 1000).toFixed(0)} mil lei`
-                }
-                contentStyle={{
-                  background: "#101226",
-                  border: "1px solid #3e4261",
-                  borderRadius: "10px",
-                  color: "#fff",
-                }}
-              />
-              <Legend />
-              <Radar
-                name="2025"
-                dataKey="buget2025"
-                stroke="#7dd3fc"
-                fill="#7dd3fc"
-                fillOpacity={0.18}
-              />
-              <Radar
-                name="2026"
-                dataKey="buget2026"
-                stroke="#2dd4bf"
-                fill="#2dd4bf"
-                fillOpacity={0.22}
-              />
-            </RadarChart>
-          </ResponsiveContainer>
-        </div>
+        {isNarrow ? (
+          <div className="radar-mobile-fallback">
+            {radarData.map((row, i) => (
+              <div key={i} className="radar-mobile-row">
+                <span className="radar-mobile-name">{row.institutie}</span>
+                <span className="radar-mobile-val">{row.buget2026.toFixed(1)} mld</span>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="chart-wrap tall chart-stable" style={{ minWidth: 0, width: "100%" }}>
+            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
+              <RadarChart data={radarData} outerRadius="72%">
+                <PolarGrid stroke="rgba(255,255,255,0.18)" />
+                <PolarAngleAxis dataKey="institutie" tick={{ fill: "#e5e7eb", fontSize: 11 }} />
+                <PolarRadiusAxis
+                  tick={{ fill: "#c7cedf", fontSize: 11 }}
+                  tickFormatter={(value) =>
+                    Number(value) >= 1
+                      ? `${Number(value).toFixed(1)} mld`
+                      : `${(Number(value) * 1000).toFixed(0)} mil`
+                  }
+                />
+                <Tooltip
+                  formatter={(value) =>
+                    Number(value) >= 1
+                      ? `${Number(value).toFixed(1)} mld lei`
+                      : `${(Number(value) * 1000).toFixed(0)} mil lei`
+                  }
+                  contentStyle={{
+                    background: "#101226",
+                    border: "1px solid #3e4261",
+                    borderRadius: "10px",
+                    color: "#fff",
+                  }}
+                />
+                <Legend />
+                <Radar
+                  name="2025"
+                  dataKey="buget2025"
+                  stroke="#7dd3fc"
+                  fill="#7dd3fc"
+                  fillOpacity={0.18}
+                />
+                <Radar
+                  name="2026"
+                  dataKey="buget2026"
+                  stroke="#2dd4bf"
+                  fill="#2dd4bf"
+                  fillOpacity={0.22}
+                />
+              </RadarChart>
+            </ResponsiveContainer>
+          </div>
+        )}
       </section>
 
       <section className="ministere-cards-grid">
