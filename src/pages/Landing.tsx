@@ -93,10 +93,10 @@ export const LandingPage = () => {
                 Vezi overview
               </Link>
               <Link className="ghost-btn inline-btn" to="/ministere">
-                Exploreaza ministere
+                Explorează ministere
               </Link>
               <Link className="ghost-btn inline-btn" to="/investitii">
-                Analizeaza investitii
+                Analizează investiții
               </Link>
             </div>
 
@@ -109,7 +109,7 @@ export const LandingPage = () => {
               </div>
               <div className="landing-highlight">
                 <p className="muted">Seturi de date locale</p>
-                <p className="landing-highlight-title">Ministere, programe, investitii, overview</p>
+                <p className="landing-highlight-title">Ministere, programe, investiții, overview</p>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ export const LandingPage = () => {
             </article>
 
             <article className="landing-hero-kpi-card">
-              <p className="landing-kpi-label">Program investitii 2026</p>
+              <p className="landing-kpi-label">Program investiții 2026</p>
               <p className="landing-hero-kpi-value">{formatMld(totalInvestitii2026)}</p>
             </article>
 
@@ -140,25 +140,25 @@ export const LandingPage = () => {
 
       <section className="landing-pillars-grid">
         <article className="panel landing-pillar reveal-on-load">
-          <h3 className="panel-title">Date oficiale, fara opacitate</h3>
+          <h3 className="panel-title">Date oficiale, fără opacitate</h3>
           <p className="landing-copy">
-            Valorile sunt extrase direct din XML-urile publicate oficial si transformate intr-un
-            format usor de verificat si comparat.
+            Valorile sunt extrase direct din XML-urile publicate oficial și transformate într-un
+            format ușor de verificat și comparat.
           </p>
         </article>
 
         <article className="panel landing-pillar reveal-on-load">
-          <h3 className="panel-title">Comparatii rapide pe ani</h3>
+          <h3 className="panel-title">Comparații rapide pe ani</h3>
           <p className="landing-copy">
-            Vezi imediat variatii 2025-2026, ierarhii pe ministere, programe si distributia
+            Vezi imediat variații 2025-2026, ierarhii pe ministere, programe și distribuția
             principalelor capitole bugetare.
           </p>
         </article>
 
         <article className="panel landing-pillar reveal-on-load">
-          <h3 className="panel-title">Focus pe investitii publice</h3>
+          <h3 className="panel-title">Focus pe investiții publice</h3>
           <p className="landing-copy">
-            Obiectivele de investitii sunt grupate si filtrabile, pentru a intelege unde se
+            Obiectivele de investiții sunt grupate si filtrabile, pentru a intelege unde se
             concentreaza programarea financiara.
           </p>
         </article>

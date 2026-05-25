@@ -40,6 +40,8 @@ export const ComparatorPage = () => {
   const [comboQuery, setComboQuery] = useState("");
   const [comboOpen, setComboOpen] = useState(false);
 
+  const isNarrow = typeof window !== 'undefined' && window.innerWidth < 640;
+
   // URL is the single source of truth for selection
   const selectedCods = (searchParams.get("cods") ?? "")
     .split(",")
@@ -191,12 +193,15 @@ export const ComparatorPage = () => {
             <ResponsiveContainer width="100%" height="100%">
               <LineChart
                 data={chartData}
-                margin={{ left: 26, right: 12, top: 12, bottom: 40 }}
+                margin={isNarrow
+                  ? { left: 4, right: 4, top: 12, bottom: 40 }
+                  : { left: 26, right: 12, top: 12, bottom: 40 }
+                }
               >
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
                 <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
                 <YAxis
-                  width={90}
+                  width={isNarrow ? 45 : 90}
                   tickMargin={8}
                   tick={{ fill: "#f7f7f7" }}
                   axisLine={{ stroke: "#4e4f66" }}

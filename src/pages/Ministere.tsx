@@ -191,7 +191,7 @@ export const MinisterePage = () => {
               <span className="mini-chip">
                 Evolutie {availableYears[0] ?? "-"}-{availableYears[availableYears.length - 1] ?? "-"}
               </span>
-              <span className="mini-chip">Top {featuredMinistries.length} institutii in prim-plan</span>
+              <span className="mini-chip">Top {featuredMinistries.length} instituții în prim-plan</span>
             </div>
           </div>
 
@@ -202,7 +202,7 @@ export const MinisterePage = () => {
             </article>
 
             <article className={`ministere-hero-metric ministere-growth-card ministere-growth-${growthTone}`}>
-              <p className="muted">Crestere agregata vs 2025</p>
+              <p className="muted">Crestere agregată vs 2025</p>
               <p className="ministere-growth-value">{growthEmoji} {deltaTotalLabel}</p>
               <p className="muted ministere-growth-old">
                 de la {formatMld(total2025)} la {formatMld(total2026)}
@@ -210,7 +210,7 @@ export const MinisterePage = () => {
             </article>
 
             <article className="ministere-hero-metric leader-card">
-              <p className="muted">Lider dupa alocare 2026</p>
+              <p className="muted">Lider după alocare 2026</p>
               <p className="ministere-hero-leader">{topMinister ? topMinister.nume : "-"}</p>
               <p className="muted">{topMinister ? formatMld(topMinister["2026"]) : "-"}</p>
             </article>
@@ -218,15 +218,15 @@ export const MinisterePage = () => {
         </div>
       </section>
 
-      <section className="panel">
+      <section className="panel" style={{ minWidth: 0, overflow: 'hidden' }}>
         <div className="panel-header-row stack-mobile">
           <div>
-            <h2 className="panel-title">Radar pe institutii</h2>
-            <p className="muted">Top 8 institutii dupa alocarea 2026, comparativ cu 2025</p>
+            <h2 className="panel-title">Radar pe instituții</h2>
+            <p className="muted">Top 8 instituții după alocarea 2026, comparativ cu 2025</p>
           </div>
         </div>
-        <div className="chart-wrap tall chart-stable">
-          <ResponsiveContainer width="100%" height="100%">
+        <div className="chart-wrap tall chart-stable" style={{ minWidth: 0, width: "100%" }}>
+          <ResponsiveContainer width="100%" height="100%" minWidth={0}>
             <RadarChart data={radarData} outerRadius="72%">
               <PolarGrid stroke="rgba(255,255,255,0.18)" />
               <PolarAngleAxis dataKey="institutie" tick={{ fill: "#e5e7eb", fontSize: 11 }} />

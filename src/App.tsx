@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 import { LandingPage } from "./pages/Landing";
 import { OverviewPage } from "./pages/Overview";
@@ -21,6 +22,7 @@ const navItems = [
 ];
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="app-shell">
@@ -44,6 +46,34 @@ function App() {
             </NavLink>
           ))}
         </nav>
+
+        <button
+          type="button"
+          className="hamburger-btn"
+          aria-label={menuOpen ? "Închide meniu" : "Deschide meniu"}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((o) => !o)}
+        >
+          {menuOpen ? "✕" : "☰"}
+        </button>
+
+        {menuOpen && (
+          <nav className="mobile-menu" aria-label="Meniu mobil">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                end={item.to === "/"}
+                className={({ isActive }) =>
+                  isActive ? "mobile-menu-link mobile-menu-link--active" : "mobile-menu-link"
+                }
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </NavLink>
+            ))}
+          </nav>
+        )}
       </header>
 
       <main className="page-wrap">
