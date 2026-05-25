@@ -27,7 +27,7 @@ function App() {
       <header className="topbar">
         <div className="brand-wrap">
           <p className="brand-kicker">bugetul-romaniei.com</p>
-          <h1 className="brand-title">Bugetul Romaniei</h1>
+          <h1 className="brand-title">Bugetul României</h1>
         </div>
 
         <nav className="topnav" aria-label="Navigatie principala">
@@ -67,8 +67,8 @@ function App() {
           <div>
             <p className="site-footer-brand">bugetul-romaniei.com</p>
             <p className="landing-copy">
-              Proiect civic independent care transforma fisierele XML bugetare oficiale in
-              vizualizari clare pentru comparatii rapide intre ani, ministere si investitii.
+              Proiect civic independent care transformă fișierele XML bugetare oficiale în
+              vizualizări clare pentru comparații rapide între ani, ministere și investiții.
             </p>
           </div>
 
@@ -147,7 +147,7 @@ function App() {
         </div>
 
         <p className="site-footer-disclaimer">
-          Bugetul Romaniei este un proiect civic independent, neafiliat cu ANAF sau Ministerul
+          Bugetul României este un proiect civic independent, neafiliat cu ANAF sau Ministerul
           Finantelor. Datele sunt preluate din surse oficiale publice (XML).
         </p>
 

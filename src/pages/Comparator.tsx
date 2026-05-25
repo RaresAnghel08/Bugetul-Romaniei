@@ -191,7 +191,7 @@ export const ComparatorPage = () => {
             <ResponsiveContainer width="100%" height="100%">
               <LineChart
                 data={chartData}
-                margin={{ left: 26, right: 12, top: 12, bottom: 8 }}
+                margin={{ left: 26, right: 12, top: 12, bottom: 40 }}
               >
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
                 <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />

@@ -160,9 +160,9 @@ export const MinisterePage = () => {
   };
 
   const seoPath = "/ministere";
-  const seoTitle = "Ministere Romania | Bugetul Romaniei";
+  const seoTitle = "Ministere Romania | Bugetul României";
   const seoDescription =
-    "Compara bugetele ministerelor pentru 2025 si 2026, vezi top institutii, variatii procentuale si evolutie istorica.";
+    "Compară bugetele ministerelor pentru 2025 și 2026, vezi top instituții, variații procentuale și evoluție istorică.";
   const seoJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -181,11 +181,11 @@ export const MinisterePage = () => {
         <div className="ministere-hero-grid">
           <div>
             <p className="ministere-kicker">Radar pe institutii</p>
-            <h2 className="ministere-title">Ministere in prim-plan</h2>
+            <h2 className="ministere-title">Ministere în prim-plan</h2>
             <p className="landing-copy">
               Panorama executiei bugetare pentru institutiile-cheie, cu evolutie istorica din
               {" "}
-              {availableYears[0] ?? 2015} pana in prezent.
+              {availableYears[0] ?? 2015} până în prezent.
             </p>
             <div className="ministere-hero-chips">
               <span className="mini-chip">

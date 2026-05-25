@@ -50,7 +50,7 @@ $brushMuted = New-Object System.Drawing.SolidBrush([System.Drawing.ColorTranslat
 $brushDark = New-Object System.Drawing.SolidBrush([System.Drawing.ColorTranslator]::FromHtml("#042226"))
 
 $graphics.DrawString("BUGETUL-ROMANIEI.RO", $fontSmall, $brushCyan, 130, 162)
-$graphics.DrawString("Bugetul Romaniei", $fontTitle, $brushWhite, 130, 220)
+$graphics.DrawString("Bugetul României", $fontTitle, $brushWhite, 130, 220)
 $graphics.DrawString("Dashboard civic pentru transparenta bugetara", $fontLead, $brushMuted, 130, 330)
 $graphics.DrawString("Overview | Ministere | Investitii", $fontPill, $brushDark, 160, 414)
 
