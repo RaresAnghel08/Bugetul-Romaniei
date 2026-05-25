@@ -158,9 +158,9 @@ export const InvestitiiPage = () => {
   };
 
   const seoPath = "/investitii";
-  const seoTitle = "Investitii Publice | Bugetul Romaniei";
+  const seoTitle = "Investitii Publice | Bugetul României";
   const seoDescription =
-    "Analizeaza investitiile publice pe ministere si surse de finantare, cu totaluri 2026, variatii vs 2025 si distributia obiectivelor.";
+    "Analizează investițiile publice pe ministere și surse de finanțare, cu totaluri 2026, variații vs 2025 și distribuția obiectivelor.";
   const seoJsonLd = {
     "@context": "https://schema.org",
     "@type": "Dataset",
@@ -222,7 +222,7 @@ export const InvestitiiPage = () => {
 
         <div className="investitii-kpi-row">
           <article className="investitii-mini-kpi">
-            <p className="muted">Ministere in selectie</p>
+            <p className="muted">Ministere în selecție</p>
             <p className="investitii-kpi-value">{grouped.length}</p>
           </article>
           <article className="investitii-mini-kpi">
@@ -230,7 +230,7 @@ export const InvestitiiPage = () => {
             <p className="investitii-kpi-value">{filtered.length}</p>
           </article>
           <article className="investitii-mini-kpi">
-            <p className="muted">Cheltuit pana in 2024</p>
+            <p className="muted">Cheltuit până în 2024</p>
             <p className="investitii-kpi-value">{formatMldAlways(totalCheltuit2024)}</p>
           </article>
           <article className={`investitii-mini-kpi investitii-mini-kpi-${growthTone}`}>

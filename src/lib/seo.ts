@@ -5,7 +5,7 @@ export const SITE_URL = (configuredSiteUrl || runtimeOrigin || "https://bugetul-
   /\/+$/,
   ""
 );
-export const SITE_NAME = "Bugetul Romaniei";
+export const SITE_NAME = "Bugetul României";
 
 export const toAbsoluteSiteUrl = (path: string): string => {
   if (/^https?:\/\//i.test(path)) {

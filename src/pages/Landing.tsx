@@ -38,7 +38,7 @@ export const LandingPage = () => {
   );
 
   const seoDescription =
-    "Dashboard civic pentru analiza bugetului Romaniei 2025-2026: overview national, ministere, investitii si comparatii rapide pe date oficiale.";
+    "Dashboard civic pentru analiza bugetului României 2025-2026: overview național, ministere, investiții și comparații rapide pe date oficiale.";
 
   const seoJsonLd = [
     {
@@ -57,7 +57,7 @@ export const LandingPage = () => {
     {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Bugetul Romaniei 2025-2026",
+      name: "Bugetul României 2025-2026",
       description: "Date bugetare agregate din surse publice oficiale, transformate in vizualizari interactive.",
       inLanguage: "ro-RO",
       url: toAbsoluteSiteUrl("/"),
@@ -72,7 +72,7 @@ export const LandingPage = () => {
   return (
     <section className="page-grid">
       <Seo
-        title="Bugetul Romaniei | Dashboard Civic Bugetar 2025-2026"
+        title="Bugetul României | Dashboard Civic Bugetar 2025-2026"
         description={seoDescription}
         path="/"
         jsonLd={seoJsonLd}
@@ -81,11 +81,11 @@ export const LandingPage = () => {
       <section className="landing-hero panel reveal-on-load">
         <div className="landing-hero-grid">
           <div>
-            <p className="landing-kicker">Bugetul Romaniei 2025-2026</p>
-            <h2 className="landing-title">Unde merg banii publici, intr-un tablou clar, explorabil si deschis.</h2>
+            <p className="landing-kicker">Bugetul României 2025-2026</p>
+            <h2 className="landing-title">Unde merg banii publici, într-un tablou clar, explorabil și deschis.</h2>
             <p className="landing-lead">
-              Proiect civic care transforma fisiere XML bugetare in vizualizari accesibile: ministere,
-              programe si investitii, pentru comparatii rapide si transparente.
+              Proiect civic care transformă fișiere XML bugetare în vizualizări accesibile: ministere,
+              programe și investiții, pentru comparații rapide și transparente.
             </p>
 
             <div className="landing-actions">
@@ -93,10 +93,10 @@ export const LandingPage = () => {
                 Vezi overview
               </Link>
               <Link className="ghost-btn inline-btn" to="/ministere">
-                Exploreaza ministere
+                Explorează ministere
               </Link>
               <Link className="ghost-btn inline-btn" to="/investitii">
-                Analizeaza investitii
+                Analizează investiții
               </Link>
             </div>
 
@@ -109,7 +109,7 @@ export const LandingPage = () => {
               </div>
               <div className="landing-highlight">
                 <p className="muted">Seturi de date locale</p>
-                <p className="landing-highlight-title">Ministere, programe, investitii, overview</p>
+                <p className="landing-highlight-title">Ministere, programe, investiții, overview</p>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ export const LandingPage = () => {
             </article>
 
             <article className="landing-hero-kpi-card">
-              <p className="landing-kpi-label">Program investitii 2026</p>
+              <p className="landing-kpi-label">Program investiții 2026</p>
               <p className="landing-hero-kpi-value">{formatMld(totalInvestitii2026)}</p>
             </article>
 
@@ -140,25 +140,25 @@ export const LandingPage = () => {
 
       <section className="landing-pillars-grid">
         <article className="panel landing-pillar reveal-on-load">
-          <h3 className="panel-title">Date oficiale, fara opacitate</h3>
+          <h3 className="panel-title">Date oficiale, fără opacitate</h3>
           <p className="landing-copy">
-            Valorile sunt extrase direct din XML-urile publicate oficial si transformate intr-un
-            format usor de verificat si comparat.
+            Valorile sunt extrase direct din XML-urile publicate oficial și transformate într-un
+            format ușor de verificat și comparat.
           </p>
         </article>
 
         <article className="panel landing-pillar reveal-on-load">
-          <h3 className="panel-title">Comparatii rapide pe ani</h3>
+          <h3 className="panel-title">Comparații rapide pe ani</h3>
           <p className="landing-copy">
-            Vezi imediat variatii 2025-2026, ierarhii pe ministere, programe si distributia
+            Vezi imediat variații 2025-2026, ierarhii pe ministere, programe și distribuția
             principalelor capitole bugetare.
           </p>
         </article>
 
         <article className="panel landing-pillar reveal-on-load">
-          <h3 className="panel-title">Focus pe investitii publice</h3>
+          <h3 className="panel-title">Focus pe investiții publice</h3>
           <p className="landing-copy">
-            Obiectivele de investitii sunt grupate si filtrabile, pentru a intelege unde se
+            Obiectivele de investiții sunt grupate si filtrabile, pentru a intelege unde se
             concentreaza programarea financiara.
           </p>
         </article>
@@ -167,8 +167,8 @@ export const LandingPage = () => {
       <section className="panel landing-info">
         <h3 className="panel-title">Cum este construit proiectul</h3>
         <p className="landing-copy">
-          Datele provin din anexele XML oficiale si sunt procesate local intr-un pipeline Python,
-          apoi servite in frontend-ul React pentru cautare, comparatii pe ani si drill-down pe ministere.
+          Datele provin din anexele XML oficiale și sunt procesate local într-un pipeline Python,
+          apoi servite în frontend-ul React pentru căutare, comparații pe ani și drill-down pe ministere.
         </p>
         <p className="landing-copy">
           Datele provin din{" "}

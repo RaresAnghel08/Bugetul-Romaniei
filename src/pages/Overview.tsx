@@ -35,6 +35,9 @@ const ministere = ministereJson as MinisterRecord[];
 const guverne = guverneJson as GuvData[];
 const pib = pibJson as unknown as Record<string, number>;
 
+const getGovForYear = (year: string): string =>
+  guverne.find((g) => g.ani.includes(year))?.premier ?? "";
+
 export const OverviewPage = () => {
   const [moneda, setMoneda] = useState<Moneda>("RON");
   const [selectedGuvern, setSelectedGuvern] = useState<string | null>(null);
@@ -50,22 +53,22 @@ export const OverviewPage = () => {
   const latest = latestYear ? overview[String(latestYear)] : undefined;
   const previous = previousYear ? overview[String(previousYear)] : undefined;
 
-  const seoTitle = "Overview Bugetar Romania | Bugetul Romaniei";
+  const seoTitle = "Overview Bugetar Romania | Bugetul României";
   const seoDescription =
-    "Vezi evolutia veniturilor, cheltuielilor si deficitului bugetar din Romania, cu comparatii anuale si top variatii pe ministere.";
+    "Vezi evoluția veniturilor, cheltuielilor și deficitului bugetar din România, cu comparații anuale și top variații pe ministere.";
   const seoPath = "/overview";
 
   if (!latestYear || !latest) {
     return (
       <section className="panel">
         <Seo
-          title="Overview indisponibil | Bugetul Romaniei"
+          title="Overview indisponibil | Bugetul României"
           description="Datele pentru pagina de overview bugetar nu sunt disponibile momentan."
           path={seoPath}
           noIndex
         />
         <h2 className="panel-title">Overview indisponibil</h2>
-        <p>Nu exista date suficiente pentru a afisa evolutia bugetara.</p>
+        <p>Nu există date suficiente pentru a afișa evoluția bugetară.</p>
       </section>
     );
   }
@@ -169,7 +172,7 @@ export const OverviewPage = () => {
         <p className="ministere-kicker">Panorama bugetara</p>
         <h2 className="ministere-title">Overview {years[0]}-{latestYear}</h2>
         <p className="landing-copy">
-          Evolutie multi-an pentru venituri, cheltuieli si deficit, cu focalizare pe anul curent.
+          Evoluție multi-an pentru venituri, cheltuieli și deficit, cu focalizare pe anul curent.
         </p>
       </section>
 
@@ -273,6 +276,10 @@ export const OverviewPage = () => {
                 tickFormatter={(v) => formatAxisValuta(v, moneda)}
               />
               <Tooltip
+                labelFormatter={(label) => {
+                  const gov = getGovForYear(String(label));
+                  return gov ? `${label} — ${gov}` : String(label);
+                }}
                 formatter={(value) => [formatMldValuta(Number(value), moneda)]}
                 contentStyle={{
                   background: "#101226",
@@ -339,6 +346,10 @@ export const OverviewPage = () => {
                 tickFormatter={(v) => formatAxisValuta(v, moneda)}
               />
               <Tooltip
+                labelFormatter={(label) => {
+                  const gov = getGovForYear(String(label));
+                  return gov ? `${label} — ${gov}` : String(label);
+                }}
                 formatter={(value) => [formatMldValuta(Number(value), moneda)]}
                 contentStyle={{
                   background: "#101226",
@@ -347,6 +358,25 @@ export const OverviewPage = () => {
                   color: "#fff",
                 }}
               />
+              {!selectedGuvern &&
+                guverne.map((g) => (
+                  <ReferenceArea
+                    key={g.id}
+                    x1={g.ani[0]}
+                    x2={g.ani[g.ani.length - 1]}
+                    fill={g.culoare}
+                    fillOpacity={0.07}
+                    stroke={g.culoare}
+                    strokeOpacity={0.25}
+                    label={{
+                      value: g.premier.split(" ").at(-1) ?? g.premier,
+                      position: "insideTop",
+                      fill: g.culoare,
+                      fontSize: 10,
+                      opacity: 0.8,
+                    }}
+                  />
+                ))}
               <Bar dataKey="deficit" name="Deficit" fill="#ef4444" radius={[8, 8, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
@@ -368,6 +398,10 @@ export const OverviewPage = () => {
                 tickFormatter={(v) => `${Math.abs(v).toFixed(1)}%`}
               />
               <Tooltip
+                labelFormatter={(label) => {
+                  const gov = getGovForYear(String(label));
+                  return gov ? `${label} — ${gov}` : String(label);
+                }}
                 formatter={(value) => [`${Math.abs(Number(value)).toFixed(2)}%`, "Deficit / PIB"]}
                 contentStyle={{
                   background: "#101226",
@@ -376,6 +410,25 @@ export const OverviewPage = () => {
                   color: "#fff",
                 }}
               />
+              {!selectedGuvern &&
+                guverne.map((g) => (
+                  <ReferenceArea
+                    key={g.id}
+                    x1={g.ani[0]}
+                    x2={g.ani[g.ani.length - 1]}
+                    fill={g.culoare}
+                    fillOpacity={0.07}
+                    stroke={g.culoare}
+                    strokeOpacity={0.25}
+                    label={{
+                      value: g.premier.split(" ").at(-1) ?? g.premier,
+                      position: "insideTop",
+                      fill: g.culoare,
+                      fontSize: 10,
+                      opacity: 0.8,
+                    }}
+                  />
+                ))}
               <ReferenceArea y1={-3} y2={0} fill="#ef4444" fillOpacity={0.08} label={{ value: "Maastricht -3%", position: "insideBottomRight", fill: "#ef4444", fontSize: 10 }} />
               <Line
                 type="monotone"
@@ -396,10 +449,10 @@ export const OverviewPage = () => {
       </section>
 
       <section className="panel dual-list-panel">
-        <h2 className="panel-title">Castigatori si Pierzatori {latestYear}</h2>
+        <h2 className="panel-title">Câștigători și Pierzători {latestYear}</h2>
         <div className="dual-list">
           <div>
-            <h3 className="list-title positive">Top 5 cresteri</h3>
+            <h3 className="list-title positive">Top 5 creșteri</h3>
             <ul className="plain-list">
               {crescatori.map((minister) => (
                 <li key={`up-${minister.cod}`} className="list-row">
@@ -411,7 +464,7 @@ export const OverviewPage = () => {
           </div>
 
           <div>
-            <h3 className="list-title negative">Top 5 scaderi</h3>
+            <h3 className="list-title negative">Top 5 scăderi</h3>
             <ul className="plain-list">
               {scaderi.map((minister) => (
                 <li key={`down-${minister.cod}`} className="list-row">

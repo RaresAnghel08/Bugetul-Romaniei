@@ -7,27 +7,27 @@ interface RouteMeta {
 
 const routeMeta: Record<string, RouteMeta> = {
   "/": {
-    title: "Bugetul Romaniei | Dashboard Civic Bugetar 2025-2026",
+    title: "Bugetul României | Dashboard Civic Bugetar 2025-2026",
     description:
-      "Dashboard civic independent pentru analiza bugetului Romaniei: overview national, ministere, investitii si comparatii rapide intre ani pe date oficiale.",
+      "Dashboard civic independent pentru analiza bugetului Romaniei: overview national, ministere, investiții si comparatii rapide intre ani pe date oficiale.",
   },
   "/overview": {
-    title: "Overview Bugetar 2025-2026 | Bugetul Romaniei",
+    title: "Overview Bugetar 2025-2026 | Bugetul României",
     description:
       "Vizualizare comparativa a bugetului national 2025-2026: deficit, cheltuieli si venituri pe date oficiale ale Ministerului Finantelor.",
   },
   "/ministere": {
-    title: "Ministere | Bugetul Romaniei",
+    title: "Ministere | Bugetul României",
     description:
       "Bugetele tuturor ministerelor din Romania pentru 2025-2026, sortabile si filtrabile dupa domeniu si suma alocata.",
   },
   "/investitii": {
-    title: "Investitii Publice | Bugetul Romaniei",
+    title: "Investiții Publice | Bugetul României",
     description:
-      "Proiectele de investitii publice ale Romaniei 2025-2026 din datele oficiale ale Ministerului Finantelor.",
+      "Proiectele de investiții publice ale Romaniei 2025-2026 din datele oficiale ale Ministerului Finantelor.",
   },
   "/joc": {
-    title: "Ce Minister Esti? | Bugetul Romaniei",
+    title: "Ce Minister Esti? | Bugetul României",
     description:
       "Ghiceste bugetul ministerelor si afla ce minister esti tu in jocul civic al Bugetului Romaniei.",
   },

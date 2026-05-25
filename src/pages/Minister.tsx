@@ -49,7 +49,7 @@ export const MinisterPage = () => {
     return (
       <section className="panel">
         <Seo
-          title="Minister inexistent | Bugetul Romaniei"
+          title="Minister inexistent | Bugetul României"
           description="Ministerul cautat nu exista in setul de date local disponibil."
           path={seoPath}
           noIndex
@@ -159,7 +159,7 @@ export const MinisterPage = () => {
     url: toAbsoluteSiteUrl(seoPath),
     parentOrganization: {
       "@type": "Organization",
-      name: "Bugetul Romaniei",
+      name: "Bugetul României",
       url: toAbsoluteSiteUrl("/"),
     },
   };

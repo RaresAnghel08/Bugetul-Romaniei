@@ -4,38 +4,38 @@ export const TermeniPage = () => {
   return (
     <section className="page-grid">
       <Seo
-        title="Termeni si Conditii | Bugetul Romaniei"
-        description="Termenii de utilizare ai platformei civice Bugetul Romaniei."
+        title="Termeni și Condiții | Bugetul României"
+        description="Termenii de utilizare ai platformei civice Bugetul României."
         path="/termeni"
         noIndex
       />
 
       <section className="panel legal-hero reveal-on-load">
         <p className="ministere-kicker">Document legal</p>
-        <h2 className="ministere-title">Termeni si Conditii</h2>
+        <h2 className="ministere-title">Termeni și Condiții</h2>
         <p className="landing-copy">
-          Aceasta platforma este oferita exclusiv in scop demonstrativ, pentru transparenta
-          datelor publice si explorare civica.
+          Această platformă este oferită exclusiv în scop demonstrativ, pentru transparența
+          datelor publice și explorare civică.
         </p>
       </section>
 
       <section className="panel legal-content">
         <h3 className="panel-title">1. Natura serviciului</h3>
         <p>
-          Acest site este un proiect demo si nu este afiliat cu ANAF sau Ministerul
-          Finantelor. Datele sunt preluate din API-urile publice ANAF.
+          Acest site este un proiect demo și nu este afiliat cu ANAF sau Ministerul
+          Finanțelor. Datele sunt preluate din API-urile publice ANAF.
         </p>
 
         <h3 className="panel-title">2. Fara garantie oficiala</h3>
         <p>
-          Informatiile prezentate au caracter orientativ. Pentru validari oficiale,
-          consultati sursele institutionale publicate pe canalele autoritatilor competente.
+          Informațiile prezentate au caracter orientativ. Pentru validări oficiale,
+          consultați sursele instituționale publicate pe canalele autorităților competente.
         </p>
 
         <h3 className="panel-title">3. Utilizare permisa</h3>
         <p>
-          Puteti utiliza liber datele si vizualizarile pentru analiza, educatie si informare,
-          cu mentiunea ca acest produs nu reprezinta un serviciu guvernamental oficial.
+          Puteți utiliza liber datele și vizualizările pentru analiză, educație și informare,
+          cu mențiunea că acest produs nu reprezintă un serviciu guvernamental oficial.
         </p>
 
         <h3 className="panel-title">4. Contact</h3>

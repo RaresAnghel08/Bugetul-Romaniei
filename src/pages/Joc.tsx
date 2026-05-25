@@ -77,7 +77,7 @@ function getScoreTitle(score: number): string {
 }
 
 function shortName(name: string): string {
-  const stop = new Set(["si", "al", "a", "de", "in", "din", "cu", "la", "ale", "pentru", "privind"]);
+  const stop = new Set(["si", "și", "al", "a", "de", "in", "în", "din", "cu", "la", "ale", "pentru", "privind"]);
   const words = name.split(/[\s,/-]+/).filter((w) => w.length > 2 && !stop.has(w.toLowerCase()));
   return words.slice(0, 2).map((w) => w.toUpperCase()).join(" ");
 }
@@ -105,9 +105,9 @@ export function JocPage() {
   const countedRef = useRef(false);
   const finalScoreRef = useRef(0);
 
-  const seoTitle = "Bugetul Romaniei | Ce Minister Esti? - Mini-joc";
+  const seoTitle = "Bugetul României | Ce Minister Esti? - Mini-joc";
   const seoDescription =
-    "Joaca 'Ce Minister Esti?' — ghiceste daca bugetul ministerului din dreapta este mai mare sau mai mic decat cel din stanga. Clasament Top 10 si highscore local.";
+    "Joacă 'Ce Minister Ești?' — ghicește dacă bugetul ministerului din dreapta este mai mare sau mai mic decât cel din stânga. Clasament Top 10 și highscore local.";
   const seoPath = "/joc";
   const seoJsonLd = [
     {
@@ -235,8 +235,8 @@ export function JocPage() {
           <p className="joc-menu-kicker">Mini-joc bugetar</p>
           <h1 className="joc-menu-title">Ce Minister Esti?</h1>
           <p className="joc-menu-desc">
-            Ghiceste daca bugetul ministerului din dreapta este <strong>mai mare</strong> sau{" "}
-            <strong>mai mic</strong> decat cel din stanga. Cat de departe ajungi?
+            Ghicește dacă bugetul ministerului din dreapta este <strong>mai mare</strong> sau{" "}
+            <strong>mai mic</strong> decât cel din stânga. Cât de departe ajungi?
           </p>
           <div className="joc-menu-btns">
             <button className="joc-primary-btn" onClick={startGame}>
@@ -266,7 +266,7 @@ export function JocPage() {
           {loadingBoard ? (
             <p className="joc-lb-loading">Se incarca...</p>
           ) : leaderboard.length === 0 ? (
-            <p className="joc-lb-loading">Niciun scor inregistrat inca. Fii primul!</p>
+            <p className="joc-lb-loading">Niciun scor înregistrat încă. Fii primul!</p>
           ) : (
             <table className="joc-lb-table">
               <thead>
@@ -354,12 +354,12 @@ export function JocPage() {
           )}
           {submitStatus === "skipped" && (
             <p className="joc-submit-msg joc-submit-muted">
-              Scorul nu intra in Top 10 sau ai deja unul mai bun.
+              Scorul nu intră în Top 10 sau ai deja unul mai bun.
             </p>
           )}
           {submitStatus === "error" && (
             <p className="joc-submit-msg joc-submit-error">
-              Eroare la salvare. Incearca din nou.
+              Eroare la salvare. Încearcă din nou.
             </p>
           )}
 
