@@ -323,12 +323,14 @@ export const MinisterPage = () => {
         </div>
       </section>
 
-      <AISummary minister={minister} topCapitole={topCapitole} year={2026} />
+      <div style={{ minWidth: 0, overflow: 'hidden', wordBreak: 'break-word' }}>
+        <AISummary minister={minister} topCapitole={topCapitole} year={2026} />
+      </div>
 
       <section className="panel">
         <h3 className="panel-title">Programe asociate</h3>
         <div className="table-wrap">
-          <table className="data-table compact">
+          <table className="data-table compact programe-table">
             <thead>
               <tr>
                 <th>Program</th>
