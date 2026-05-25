@@ -6,7 +6,7 @@ import investitiiJson from "../../data/investitii.json";
 import { Seo } from "../components/Seo";
 import { formatMld } from "../lib/format";
 import { SITE_NAME, toAbsoluteSiteUrl } from "../lib/seo";
-import { getVisitorSnapshotFromStorage, refreshVisitorSnapshot } from "../lib/visitorCounter";
+import { getCount, incrementAndGetCount } from "../lib/counter";
 import type { InvestitieRecord, MinisterRecord, OverviewData } from "../types";
 
 const overview = overviewJson as OverviewData;
@@ -14,24 +14,18 @@ const ministere = ministereJson as MinisterRecord[];
 const investitii = investitiiJson as InvestitieRecord[];
 
 export const LandingPage = () => {
-  const [totalVisits, setTotalVisits] = useState<number | null>(
-    () => getVisitorSnapshotFromStorage().pageviews
-  );
+  const [totalVisits, setTotalVisits] = useState<number | null>(null);
 
   useEffect(() => {
-    let mounted = true;
-
-    const load = async () => {
-      const snapshot = await refreshVisitorSnapshot();
-      if (mounted) {
-        setTotalVisits(snapshot.pageviews);
-      }
-    };
-
-    void load();
-    return () => {
-      mounted = false;
-    };
+    const key = 'counter_incremented';
+    if (sessionStorage.getItem(key)) {
+      getCount().then(setTotalVisits);
+      return;
+    }
+    incrementAndGetCount().then(count => {
+      setTotalVisits(count);
+      sessionStorage.setItem(key, '1');
+    });
   }, []);
 
   const totalMinistere2026 = ministere.reduce((sum, row) => sum + (row["2026"] ?? 0), 0);

@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 import { LandingPage } from "./pages/Landing";
 import { OverviewPage } from "./pages/Overview";
@@ -11,7 +10,6 @@ import { ConfidentialitatePage } from "./pages/Confidentialitate";
 import { ComparatorPage } from "./pages/Comparator";
 import { DesprePage } from "./pages/Despre";
 import { NotFoundPage } from "./pages/NotFound";
-import { trackSiteVisit } from "./lib/visitorCounter";
 
 const navItems = [
   { to: "/", label: "Acasa" },
@@ -23,9 +21,6 @@ const navItems = [
 ];
 
 function App() {
-  useEffect(() => {
-    void trackSiteVisit();
-  }, []);
 
   return (
     <div className="app-shell">
