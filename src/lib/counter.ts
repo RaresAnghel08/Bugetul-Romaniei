@@ -17,6 +17,6 @@ export async function getCount(): Promise<number> {
     .select('count')
     .eq('key', 'visitors')
     .single();
-  if (error) return 3776;
+  if (error) return 7761;
   return (data.count as number);
 }
