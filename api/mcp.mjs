@@ -34,7 +34,7 @@ export default async function handler(req, res) {
    * stream-ul SSE deschis de GET ar tine functia ocupata pana la timeout, fara sa transmita nimic.
    * Raspunsul 405 este permis de specificatie si spune clientului sa foloseasca doar POST.
    */
-  if (req.method === "GET" || req.method === "DELETE") {
+  if (req.method === "GET" || req.method === "HEAD" || req.method === "DELETE") {
     res.statusCode = 405;
     res.setHeader("Allow", "POST, OPTIONS");
     res.setHeader("Content-Type", "application/json");
