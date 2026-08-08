@@ -11,6 +11,7 @@ Dashboard civic pentru analiza bugetului public 2025-2026, construit pe date XML
 	- Ministere
 	- Detaliu minister
 	- Investitii
+- server MCP in `mcp/`, care expune aceleasi date catre asistenti AI
 
 ## Cerinte
 
@@ -73,3 +74,31 @@ npm run counter:batch -- --n 3 --mode both --delay-ms 120
 ```bash
 npm run preview
 ```
+
+## Server MCP
+
+Proiectul expune datele din `data/` si catre asistenti AI, printr-un server Model Context Protocol:
+clasamente de ministere, fise de ordonator, programe, investitii si context macro, cu conversie
+RON/EUR/USD.
+
+Endpoint public, gazduit ca functie Vercel:
+
+```
+https://bugetul-romaniei.com/api/mcp
+```
+
+Se adauga in claude.ai sau Claude Desktop din Settings → Connectors → Add custom connector, sau in
+Claude Code cu:
+
+```bash
+claude mcp add --transport http --scope user bugetul-romaniei https://bugetul-romaniei.com/api/mcp
+```
+
+Pentru dezvoltare locala exista si varianta pe stdio, configurata in `.mcp.json`:
+
+```bash
+npm run mcp        # porneste serverul pe stdio
+npm run mcp:test   # teste end-to-end, pe stdio si pe HTTP
+```
+
+Detalii complete: `mcp/README.md`.
