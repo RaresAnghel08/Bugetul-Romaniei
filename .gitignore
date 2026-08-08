@@ -1,7 +1,10 @@
 .env
 !README.md
 *.md
+!mcp/README.md
 node_modules
 dist
 build
 *.log
+.vercel
+.env*
