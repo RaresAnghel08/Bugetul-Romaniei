@@ -6,7 +6,7 @@ export async function incrementAndGetCount(): Promise<number> {
   });
   if (error) {
     console.error('Counter error:', error);
-    return 3776;
+    return 7761;
   }
   return data as number;
 }
@@ -17,6 +17,6 @@ export async function getCount(): Promise<number> {
     .select('count')
     .eq('key', 'visitors')
     .single();
-  if (error) return 3776;
+  if (error) return 7761;
   return (data.count as number);
 }
