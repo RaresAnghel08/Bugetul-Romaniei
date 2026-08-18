@@ -1,47 +1,36 @@
 import { Seo } from "../components/Seo";
+import { useLocale } from "../i18n/LocaleContext";
 
 export const TermeniPage = () => {
+  const { t, path } = useLocale();
+
   return (
     <section className="page-grid">
       <Seo
-        title="Termeni și Condiții | Bugetul României"
-        description="Termenii de utilizare ai platformei civice Bugetul României."
-        path="/termeni"
+        title={t.termeni.seoTitle}
+        description={t.termeni.seoDescription}
+        path={path("/termeni")}
         noIndex
       />
 
       <section className="panel legal-hero reveal-on-load">
-        <p className="ministere-kicker">Document legal</p>
-        <h2 className="ministere-title">Termeni și Condiții</h2>
-        <p className="landing-copy">
-          Această platformă este oferită exclusiv în scop demonstrativ, pentru transparența
-          datelor publice și explorare civică.
-        </p>
+        <p className="ministere-kicker">{t.termeni.kicker}</p>
+        <h2 className="ministere-title">{t.termeni.title}</h2>
+        <p className="landing-copy">{t.termeni.lead}</p>
       </section>
 
       <section className="panel legal-content">
-        <h3 className="panel-title">1. Natura serviciului</h3>
-        <p>
-          Acest site este un proiect demo și nu este afiliat cu ANAF sau Ministerul
-          Finanțelor. Datele sunt preluate din API-urile publice ANAF.
-        </p>
+        <h3 className="panel-title">{t.termeni.s1Title}</h3>
+        <p>{t.termeni.s1P}</p>
 
-        <h3 className="panel-title">2. Fara garantie oficiala</h3>
-        <p>
-          Informațiile prezentate au caracter orientativ. Pentru validări oficiale,
-          consultați sursele instituționale publicate pe canalele autorităților competente.
-        </p>
+        <h3 className="panel-title">{t.termeni.s2Title}</h3>
+        <p>{t.termeni.s2P}</p>
 
-        <h3 className="panel-title">3. Utilizare permisa</h3>
-        <p>
-          Puteți utiliza liber datele și vizualizările pentru analiză, educație și informare,
-          cu mențiunea că acest produs nu reprezintă un serviciu guvernamental oficial.
-        </p>
+        <h3 className="panel-title">{t.termeni.s3Title}</h3>
+        <p>{t.termeni.s3P}</p>
 
-        <h3 className="panel-title">4. Contact</h3>
-        <p>
-          Pentru sugestii sau corectii, folositi datele de contact publicate in repository.
-        </p>
+        <h3 className="panel-title">{t.termeni.s4Title}</h3>
+        <p>{t.termeni.s4P}</p>
       </section>
     </section>
   );

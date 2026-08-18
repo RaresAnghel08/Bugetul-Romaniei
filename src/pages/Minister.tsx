@@ -21,6 +21,7 @@ import { Seo } from "../components/Seo";
 import { formatAxisValuta, formatMld, formatMldValuta, formatMil } from "../lib/format";
 import { toAbsoluteSiteUrl } from "../lib/seo";
 import { convertRON, type Moneda } from "../lib/cursValutar";
+import { useLocale } from "../i18n/LocaleContext";
 import type { MinisterRecord, ProgramRecord } from "../types";
 
 interface GuvData {
@@ -36,10 +37,11 @@ const programe = programeJson as ProgramRecord[];
 const guverne = guverneJson as GuvData[];
 
 export const MinisterPage = () => {
+  const { t, locale, path } = useLocale();
   const { cod } = useParams();
   const [moneda, setMoneda] = useState<Moneda>("RON");
   const minister = ministere.find((item) => item.cod === cod);
-  const seoPath = cod ? `/minister/${cod}` : "/minister";
+  const seoPath = cod ? path(`/minister/${cod}`) : path("/minister");
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -49,15 +51,15 @@ export const MinisterPage = () => {
     return (
       <section className="panel">
         <Seo
-          title="Minister inexistent | Bugetul României"
-          description="Ministerul cautat nu exista in setul de date local disponibil."
+          title={t.minister.notFoundSeoTitle}
+          description={t.minister.notFoundSeoDescription}
           path={seoPath}
           noIndex
         />
-        <h2 className="panel-title">Minister inexistent</h2>
-        <p>Codul solicitat nu exista in datele locale.</p>
-        <Link className="primary-btn inline-btn" to="/ministere">
-          Inapoi la ministere
+        <h2 className="panel-title">{t.minister.notFoundTitle}</h2>
+        <p>{t.minister.notFoundBody}</p>
+        <Link className="primary-btn inline-btn" to={path("/ministere")}>
+          {t.minister.backLink}
         </Link>
       </section>
     );
@@ -145,10 +147,10 @@ export const MinisterPage = () => {
   const seoTitle = `${minister.nume} | Bugetul României 2026`;
   const seoDescription =
     minister.delta_pct !== null
-      ? `Bugetul ${minister.nume} în 2026: ${formatMld(minister["2026"])}, variație ${
-          minister.delta_pct >= 0 ? "+" : ""
-        }${minister.delta_pct.toFixed(1)}% față de 2025. Evoluție completă 2015-2026.`
-      : `Bugetul ${minister.nume} în 2026: ${formatMld(minister["2026"])}. Evoluție completă 2015-2026.`;
+      ? `${t.minister.seoDescriptionWithDeltaPrefix} ${minister.nume} ${t.minister.seoDescriptionWithDeltaMid} ${formatMld(minister["2026"], locale)}, ${t.minister.seoDescriptionWithDeltaSuffix
+          .replace("{sign}", minister.delta_pct >= 0 ? "+" : "")
+          .replace("{delta}", minister.delta_pct.toFixed(1))}`
+      : `${t.minister.seoDescriptionNoDeltaPrefix} ${minister.nume} ${t.minister.seoDescriptionNoDeltaSuffix.replace("{buget}", formatMld(minister["2026"], locale))}`;
 
   const seoJsonLd = {
     "@context": "https://schema.org",
@@ -160,7 +162,7 @@ export const MinisterPage = () => {
     parentOrganization: {
       "@type": "Organization",
       name: "Bugetul României",
-      url: toAbsoluteSiteUrl("/"),
+      url: toAbsoluteSiteUrl(path("/")),
     },
   };
 
@@ -180,18 +182,18 @@ export const MinisterPage = () => {
       <section className="panel">
         <div className="panel-header-row">
           <div>
-            <p className="muted">Minister #{minister.cod}</p>
+            <p className="muted">{t.minister.codeLabel}{minister.cod}</p>
             <h2 className="panel-title">{minister.nume}</h2>
             <p className="headline-value">
-              Buget total 2026: {formatMldValuta(minister["2026"] ?? null, moneda)}
+              {t.minister.totalBudgetLabel} {formatMldValuta(minister["2026"] ?? null, moneda, locale)}
             </p>
             <p className="muted">
-              2025: {formatMldValuta(minister["2025"] ?? null, moneda)}{" "}
-              {"->"} 2026: {formatMldValuta(minister["2026"] ?? null, moneda)}
+              2025: {formatMldValuta(minister["2025"] ?? null, moneda, locale)}{" "}
+              {t.minister.arrow} 2026: {formatMldValuta(minister["2026"] ?? null, moneda, locale)}
             </p>
           </div>
           <div>
-            <p className="muted">Variatie 2026 vs 2025</p>
+            <p className="muted">{t.minister.variatieLabel}</p>
             <p className={`headline-value ${ministerDeltaTone}`}>{ministerDeltaDisplay}</p>
           </div>
         </div>
@@ -201,8 +203,8 @@ export const MinisterPage = () => {
       <section className="panel">
         <div className="panel-toolbar">
           <h3 className="panel-title">
-            Evoluție {firstYear}–{lastYear}
-            {hasEstimate ? " + estimări 2027–2029" : ""}
+            {t.minister.evolutieTitlePrefix} {firstYear}–{lastYear}
+            {hasEstimate ? ` ${t.minister.evolutieEstimariSuffix}` : ""}
           </h3>
           <div className="moneda-toggle">
             {(["RON", "EUR", "USD"] as Moneda[]).map((m) => (
@@ -227,17 +229,17 @@ export const MinisterPage = () => {
                 tickMargin={8}
                 tick={{ fill: "#f7f7f7" }}
                 axisLine={{ stroke: "#4e4f66" }}
-                tickFormatter={(v) => formatAxisValuta(v, moneda)}
+                tickFormatter={(v) => formatAxisValuta(v, moneda, locale)}
               />
               <Tooltip
                 formatter={(value, name) => [
-                  formatMldValuta(Number(value), moneda),
-                  name === "valoare" ? "Buget" : "Estimare",
+                  formatMldValuta(Number(value), moneda, locale),
+                  name === "valoare" ? t.minister.bugetLegend : t.minister.estimareLegend,
                 ]}
                 contentStyle={tooltipStyle}
               />
               <Legend
-                formatter={(value) => (value === "valoare" ? "Buget" : "Estimare")}
+                formatter={(value) => (value === "valoare" ? t.minister.bugetLegend : t.minister.estimareLegend)}
               />
               {guverne.map((g) => (
                 <ReferenceArea
@@ -276,7 +278,7 @@ export const MinisterPage = () => {
 
       {/* Task 1: Capitol breakdown — grouped 2025 vs 2026 */}
       <section className="panel">
-        <h3 className="panel-title">Capitole bugetare: 2025 vs 2026</h3>
+        <h3 className="panel-title">{t.minister.capitoleTitle}</h3>
         <div className="chart-wrap" style={{ height: capitolChartHeight }}>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
@@ -289,7 +291,7 @@ export const MinisterPage = () => {
                 type="number"
                 tick={{ fill: "#f7f7f7" }}
                 axisLine={{ stroke: "#4e4f66" }}
-                tickFormatter={(v) => formatAxisValuta(v, moneda)}
+                tickFormatter={(v) => formatAxisValuta(v, moneda, locale)}
               />
               <YAxis
                 dataKey="capitol"
@@ -300,7 +302,7 @@ export const MinisterPage = () => {
               />
               <Tooltip
                 formatter={(value, name) => [
-                  formatMldValuta(Number(value), moneda),
+                  formatMldValuta(Number(value), moneda, locale),
                   name === "buget2025" ? "2025" : "2026",
                 ]}
                 contentStyle={tooltipStyle}
@@ -328,27 +330,27 @@ export const MinisterPage = () => {
       </div>
 
       <section className="panel">
-        <h3 className="panel-title">Programe asociate</h3>
+        <h3 className="panel-title">{t.minister.programeTitle}</h3>
         <div className="table-wrap">
           <table className="data-table compact programe-table">
             <thead>
               <tr>
-                <th>Program</th>
-                <th>Executie 2025</th>
-                <th>Program 2026</th>
+                <th>{t.minister.colProgram}</th>
+                <th>{t.minister.colExecutie2025}</th>
+                <th>{t.minister.colProgram2026}</th>
               </tr>
             </thead>
             <tbody>
               {programeMinister.length === 0 ? (
                 <tr>
-                  <td colSpan={3}>Nu exista programe mapate pentru acest minister.</td>
+                  <td colSpan={3}>{t.minister.noPrograms}</td>
                 </tr>
               ) : (
                 programeMinister.map((program) => (
                   <tr key={`${program.ordonator_cod}-${program.cod_program}`}>
-                    <td>{program.program_nume || `Program ${program.cod_program}`}</td>
-                    <td>{formatMil(program.executie_2025 ?? null)}</td>
-                    <td>{formatMil(program.program_2026 ?? null)}</td>
+                    <td>{program.program_nume || `${t.minister.programFallbackPrefix} ${program.cod_program}`}</td>
+                    <td>{formatMil(program.executie_2025 ?? null, locale)}</td>
+                    <td>{formatMil(program.program_2026 ?? null, locale)}</td>
                   </tr>
                 ))
               )}

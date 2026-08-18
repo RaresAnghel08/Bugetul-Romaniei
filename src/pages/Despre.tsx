@@ -1,88 +1,69 @@
 import { Seo } from "../components/Seo";
+import { useLocale } from "../i18n/LocaleContext";
 
 export const DesprePage = () => {
+  const { t, path } = useLocale();
+
   return (
     <section className="page-grid">
       <Seo
-        title="Despre Proiect | Bugetul României"
-        description="Bugetul României este un dashboard civic independent care transformă datele XML oficiale ale Ministerului Finanțelor în vizualizări interactive accesibile oricui."
-        path="/despre"
+        title={t.despre.seoTitle}
+        description={t.despre.seoDescription}
+        path={path("/despre")}
       />
 
       <section className="panel legal-hero reveal-on-load">
-        <p className="ministere-kicker">Transparență bugetară</p>
-        <h2 className="ministere-title">Despre proiect</h2>
-        <p className="landing-copy">
-          Un instrument civic independent pentru înțelegerea bugetului public al României —
-          fără afiliere politică, fără finanțare instituțională.
-        </p>
+        <p className="ministere-kicker">{t.despre.kicker}</p>
+        <h2 className="ministere-title">{t.despre.title}</h2>
+        <p className="landing-copy">{t.despre.lead}</p>
       </section>
 
       <section className="panel legal-content">
-        <h3 className="panel-title">Ce este acest proiect</h3>
-        <p>
-          Bugetul României este un dashboard civic care pune datele bugetare oficiale într-o
-          formă lizibilă pentru oricine. Scopul este simplu: să poți vedea cu ușurință cât
-          primește fiecare minister, cum evoluează cheltuielile de la un an la altul și unde
-          merg banii publici — fără să trebuiască să descarci fișiere XML sau să interpretezi
-          tabele tehnice.
-        </p>
-        <p>
-          Proiectul nu are afiliere politică și nu reprezintă o poziție oficială a niciunei
-          instituții publice.
-        </p>
+        <h3 className="panel-title">{t.despre.s1Title}</h3>
+        <p>{t.despre.s1P1}</p>
+        <p>{t.despre.s1P2}</p>
 
-        <h3 className="panel-title">Sursa datelor</h3>
+        <h3 className="panel-title">{t.despre.s2Title}</h3>
         <p>
-          Toate datele provin din{" "}
+          {t.despre.s2PPrefix}{" "}
           <a
             className="site-footer-link"
             href="https://mfinante.gov.ro/domenii/buget"
             target="_blank"
             rel="noreferrer noopener"
           >
-            anexele XML publicate de Ministerul Finanțelor Publice
+            {t.despre.s2LinkText}
           </a>
-          . Acestea sunt documente oficiale, publicate periodic, care detaliază alocările
-          bugetare pe ordonatori principali de credite.
+          . {t.despre.s2PSuffix}
         </p>
 
-        <h3 className="panel-title">Cum sunt procesate datele</h3>
-        <p>
-          Un pipeline Python parsează fișierele XML și le
-          transformă în fișiere JSON locale folosite de aplicație. Nu există bază de date
-          externă — totul rulează din fișiere statice incluse în build.
-        </p>
+        <h3 className="panel-title">{t.despre.s3Title}</h3>
+        <p>{t.despre.s3P}</p>
 
-        <h3 className="panel-title">Limitări importante</h3>
-        <p>
-          Datele reflectă <strong>bugetul aprobat și/sau rectificat</strong>, nu execuția
-          bugetară reală. Sumele alocate nu sunt echivalente cu sumele efectiv cheltuite.
-          Pentru execuție bugetară, consultați rapoartele lunare publicate de Ministerul
-          Finanțelor.
-        </p>
+        <h3 className="panel-title">{t.despre.s4Title}</h3>
+        <p>{t.despre.s4P}</p>
 
-        <h3 className="panel-title">Autor și cod sursă</h3>
+        <h3 className="panel-title">{t.despre.s5Title}</h3>
         <p>
-          Proiect realizat de{" "}
+          {t.despre.s5PPrefix}{" "}
           <a
             className="site-footer-link"
             href="https://www.linkedin.com/in/raresanghel/"
             target="_blank"
             rel="noreferrer noopener"
           >
-            Rareș Anghel
+            {t.despre.s5AuthorName}
           </a>
-          . Codul sursă este open source și disponibil pe{" "}
+          . {t.despre.s5PMid}{" "}
           <a
             className="site-footer-link"
             href="https://github.com/RaresAnghel08/Bugetul-Romaniei"
             target="_blank"
             rel="noreferrer noopener"
           >
-            GitHub
+            {t.despre.s5GithubText}
           </a>
-          . Contribuțiile și sugestiile sunt binevenite.
+          . {t.despre.s5PSuffix}
         </p>
       </section>
     </section>

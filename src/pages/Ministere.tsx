@@ -17,6 +17,7 @@ import { Seo } from "../components/Seo";
 import { formatMld } from "../lib/format";
 import { toAbsoluteSiteUrl } from "../lib/seo";
 import { useDebouncedValue } from "../lib/useDebouncedValue";
+import { useLocale } from "../i18n/LocaleContext";
 import type { MinisterRecord } from "../types";
 
 const ministere = ministereJson as MinisterRecord[];
@@ -32,6 +33,7 @@ const shortInstitutionName = (name: string): string => {
 };
 
 export const MinisterePage = () => {
+  const { t, locale, path } = useLocale();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 
@@ -169,60 +171,57 @@ export const MinisterePage = () => {
     URL.revokeObjectURL(url);
   };
 
-  const seoPath = "/ministere";
-  const seoTitle = "Ministere Romania | Bugetul României";
-  const seoDescription =
-    "Compară bugetele ministerelor pentru 2025 și 2026, vezi top instituții, variații procentuale și evoluție istorică.";
+  const seoPath = path("/ministere");
   const seoJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Ministere Romania",
-    inLanguage: "ro-RO",
+    name: t.ministere.jsonLdName,
+    inLanguage: t.common.inLanguage,
     url: toAbsoluteSiteUrl(seoPath),
-    description: seoDescription,
-    about: "Bugete ministere 2025-2026",
+    description: t.ministere.seoDescription,
+    about: t.ministere.jsonLdAbout,
   };
 
   return (
     <section className="page-grid">
-      <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+      <Seo title={t.ministere.seoTitle} description={t.ministere.seoDescription} path={seoPath} jsonLd={seoJsonLd} />
 
       <section className="panel ministere-hero ministere-hero-upgraded reveal-on-load">
         <div className="ministere-hero-grid">
           <div>
-            <p className="ministere-kicker">Radar pe institutii</p>
-            <h2 className="ministere-title">Ministere în prim-plan</h2>
+            <p className="ministere-kicker">{t.ministere.kicker}</p>
+            <h2 className="ministere-title">{t.ministere.title}</h2>
             <p className="landing-copy">
-              Panorama executiei bugetare pentru institutiile-cheie, cu evolutie istorica din
+              {t.ministere.leadPrefix}
               {" "}
-              {availableYears[0] ?? 2015} până în prezent.
+              {availableYears[0] ?? 2015} {t.ministere.leadSuffix}
             </p>
             <div className="ministere-hero-chips">
               <span className="mini-chip">
-                Evolutie {availableYears[0] ?? "-"}-{availableYears[availableYears.length - 1] ?? "-"}
+                {t.ministere.chipEvolutie} {availableYears[0] ?? "-"}-{availableYears[availableYears.length - 1] ?? "-"}
               </span>
-              <span className="mini-chip">Top {featuredMinistries.length} instituții în prim-plan</span>
+              <span className="mini-chip">{t.ministere.chipTopPrefix} {featuredMinistries.length} {t.ministere.chipTopSuffix}</span>
             </div>
           </div>
 
           <div className="ministere-hero-metrics-grid">
             <article className="ministere-hero-metric ministere-total-card">
-              <p className="muted">Buget total ministere 2026</p>
-              <p className="ministere-total-inline">{formatMld(total2026)}</p>
+              <p className="muted">{t.ministere.totalBudgetLabel}</p>
+              <p className="ministere-total-inline">{formatMld(total2026, locale)}</p>
             </article>
 
             <article className={`ministere-hero-metric ministere-growth-card ministere-growth-${growthTone}`}>
-              <p className="muted">Crestere agregată vs 2025</p>
+              <p className="muted">{t.ministere.growthLabel}</p>
               <p className="ministere-growth-value">{growthEmoji} {deltaTotalLabel}</p>
               <p className="muted ministere-growth-old">
-                de la {formatMld(total2025)} la {formatMld(total2026)}
+                {t.ministere.growthFromLabel} {formatMld(total2025, locale)} {t.ministere.growthToLabel} {formatMld(total2026, locale)}
               </p>
             </article>
 
             <article className="ministere-hero-metric leader-card">
-              <p className="muted">Lider după alocare 2026</p>
+              <p className="muted">{t.ministere.leaderLabel}</p>
               <p className="ministere-hero-leader">{topMinister ? topMinister.nume : "-"}</p>
-              <p className="muted">{topMinister ? formatMld(topMinister["2026"]) : "-"}</p>
+              <p className="muted">{topMinister ? formatMld(topMinister["2026"], locale) : "-"}</p>
             </article>
           </div>
         </div>
@@ -231,8 +230,8 @@ export const MinisterePage = () => {
       <section className="panel" style={{ minWidth: 0 }}>
         <div className="panel-header-row stack-mobile">
           <div>
-            <h2 className="panel-title">Radar pe instituții</h2>
-            <p className="muted">Top 8 instituții după alocarea 2026, comparativ cu 2025</p>
+            <h2 className="panel-title">{t.ministere.radarTitle}</h2>
+            <p className="muted">{t.ministere.radarSubtitle}</p>
           </div>
         </div>
         {isNarrow ? (
@@ -240,7 +239,7 @@ export const MinisterePage = () => {
             {radarData.map((row, i) => (
               <div key={i} className="radar-mobile-row">
                 <span className="radar-mobile-name">{row.institutie}</span>
-                <span className="radar-mobile-val">{row.buget2026.toFixed(1)} mld</span>
+                <span className="radar-mobile-val">{row.buget2026.toFixed(1)} {t.format.mldBare}</span>
               </div>
             ))}
           </div>
@@ -254,15 +253,15 @@ export const MinisterePage = () => {
                   tick={{ fill: "#c7cedf", fontSize: 11 }}
                   tickFormatter={(value) =>
                     Number(value) >= 1
-                      ? `${Number(value).toFixed(1)} mld`
-                      : `${(Number(value) * 1000).toFixed(0)} mil`
+                      ? `${Number(value).toFixed(1)} ${t.format.mldBare}`
+                      : `${(Number(value) * 1000).toFixed(0)} ${t.format.milBare}`
                   }
                 />
                 <Tooltip
                   formatter={(value) =>
                     Number(value) >= 1
-                      ? `${Number(value).toFixed(1)} mld lei`
-                      : `${(Number(value) * 1000).toFixed(0)} mil lei`
+                      ? `${Number(value).toFixed(1)} ${t.format.mldSuffix}`
+                      : `${(Number(value) * 1000).toFixed(0)} ${t.format.milSuffix}`
                   }
                   contentStyle={{
                     background: "#101226",
@@ -299,17 +298,17 @@ export const MinisterePage = () => {
             className="panel minister-card reveal-on-load"
             role="button"
             tabIndex={0}
-            onClick={() => navigate(`/minister/${minister.cod}`)}
+            onClick={() => navigate(path(`/minister/${minister.cod}`))}
             onKeyDown={(event) => {
               if (event.key === "Enter" || event.key === " ") {
-                navigate(`/minister/${minister.cod}`);
+                navigate(path(`/minister/${minister.cod}`));
               }
             }}
           >
             <p className="minister-card-name">{minister.nume}</p>
-            <p className="minister-card-value">{formatMld(minister["2026"] ?? null)}</p>
+            <p className="minister-card-value">{formatMld(minister["2026"] ?? null, locale)}</p>
             <div className="minister-card-foot">
-              <span className="muted">Buget 2025: {formatMld(minister["2025"] ?? null)}</span>
+              <span className="muted">{t.ministere.buget2025Label} {formatMld(minister["2025"] ?? null, locale)}</span>
               <DeltaBadge delta={minister.delta_pct} />
             </div>
           </article>
@@ -318,17 +317,17 @@ export const MinisterePage = () => {
 
       <section className="panel">
         <div className="panel-header-row">
-          <h2 className="panel-title">Ministere 2025 vs 2026</h2>
+          <h2 className="panel-title">{t.ministere.tableTitle}</h2>
           <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
             <input
               className="search-input"
               type="search"
-              placeholder="Cauta minister..."
+              placeholder={t.ministere.searchPlaceholder}
               value={query}
               onChange={(event) => setQuery(event.target.value)}
             />
             <button type="button" className="ghost-btn" onClick={downloadCsv}>
-              ⬇ CSV
+              {t.ministere.csvBtn}
             </button>
           </div>
         </div>
@@ -339,17 +338,17 @@ export const MinisterePage = () => {
               <tr>
                 <th>
                   <button className="th-btn" type="button" onClick={() => toggleSort("nume")}>
-                    Minister
+                    {t.ministere.colMinister}
                   </button>
                 </th>
                 <th>
                   <button className="th-btn" type="button" onClick={() => toggleSort("2025")}>
-                    Buget 2025
+                    {t.ministere.colBuget2025}
                   </button>
                 </th>
                 <th>
                   <button className="th-btn" type="button" onClick={() => toggleSort("2026")}>
-                    Buget 2026
+                    {t.ministere.colBuget2026}
                   </button>
                 </th>
                 <th>
@@ -358,7 +357,7 @@ export const MinisterePage = () => {
                     type="button"
                     onClick={() => toggleSort("delta_pct")}
                   >
-                    Variatie
+                    {t.ministere.colVariatie}
                   </button>
                 </th>
               </tr>
@@ -368,14 +367,14 @@ export const MinisterePage = () => {
                 <tr
                   key={minister.cod}
                   className="clickable-row"
-                  onClick={() => navigate(`/minister/${minister.cod}`)}
+                  onClick={() => navigate(path(`/minister/${minister.cod}`))}
                 >
                   <td>{minister.nume}</td>
                   <td>
-                    <span className="table-money">{formatMld(minister["2025"] ?? null)}</span>
+                    <span className="table-money">{formatMld(minister["2025"] ?? null, locale)}</span>
                   </td>
                   <td>
-                    <span className="table-money">{formatMld(minister["2026"] ?? null)}</span>
+                    <span className="table-money">{formatMld(minister["2026"] ?? null, locale)}</span>
                   </td>
                   <td>
                     <DeltaBadge delta={minister.delta_pct} />

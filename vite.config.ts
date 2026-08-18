@@ -9,7 +9,17 @@ export default defineConfig({
     vitePrerenderPlugin({
       prerenderScript: path.resolve(process.cwd(), "src/prerender.ts"),
       renderTarget: "#root",
-      additionalPrerenderRoutes: ["/overview", "/ministere", "/investitii", "/joc"],
+      additionalPrerenderRoutes: [
+        "/overview",
+        "/ministere",
+        "/investitii",
+        "/joc",
+        "/en",
+        "/en/overview",
+        "/en/ministere",
+        "/en/investitii",
+        "/en/joc",
+      ],
     }),
   ],
   server: {

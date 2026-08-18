@@ -4,6 +4,7 @@ import investitiiJson from "../../data/investitii.json";
 import { Seo } from "../components/Seo";
 import { formatMldAlways, formatPct } from "../lib/format";
 import { toAbsoluteSiteUrl } from "../lib/seo";
+import { useLocale } from "../i18n/LocaleContext";
 import type { InvestitieRecord } from "../types";
 
 const investitii = investitiiJson as InvestitieRecord[];
@@ -19,6 +20,7 @@ interface InvestitiiGroup {
 }
 
 export const InvestitiiPage = () => {
+  const { t, locale, path } = useLocale();
   const [searchParams] = useSearchParams();
 
   // Initialize from URL params
@@ -157,38 +159,35 @@ export const InvestitiiPage = () => {
     URL.revokeObjectURL(url);
   };
 
-  const seoPath = "/investitii";
-  const seoTitle = "Investitii Publice | Bugetul României";
-  const seoDescription =
-    "Analizează investițiile publice pe ministere și surse de finanțare, cu totaluri 2026, variații vs 2025 și distribuția obiectivelor.";
+  const seoPath = path("/investitii");
   const seoJsonLd = {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    name: "Investitii publice Romania",
-    inLanguage: "ro-RO",
+    name: t.investitii.jsonLdName,
+    inLanguage: t.common.inLanguage,
     url: toAbsoluteSiteUrl(seoPath),
-    description: seoDescription,
+    description: t.investitii.seoDescription,
     variableMeasured: ["program_2026", "preliminat_2025", "cheltuit_pana_2024"],
   };
 
   return (
     <section className="page-grid">
-      <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+      <Seo title={t.investitii.seoTitle} description={t.investitii.seoDescription} path={seoPath} jsonLd={seoJsonLd} />
 
       <section className="panel investitii-hero reveal-on-load">
         <div className="investitii-hero-top">
           <div className="investitii-hero-intro">
-            <p className="ministere-kicker">Portofoliu de proiecte publice</p>
-            <h2 className="ministere-title">Investitii grupate pe ministere</h2>
-            <p className="mega-value">{formatMldAlways(totalProgram2026)}</p>
-            <p className="muted">Programat pentru 2026 pe filtrul curent</p>
+            <p className="ministere-kicker">{t.investitii.kicker}</p>
+            <h2 className="ministere-title">{t.investitii.title}</h2>
+            <p className="mega-value">{formatMldAlways(totalProgram2026, locale)}</p>
+            <p className="muted">{t.investitii.subtitleProgramat}</p>
           </div>
 
           <div className="investitii-filters-card">
-            <p className="muted investitii-filters-title">Filtre active</p>
+            <p className="muted investitii-filters-title">{t.investitii.filtreActive}</p>
             <div className="filter-row investitii-filter-row">
               <label className="filter-label">
-                Minister
+                {t.investitii.ministerLabel}
                 <select
                   className="filter-select"
                   value={minister}
@@ -196,14 +195,14 @@ export const InvestitiiPage = () => {
                 >
                   {ministere.map((opt) => (
                     <option key={opt} value={opt}>
-                      {opt === "toate" ? "Toate" : opt}
+                      {opt === "toate" ? t.common.toate : opt}
                     </option>
                   ))}
                 </select>
               </label>
 
               <label className="filter-label">
-                Sursa
+                {t.investitii.sursaLabel}
                 <select
                   className="filter-select"
                   value={sursa}
@@ -211,7 +210,7 @@ export const InvestitiiPage = () => {
                 >
                   {surse.map((opt) => (
                     <option key={opt} value={opt}>
-                      {opt === "toate" ? "Toate" : opt}
+                      {opt === "toate" ? t.common.toate : opt}
                     </option>
                   ))}
                 </select>
@@ -222,19 +221,19 @@ export const InvestitiiPage = () => {
 
         <div className="investitii-kpi-row">
           <article className="investitii-mini-kpi">
-            <p className="muted">Ministere în selecție</p>
+            <p className="muted">{t.investitii.ministereSelectie}</p>
             <p className="investitii-kpi-value">{grouped.length}</p>
           </article>
           <article className="investitii-mini-kpi">
-            <p className="muted">Obiective totale</p>
+            <p className="muted">{t.investitii.obiectiveTotale}</p>
             <p className="investitii-kpi-value">{filtered.length}</p>
           </article>
           <article className="investitii-mini-kpi">
-            <p className="muted">Cheltuit până în 2024</p>
-            <p className="investitii-kpi-value">{formatMldAlways(totalCheltuit2024)}</p>
+            <p className="muted">{t.investitii.cheltuitPana2024}</p>
+            <p className="investitii-kpi-value">{formatMldAlways(totalCheltuit2024, locale)}</p>
           </article>
           <article className={`investitii-mini-kpi investitii-mini-kpi-${growthTone}`}>
-            <p className="muted">Variatie vs 2025</p>
+            <p className="muted">{t.investitii.variatieVs2025}</p>
             <p className="investitii-kpi-value">{growthLabel}</p>
           </article>
         </div>
@@ -242,9 +241,9 @@ export const InvestitiiPage = () => {
 
       {/* Task 3: CSV button above groups */}
       <div className="panel-header-row" style={{ padding: "0 2px" }}>
-        <p className="muted">{filtered.length} înregistrări în filtrul curent</p>
+        <p className="muted">{filtered.length} {t.investitii.recordsInFilterSuffix}</p>
         <button type="button" className="ghost-btn" onClick={downloadCsv}>
-          ⬇ CSV
+          {t.investitii.csvBtn}
         </button>
       </div>
 
@@ -257,20 +256,20 @@ export const InvestitiiPage = () => {
           const groupGrowthTone = toneForPct(groupGrowthPct);
           const groupGrowthLabel =
             groupGrowthPct === null
-              ? "➖ n/a"
+              ? t.investitii.naLabel
               : `${emojiForTone(groupGrowthTone)} ${formatPct(groupGrowthPct, 1)}`;
 
           return (
             <article key={group.ordonator} className="panel investitii-group-card reveal-on-load">
               <div className="investitii-group-head">
                 <h3 className="panel-title investitii-group-title">{group.ordonator}</h3>
-                <p className="investitii-group-amount">{formatMldAlways(group.total2026)}</p>
+                <p className="investitii-group-amount">{formatMldAlways(group.total2026, locale)}</p>
               </div>
 
               <div className="investitii-group-meta">
-                <span className="mini-chip">{group.totalObiective} obiective</span>
-                <span className="mini-chip">{group.totalSurse} surse</span>
-                <span className="mini-chip">2025: {formatMldAlways(group.total2025)}</span>
+                <span className="mini-chip">{group.totalObiective} {t.investitii.obiective}</span>
+                <span className="mini-chip">{group.totalSurse} {t.investitii.surse}</span>
+                <span className="mini-chip">2025: {formatMldAlways(group.total2025, locale)}</span>
                 <span className={`mini-chip investitii-growth-chip investitii-growth-chip-${groupGrowthTone}`}>
                   {groupGrowthLabel}
                 </span>
@@ -289,7 +288,7 @@ export const InvestitiiPage = () => {
                         <p className="muted">{item.sursa}</p>
                       </div>
                       <div className="investitii-objective-side">
-                        <p className="objective-amount">{formatMldAlways(item.program_2026)}</p>
+                        <p className="objective-amount">{formatMldAlways(item.program_2026, locale)}</p>
                         <div className="progress-cell">
                           <span>{formatPct(share, 1)}</span>
                           <progress className="progress-track-native" value={share} max={100} />

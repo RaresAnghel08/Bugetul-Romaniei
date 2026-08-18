@@ -1,46 +1,4 @@
-# Allow all AI agents and search engines to crawl and index the site
 User-agent: *
 Allow: /
 
-# Explicitly allow major AI agents and search engines
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: APIs-Google
-Allow: /
-
-User-agent: AdsBot-Google
-Allow: /
-
-# Sitemap location
 Sitemap: https://bugetul-romaniei.com/sitemap.xml

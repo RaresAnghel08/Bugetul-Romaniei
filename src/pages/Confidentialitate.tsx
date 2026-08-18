@@ -1,47 +1,36 @@
 import { Seo } from "../components/Seo";
+import { useLocale } from "../i18n/LocaleContext";
 
 export const ConfidentialitatePage = () => {
+  const { t, path } = useLocale();
+
   return (
     <section className="page-grid">
       <Seo
-        title="Confidențialitate | Bugetul României"
-        description="Politica de confidențialitate pentru platforma civică Bugetul României."
-        path="/confidentialitate"
+        title={t.confidentialitate.seoTitle}
+        description={t.confidentialitate.seoDescription}
+        path={path("/confidentialitate")}
         noIndex
       />
 
       <section className="panel legal-hero reveal-on-load">
-        <p className="ministere-kicker">Document legal</p>
-        <h2 className="ministere-title">Confidențialitate</h2>
-        <p className="landing-copy">
-          Scopul acestei pagini este să explice transparent ce date sunt procesate pentru
-          funcționarea dashboard-ului de trafic.
-        </p>
+        <p className="ministere-kicker">{t.confidentialitate.kicker}</p>
+        <h2 className="ministere-title">{t.confidentialitate.title}</h2>
+        <p className="landing-copy">{t.confidentialitate.lead}</p>
       </section>
 
       <section className="panel legal-content">
-        <h3 className="panel-title">1. Date colectate</h3>
-        <p>
-          Aplicația poate folosi un contor public de vizite pentru a afișa trafic agregat la
-          nivel de site și stochează local, în browser, metadate minime de utilizare.
-        </p>
+        <h3 className="panel-title">{t.confidentialitate.s1Title}</h3>
+        <p>{t.confidentialitate.s1P}</p>
 
-        <h3 className="panel-title">2. Date locale in browser</h3>
-        <p>
-          Pentru experiența de demo sunt salvate local numărul de vizite din acest browser,
-          prima accesare și ultima accesare. Aceste date nu identifică direct persoana.
-        </p>
+        <h3 className="panel-title">{t.confidentialitate.s2Title}</h3>
+        <p>{t.confidentialitate.s2P}</p>
 
-        <h3 className="panel-title">3. Fara conturi si profilare</h3>
-        <p>
-          Site-ul nu solicita autentificare, nu creeaza profil comercial si nu vinde date.
-        </p>
+        <h3 className="panel-title">{t.confidentialitate.s3Title}</h3>
+        <p>{t.confidentialitate.s3P}</p>
 
-        <h3 className="panel-title">4. Limitari</h3>
-        <p>
-          Acest site este un proiect demo și nu este afiliat cu ANAF sau Ministerul
-          Finanțelor. Datele sunt preluate din API-urile publice ANAF.
-        </p>
+        <h3 className="panel-title">{t.confidentialitate.s4Title}</h3>
+        <p>{t.confidentialitate.s4P}</p>
       </section>
     </section>
   );

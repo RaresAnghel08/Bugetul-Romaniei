@@ -10,6 +10,7 @@ import {
 import { formatMld } from "../lib/format";
 import { Seo } from "../components/Seo";
 import { SITE_NAME, toAbsoluteSiteUrl } from "../lib/seo";
+import { useLocale } from "../i18n/LocaleContext";
 import type { MinisterRecord } from "../types";
 
 // Only use ministries that have a 2026 budget and aren't excluded from ranking
@@ -65,15 +66,15 @@ function pickRight(
   return candidates[candidates.length - 1];
 }
 
-function getScoreTitle(score: number): string {
-  if (score >= 25) return "Prim-Ministru";
-  if (score >= 19) return "Ministru cu Portofoliu";
-  if (score >= 13) return "Secretar de Stat";
-  if (score >= 9) return "Director General";
-  if (score >= 6) return "Expert Financiar Senior";
-  if (score >= 3) return "Analist Bugetar";
-  if (score >= 1) return "Referent Financiar";
-  return "Stagiar la ANAF";
+function getScoreTitle(score: number, titles: string[]): string {
+  if (score >= 25) return titles[7];
+  if (score >= 19) return titles[6];
+  if (score >= 13) return titles[5];
+  if (score >= 9) return titles[4];
+  if (score >= 6) return titles[3];
+  if (score >= 3) return titles[2];
+  if (score >= 1) return titles[1];
+  return titles[0];
 }
 
 function shortName(name: string): string {
@@ -86,6 +87,7 @@ type Phase = "menu" | "playing" | "result-correct" | "result-wrong" | "gameover"
 type SubmitStatus = "idle" | "loading" | "inserted" | "updated" | "skipped" | "error";
 
 export function JocPage() {
+  const { t, locale, path } = useLocale();
   const [phase, setPhase] = useState<Phase>("menu");
   const [left, setLeft] = useState<MinisterRecord | null>(null);
   const [right, setRight] = useState<MinisterRecord | null>(null);
@@ -105,22 +107,19 @@ export function JocPage() {
   const countedRef = useRef(false);
   const finalScoreRef = useRef(0);
 
-  const seoTitle = "Bugetul României | Ce Minister Esti? - Mini-joc";
-  const seoDescription =
-    "Joacă 'Ce Minister Ești?' — ghicește dacă bugetul ministerului din dreapta este mai mare sau mai mic decât cel din stânga. Clasament Top 10 și highscore local.";
-  const seoPath = "/joc";
+  const seoPath = path("/joc");
   const seoJsonLd = [
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: `${SITE_NAME} - Mini-joc 'Ce Minister Esti?'`,
+      name: `${SITE_NAME} - ${t.joc.jsonLdName}`,
       url: toAbsoluteSiteUrl(seoPath),
-      inLanguage: "ro-RO",
-      description: seoDescription,
+      inLanguage: t.common.inLanguage,
+      description: t.joc.seoDescription,
       isPartOf: {
         "@type": "WebSite",
         name: SITE_NAME,
-        url: toAbsoluteSiteUrl("/"),
+        url: toAbsoluteSiteUrl(path("/")),
       },
     },
   ];
@@ -230,20 +229,20 @@ export function JocPage() {
   if (phase === "menu") {
     return (
       <div className="joc-page">
-        <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+        <Seo title={t.joc.seoTitle} description={t.joc.seoDescription} path={seoPath} jsonLd={seoJsonLd} />
         <div className="joc-menu">
-          <p className="joc-menu-kicker">Mini-joc bugetar</p>
-          <h1 className="joc-menu-title">Ce Minister Esti?</h1>
+          <p className="joc-menu-kicker">{t.joc.menuKicker}</p>
+          <h1 className="joc-menu-title">{t.joc.menuTitle}</h1>
           <p className="joc-menu-desc">
-            Ghicește dacă bugetul ministerului din dreapta este <strong>mai mare</strong> sau{" "}
-            <strong>mai mic</strong> decât cel din stânga. Cât de departe ajungi?
+            {t.joc.menuDescBefore} <strong>{t.joc.menuDescStrong1}</strong> {t.joc.menuDescMiddle}{" "}
+            <strong>{t.joc.menuDescStrong2}</strong> {t.joc.menuDescAfter}
           </p>
           <div className="joc-menu-btns">
             <button className="joc-primary-btn" onClick={startGame}>
-              Joaca acum
+              {t.joc.playNow}
             </button>
             <button className="joc-secondary-btn" onClick={goToLeaderboard}>
-              Clasament Top 10
+              {t.joc.top10}
             </button>
           </div>
         </div>
@@ -254,27 +253,27 @@ export function JocPage() {
   if (phase === "leaderboard") {
     return (
       <div className="joc-page">
-        <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+        <Seo title={t.joc.seoTitle} description={t.joc.seoDescription} path={seoPath} jsonLd={seoJsonLd} />
         <div className="joc-leaderboard-wrap">
-          <h2 className="joc-lb-title">Clasament Top 10</h2>
+          <h2 className="joc-lb-title">{t.joc.lbTitle}</h2>
           {totalPlayers !== null && (
             <p className="joc-lb-stats">
-              Jucatori totali: <strong>{totalPlayers.toLocaleString("ro-RO")}</strong>
+              {t.joc.totalPlayersLabel} <strong>{totalPlayers.toLocaleString(t.format.numberLocale)}</strong>
             </p>
           )}
 
           {loadingBoard ? (
-            <p className="joc-lb-loading">Se incarca...</p>
+            <p className="joc-lb-loading">{t.joc.loading}</p>
           ) : leaderboard.length === 0 ? (
-            <p className="joc-lb-loading">Niciun scor înregistrat încă. Fii primul!</p>
+            <p className="joc-lb-loading">{t.joc.noScores}</p>
           ) : (
             <table className="joc-lb-table">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Nume</th>
-                  <th>Scor</th>
-                  <th>Titlu</th>
+                  <th>{t.joc.colRank}</th>
+                  <th>{t.joc.colName}</th>
+                  <th>{t.joc.colScore}</th>
+                  <th>{t.joc.colTitle}</th>
                 </tr>
               </thead>
               <tbody>
@@ -283,7 +282,7 @@ export function JocPage() {
                     <td className="joc-lb-rank">{i + 1}</td>
                     <td>{entry.name}</td>
                     <td className="joc-lb-score">{entry.score}</td>
-                    <td className="joc-lb-title-cell">{getScoreTitle(entry.score)}</td>
+                    <td className="joc-lb-title-cell">{getScoreTitle(entry.score, t.joc.scoreTitles)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -292,10 +291,10 @@ export function JocPage() {
 
           <div className="joc-btn-row">
             <button className="joc-primary-btn" onClick={startGame}>
-              Joaca acum
+              {t.joc.playNow}
             </button>
             <button className="joc-secondary-btn" onClick={() => setPhase("menu")}>
-              Meniu
+              {t.joc.menuBtn}
             </button>
           </div>
         </div>
@@ -307,23 +306,23 @@ export function JocPage() {
     const s = finalScoreRef.current;
     return (
       <div className="joc-page">
-        <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+        <Seo title={t.joc.seoTitle} description={t.joc.seoDescription} path={seoPath} jsonLd={seoJsonLd} />
         <div className="joc-gameover">
-          <p className="joc-go-kicker">Joc terminat</p>
+          <p className="joc-go-kicker">{t.joc.gameOverKicker}</p>
           <div className="joc-go-score-box">
-            <p className="joc-go-score-label">SCORUL TAU</p>
+            <p className="joc-go-score-label">{t.joc.scoreLabel}</p>
             <p className="joc-go-score-val">{s}</p>
-            <p className="joc-go-title">{getScoreTitle(s)}</p>
+            <p className="joc-go-title">{getScoreTitle(s, t.joc.scoreTitles)}</p>
           </div>
 
           {s > 0 && submitStatus === "idle" && (
             <div className="joc-name-section">
-              <p className="joc-name-prompt">Introdu numele pentru clasament:</p>
+              <p className="joc-name-prompt">{t.joc.namePrompt}</p>
               <div className="joc-name-form">
                 <input
                   className="joc-name-input"
                   type="text"
-                  placeholder="Numele tau"
+                  placeholder={t.joc.namePlaceholder}
                   maxLength={30}
                   value={playerName}
                   onChange={(e) => setPlayerName(e.target.value)}
@@ -333,48 +332,48 @@ export function JocPage() {
                   autoFocus
                 />
                 <button className="joc-submit-btn" onClick={() => void handleSubmit()}>
-                  Trimite
+                  {t.joc.send}
                 </button>
               </div>
             </div>
           )}
 
           {submitStatus === "loading" && (
-            <p className="joc-submit-msg">Se salveaza...</p>
+            <p className="joc-submit-msg">{t.joc.saving}</p>
           )}
           {submitStatus === "inserted" && (
             <p className="joc-submit-msg joc-submit-success">
-              Bravo! Ai intrat in clasament!
+              {t.joc.successInserted}
             </p>
           )}
           {submitStatus === "updated" && (
             <p className="joc-submit-msg joc-submit-success">
-              Scorul tau a fost actualizat in clasament!
+              {t.joc.successUpdated}
             </p>
           )}
           {submitStatus === "skipped" && (
             <p className="joc-submit-msg joc-submit-muted">
-              Scorul nu intră în Top 10 sau ai deja unul mai bun.
+              {t.joc.skipped}
             </p>
           )}
           {submitStatus === "error" && (
             <p className="joc-submit-msg joc-submit-error">
-              Eroare la salvare. Încearcă din nou.
+              {t.joc.error}
             </p>
           )}
 
           <div className="joc-btn-row">
             <button className="joc-primary-btn" onClick={startGame}>
-              Joaca din nou
+              {t.joc.playAgain}
             </button>
             <button className="joc-secondary-btn" onClick={goToLeaderboard}>
-              Clasament
+              {t.joc.leaderboard}
             </button>
           </div>
 
           {highScore > 0 && (
             <p className="joc-go-highscore">
-              Highscore personal: <strong>{highScore}</strong>
+              {t.joc.personalHighscore} <strong>{highScore}</strong>
             </p>
           )}
         </div>
@@ -388,14 +387,14 @@ export function JocPage() {
 
   return (
     <div className="joc-page joc-page--arena">
-      <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+      <Seo title={t.joc.seoTitle} description={t.joc.seoDescription} path={seoPath} jsonLd={seoJsonLd} />
       {/* Score bar */}
       <div className="joc-scorebar">
         <span className="joc-scorebar-item">
-          SCOR <span className="joc-scorebar-val">{score}</span>
+          {t.joc.scorebarScor} <span className="joc-scorebar-val">{score}</span>
         </span>
         <span className="joc-scorebar-item joc-scorebar-right">
-          HIGHSCORE <span className="joc-scorebar-val joc-scorebar-hs">{highScore}</span>
+          {t.joc.scorebarHighscore} <span className="joc-scorebar-val joc-scorebar-hs">{highScore}</span>
         </span>
       </div>
 
@@ -410,13 +409,13 @@ export function JocPage() {
           <div className="joc-card-content">
             <p className="joc-ministry-name">{left.nume}</p>
             <div className="joc-divider" />
-            <p className="joc-budget-label">BUGET 2026</p>
-            <p className="joc-budget-value">{formatMld(left["2026"])}</p>
+            <p className="joc-budget-label">{t.joc.budgetLabel}</p>
+            <p className="joc-budget-value">{formatMld(left["2026"], locale)}</p>
           </div>
         </div>
 
         {/* VS badge */}
-        <div className="joc-vs-badge">VS</div>
+        <div className="joc-vs-badge">{t.joc.vs}</div>
 
         {/* Right — to guess */}
         <div
@@ -427,7 +426,7 @@ export function JocPage() {
           <div className="joc-card-content">
             <p className="joc-ministry-name">{right.nume}</p>
             <div className="joc-divider" />
-            <p className="joc-budget-label">BUGET 2026</p>
+            <p className="joc-budget-label">{t.joc.budgetLabel}</p>
 
             {phase === "playing" ? (
               <div className="joc-guess-btns">
@@ -435,19 +434,19 @@ export function JocPage() {
                   className="joc-guess-btn joc-guess-btn--higher"
                   onClick={() => handleGuess("higher")}
                 >
-                  <span className="joc-guess-arrow">▲</span> MAI MARE{" "}
+                  <span className="joc-guess-arrow">▲</span> {t.joc.higher}{" "}
                   <span className="joc-guess-arrow">▲</span>
                 </button>
                 <button
                   className="joc-guess-btn joc-guess-btn--lower"
                   onClick={() => handleGuess("lower")}
                 >
-                  <span className="joc-guess-arrow">▼</span> MAI MIC{" "}
+                  <span className="joc-guess-arrow">▼</span> {t.joc.lower}{" "}
                   <span className="joc-guess-arrow">▼</span>
                 </button>
               </div>
             ) : (
-              <p className="joc-budget-value">{formatMld(right["2026"])}</p>
+              <p className="joc-budget-value">{formatMld(right["2026"], locale)}</p>
             )}
           </div>
 

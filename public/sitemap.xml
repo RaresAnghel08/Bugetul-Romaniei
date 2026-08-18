@@ -1,363 +1,1083 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bugetul-romaniei.com/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/overview</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/overview" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/overview" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/overview" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/ministere</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/ministere" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/ministere" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/ministere" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/investitii</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/investitii" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/investitii" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/investitii" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/joc</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/joc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/joc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/joc" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/65</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/65" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/65" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/65" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/20</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/20" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/20" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/20" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/25</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/25" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/25" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/25" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/18</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/18" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/18" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/18" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/24</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/24" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/24" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/24" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/19</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/19" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/19" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/19" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/22</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/22" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/22" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/22" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/15</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/15" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/15" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/15" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/26</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/26" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/26" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/26" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/36</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/36" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/36" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/36" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/54</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/54" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/54" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/54" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/16</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/16" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/16" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/16" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/23</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/23" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/23" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/23" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/31</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/31" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/31" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/31" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/17</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/17" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/17" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/17" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/35</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/35" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/35" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/35" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/04</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/04" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/04" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/04" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/49</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/49" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/49" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/49" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/13</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/13" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/13" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/13" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/29</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/29" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/29" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/29" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/14</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/14" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/14" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/14" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/34</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/34" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/34" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/34" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/38</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/38" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/38" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/38" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/27</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/27" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/27" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/27" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/32</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/32" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/32" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/32" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/37</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/37" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/37" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/37" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/40</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/40" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/40" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/40" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/03</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/03" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/03" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/03" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/07</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/07" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/07" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/07" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/46</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/46" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/46" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/46" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/45</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/45" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/45" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/45" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/33</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/33" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/33" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/33" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/48</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/48" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/48" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/48" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/47</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/47" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/47" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/47" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/02</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/02" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/02" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/02" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/08</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/08" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/08" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/08" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/01</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/01" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/01" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/01" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/11</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/11" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/11" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/11" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/30</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/30" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/30" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/30" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/05</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/05" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/05" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/05" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/42</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/42" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/42" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/42" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/44</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/44" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/44" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/44" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/43</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/43" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/43" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/43" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/55</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/55" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/55" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/55" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/10</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/10" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/10" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/10" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/53</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/53" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/53" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/53" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/09</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/09" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/09" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/09" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/52</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/52" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/52" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/52" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/41</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/41" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/41" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/41" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/51</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/51" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/51" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/51" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/06</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/06" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/06" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/06" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/56</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/56" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/56" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/56" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/50</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/50" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/50" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/50" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/58</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/58" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/58" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/58" />
   </url>
   <url>
     <loc>https://bugetul-romaniei.com/minister/39</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/39" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/39" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/39" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/overview</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/overview" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/overview" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/overview" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/ministere</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/ministere" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/ministere" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/ministere" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/investitii</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/investitii" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/investitii" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/investitii" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/joc</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/joc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/joc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/joc" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/65</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/65" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/65" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/65" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/20</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/20" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/20" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/20" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/25</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/25" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/25" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/25" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/18</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/18" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/18" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/18" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/24</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/24" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/24" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/24" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/19</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/19" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/19" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/19" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/22</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/22" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/22" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/22" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/15</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/15" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/15" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/15" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/26</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/26" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/26" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/26" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/36</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/36" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/36" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/36" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/54</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/54" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/54" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/54" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/16</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/16" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/16" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/16" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/23</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/23" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/23" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/23" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/31</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/31" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/31" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/31" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/17</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/17" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/17" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/17" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/35</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/35" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/35" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/35" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/04</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/04" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/04" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/04" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/49</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/49" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/49" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/49" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/13</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/13" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/13" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/13" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/29</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/29" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/29" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/29" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/14</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/14" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/14" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/14" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/34</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/34" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/34" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/34" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/38</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/38" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/38" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/38" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/27</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/27" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/27" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/27" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/32</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/32" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/32" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/32" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/37</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/37" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/37" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/37" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/40</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/40" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/40" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/40" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/03</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/03" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/03" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/03" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/07</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/07" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/07" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/07" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/46</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/46" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/46" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/46" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/45</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/45" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/45" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/45" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/33</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/33" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/33" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/33" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/48</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/48" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/48" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/48" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/47</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/47" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/47" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/47" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/02</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/02" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/02" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/02" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/08</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/08" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/08" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/08" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/01</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/01" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/01" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/01" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/11</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/11" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/11" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/11" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/30</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/30" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/30" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/30" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/05</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/05" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/05" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/05" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/42</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/42" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/42" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/42" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/44</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/44" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/44" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/44" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/43</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/43" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/43" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/43" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/55</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/55" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/55" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/55" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/10</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/10" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/10" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/10" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/53</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/53" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/53" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/53" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/09</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/09" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/09" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/09" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/52</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/52" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/52" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/52" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/41</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/41" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/41" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/41" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/51</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/51" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/51" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/51" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/06</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/06" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/06" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/06" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/56</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/56" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/56" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/56" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/50</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/50" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/50" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/50" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/58</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/58" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/58" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/58" />
+  </url>
+  <url>
+    <loc>https://bugetul-romaniei.com/en/minister/39</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://bugetul-romaniei.com/minister/39" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bugetul-romaniei.com/en/minister/39" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bugetul-romaniei.com/minister/39" />
   </url>
 </urlset>

@@ -20,6 +20,7 @@ import { Seo } from "../components/Seo";
 import { formatAxisValuta, formatMldValuta, formatPct } from "../lib/format";
 import { toAbsoluteSiteUrl } from "../lib/seo";
 import { convertRON, type Moneda } from "../lib/cursValutar";
+import { useLocale } from "../i18n/LocaleContext";
 import type { MinisterRecord, OverviewData } from "../types";
 
 interface GuvData {
@@ -39,6 +40,7 @@ const getGovForYear = (year: string): string =>
   guverne.find((g) => g.ani.includes(year))?.premier ?? "";
 
 export const OverviewPage = () => {
+  const { t, locale, path } = useLocale();
   const [moneda, setMoneda] = useState<Moneda>("RON");
   const [selectedGuvern, setSelectedGuvern] = useState<string | null>(null);
 
@@ -53,22 +55,19 @@ export const OverviewPage = () => {
   const latest = latestYear ? overview[String(latestYear)] : undefined;
   const previous = previousYear ? overview[String(previousYear)] : undefined;
 
-  const seoTitle = "Overview Bugetar Romania | Bugetul României";
-  const seoDescription =
-    "Vezi evoluția veniturilor, cheltuielilor și deficitului bugetar din România, cu comparații anuale și top variații pe ministere.";
-  const seoPath = "/overview";
+  const seoPath = path("/overview");
 
   if (!latestYear || !latest) {
     return (
       <section className="panel">
         <Seo
-          title="Overview indisponibil | Bugetul României"
-          description="Datele pentru pagina de overview bugetar nu sunt disponibile momentan."
+          title={t.overview.unavailableSeoTitle}
+          description={t.overview.unavailableSeoDescription}
           path={seoPath}
           noIndex
         />
-        <h2 className="panel-title">Overview indisponibil</h2>
-        <p>Nu există date suficiente pentru a afișa evoluția bugetară.</p>
+        <h2 className="panel-title">{t.overview.unavailableTitle}</h2>
+        <p>{t.overview.unavailableBody}</p>
       </section>
     );
   }
@@ -149,15 +148,15 @@ export const OverviewPage = () => {
   const seoJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Overview Bugetar Romania",
-    inLanguage: "ro-RO",
+    name: t.overview.seoTitle,
+    inLanguage: t.common.inLanguage,
     url: toAbsoluteSiteUrl(seoPath),
-    description: seoDescription,
+    description: t.overview.seoDescription,
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Acasa", item: toAbsoluteSiteUrl("/") },
-        { "@type": "ListItem", position: 2, name: "Overview", item: toAbsoluteSiteUrl(seoPath) },
+        { "@type": "ListItem", position: 1, name: t.overview.breadcrumbHome, item: toAbsoluteSiteUrl(path("/")) },
+        { "@type": "ListItem", position: 2, name: t.overview.breadcrumbOverview, item: toAbsoluteSiteUrl(seoPath) },
       ],
     },
   };
@@ -166,48 +165,46 @@ export const OverviewPage = () => {
 
   return (
     <section className="page-grid">
-      <Seo title={seoTitle} description={seoDescription} path={seoPath} jsonLd={seoJsonLd} />
+      <Seo title={t.overview.seoTitle} description={t.overview.seoDescription} path={seoPath} jsonLd={seoJsonLd} />
 
       <section className="panel overview-hero reveal-on-load">
-        <p className="ministere-kicker">Panorama bugetara</p>
-        <h2 className="ministere-title">Overview {years[0]}-{latestYear}</h2>
-        <p className="landing-copy">
-          Evoluție multi-an pentru venituri, cheltuieli și deficit, cu focalizare pe anul curent.
-        </p>
+        <p className="ministere-kicker">{t.overview.kicker}</p>
+        <h2 className="ministere-title">{t.overview.titlePrefix} {years[0]}-{latestYear}</h2>
+        <p className="landing-copy">{t.overview.lead}</p>
       </section>
 
       <section className="cards-grid">
         <article className={`number-card overview-kpi-card overview-kpi-${venituriTone} reveal-on-load`}>
-          <p className="number-card-title">Venituri {latestYear}</p>
-          <p className="number-card-value">{formatMldValuta(venituriLatest, moneda)}</p>
+          <p className="number-card-title">{t.overview.kpiVenituri} {latestYear}</p>
+          <p className="number-card-value">{formatMldValuta(venituriLatest, moneda, locale)}</p>
           <p className="number-card-subtitle overview-kpi-subtitle">
-            {growthEmoji(venituriGrowthPct)} vs {previousYear ?? "an precedent"}: {formatPct(venituriGrowthPct)}
+            {growthEmoji(venituriGrowthPct)} {t.overview.vsLabel} {previousYear ?? t.common.anPrecedent}: {formatPct(venituriGrowthPct)}
           </p>
         </article>
 
         <article className={`number-card overview-kpi-card overview-kpi-${cheltuieliTone} reveal-on-load`}>
-          <p className="number-card-title">Cheltuieli {latestYear}</p>
-          <p className="number-card-value">{formatMldValuta(cheltuieliLatest, moneda)}</p>
+          <p className="number-card-title">{t.overview.kpiCheltuieli} {latestYear}</p>
+          <p className="number-card-value">{formatMldValuta(cheltuieliLatest, moneda, locale)}</p>
           <p className="number-card-subtitle overview-kpi-subtitle">
-            {growthEmoji(cheltuieliGrowthPct)} vs {previousYear ?? "an precedent"}: {formatPct(cheltuieliGrowthPct)}
+            {growthEmoji(cheltuieliGrowthPct)} {t.overview.vsLabel} {previousYear ?? t.common.anPrecedent}: {formatPct(cheltuieliGrowthPct)}
           </p>
         </article>
 
         <article className={`number-card overview-kpi-card overview-kpi-${deficitTone} reveal-on-load`}>
-          <p className="number-card-title">Deficit {latestYear}</p>
-          <p className="number-card-value">{formatMldValuta(deficitLatest, moneda)}</p>
+          <p className="number-card-title">{t.overview.kpiDeficit} {latestYear}</p>
+          <p className="number-card-value">{formatMldValuta(deficitLatest, moneda, locale)}</p>
           <p className="number-card-subtitle overview-kpi-subtitle">
-            {growthEmoji(deficitLatest)} vs {previousYear ?? "an precedent"}: {formatPct(deficitImprovementPct)}
+            {growthEmoji(deficitLatest)} {t.overview.vsLabel} {previousYear ?? t.common.anPrecedent}: {formatPct(deficitImprovementPct)}
           </p>
         </article>
 
         <article className={`number-card overview-kpi-card overview-kpi-${deficitPibTone} reveal-on-load`}>
-          <p className="number-card-title">Deficit / PIB</p>
+          <p className="number-card-title">{t.overview.kpiDeficitPib}</p>
           <p className="number-card-value">
             {deficitPctPib === null ? "n/a" : formatPct(deficitPctPib, 2)}
           </p>
           <p className="number-card-subtitle overview-kpi-subtitle">
-            {deficitPctPib === null ? "➖" : "📉"} PIB {latestYear}: {formatMldValuta(pibLatest, moneda)}
+            {deficitPctPib === null ? "➖" : "📉"} {t.overview.pibLabel} {latestYear}: {formatMldValuta(pibLatest, moneda, locale)}
           </p>
         </article>
       </section>
@@ -216,14 +213,14 @@ export const OverviewPage = () => {
       <section className="panel">
         <div className="chart-controls-row">
           <div className="chart-controls-group">
-            <span className="chart-controls-label">Guvern:</span>
+            <span className="chart-controls-label">{t.overview.guvernLabel}</span>
             <div className="guvern-chips">
               <button
                 type="button"
                 className={`guvern-chip ${!selectedGuvern ? "guvern-chip--active" : ""}`}
                 onClick={() => setSelectedGuvern(null)}
               >
-                Toate
+                {t.common.toate}
               </button>
               {guverne.map((g) => (
                 <button
@@ -241,7 +238,7 @@ export const OverviewPage = () => {
             </div>
           </div>
           <div className="chart-controls-group">
-            <span className="chart-controls-label">Moneda:</span>
+            <span className="chart-controls-label">{t.overview.monedaLabel}</span>
             <div className="moneda-toggle">
               {(["RON", "EUR", "USD"] as Moneda[]).map((m) => (
                 <button
@@ -260,7 +257,7 @@ export const OverviewPage = () => {
 
       <section className="panel">
         <h2 className="panel-title">
-          Trend venituri vs cheltuieli
+          {t.overview.trendTitle}
           {selectedGuvData ? ` — ${selectedGuvData.premier} (${selectedGuvData.partid})` : ""}
         </h2>
         <div className="chart-wrap tall">
@@ -273,14 +270,14 @@ export const OverviewPage = () => {
                 tickMargin={8}
                 tick={{ fill: "#f7f7f7" }}
                 axisLine={{ stroke: "#4e4f66" }}
-                tickFormatter={(v) => formatAxisValuta(v, moneda)}
+                tickFormatter={(v) => formatAxisValuta(v, moneda, locale)}
               />
               <Tooltip
                 labelFormatter={(label) => {
                   const gov = getGovForYear(String(label));
                   return gov ? `${label} — ${gov}` : String(label);
                 }}
-                formatter={(value) => [formatMldValuta(Number(value), moneda)]}
+                formatter={(value) => [formatMldValuta(Number(value), moneda, locale)]}
                 contentStyle={{
                   background: "#101226",
                   border: "1px solid #3e4261",
@@ -311,7 +308,7 @@ export const OverviewPage = () => {
               <Line
                 type="monotone"
                 dataKey="venituri"
-                name="Venituri"
+                name={t.overview.venituriLegend}
                 stroke="#2ec4b6"
                 strokeWidth={3}
                 dot={{ r: 3, fill: "#dcfce7", strokeWidth: 0 }}
@@ -320,7 +317,7 @@ export const OverviewPage = () => {
               <Line
                 type="monotone"
                 dataKey="cheltuieli"
-                name="Cheltuieli"
+                name={t.overview.cheltuieliLegend}
                 stroke="#ff9f1c"
                 strokeWidth={3}
                 dot={{ r: 3, fill: "#ffedd5", strokeWidth: 0 }}
@@ -332,7 +329,7 @@ export const OverviewPage = () => {
       </section>
 
       <section className="panel">
-        <h2 className="panel-title">Deficit anual</h2>
+        <h2 className="panel-title">{t.overview.deficitAnualTitle}</h2>
         <div className="chart-wrap medium">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={chartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }}>
@@ -343,14 +340,14 @@ export const OverviewPage = () => {
                 tickMargin={8}
                 tick={{ fill: "#f7f7f7" }}
                 axisLine={{ stroke: "#4e4f66" }}
-                tickFormatter={(v) => formatAxisValuta(v, moneda)}
+                tickFormatter={(v) => formatAxisValuta(v, moneda, locale)}
               />
               <Tooltip
                 labelFormatter={(label) => {
                   const gov = getGovForYear(String(label));
                   return gov ? `${label} — ${gov}` : String(label);
                 }}
-                formatter={(value) => [formatMldValuta(Number(value), moneda)]}
+                formatter={(value) => [formatMldValuta(Number(value), moneda, locale)]}
                 contentStyle={{
                   background: "#101226",
                   border: "1px solid #3e4261",
@@ -377,14 +374,14 @@ export const OverviewPage = () => {
                     }}
                   />
                 ))}
-              <Bar dataKey="deficit" name="Deficit" fill="#ef4444" radius={[8, 8, 0, 0]} />
+              <Bar dataKey="deficit" name={t.overview.deficitLegend} fill="#ef4444" radius={[8, 8, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>
       </section>
 
       <section className="panel">
-        <h2 className="panel-title">Deficit ca % din PIB</h2>
+        <h2 className="panel-title">{t.overview.deficitPibTitle}</h2>
         <div className="chart-wrap medium">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={pibChartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }}>
@@ -402,7 +399,7 @@ export const OverviewPage = () => {
                   const gov = getGovForYear(String(label));
                   return gov ? `${label} — ${gov}` : String(label);
                 }}
-                formatter={(value) => [`${Math.abs(Number(value)).toFixed(2)}%`, "Deficit / PIB"]}
+                formatter={(value) => [`${Math.abs(Number(value)).toFixed(2)}%`, t.overview.deficitPibLegend]}
                 contentStyle={{
                   background: "#101226",
                   border: "1px solid #3e4261",
@@ -429,11 +426,11 @@ export const OverviewPage = () => {
                     }}
                   />
                 ))}
-              <ReferenceArea y1={-3} y2={0} fill="#ef4444" fillOpacity={0.08} label={{ value: "Maastricht -3%", position: "insideBottomRight", fill: "#ef4444", fontSize: 10 }} />
+              <ReferenceArea y1={-3} y2={0} fill="#ef4444" fillOpacity={0.08} label={{ value: t.overview.maastrichtLabel, position: "insideBottomRight", fill: "#ef4444", fontSize: 10 }} />
               <Line
                 type="monotone"
                 dataKey="deficit_pct"
-                name="Deficit / PIB"
+                name={t.overview.deficitPibLegend}
                 stroke="#ef4444"
                 strokeWidth={3}
                 dot={{ r: 4, fill: "#fca5a5", strokeWidth: 0 }}
@@ -442,17 +439,14 @@ export const OverviewPage = () => {
             </LineChart>
           </ResponsiveContainer>
         </div>
-        <p className="chart-footnote">
-          PIB-ul este calculat in RON; raportul este independent de moneda selectata.
-          Sursa PIB: INS (estimari pentru 2025-2026).
-        </p>
+        <p className="chart-footnote">{t.overview.footnote}</p>
       </section>
 
       <section className="panel dual-list-panel">
-        <h2 className="panel-title">Câștigători și Pierzători {latestYear}</h2>
+        <h2 className="panel-title">{t.overview.castigatoriPierzatoriTitle} {latestYear}</h2>
         <div className="dual-list">
           <div>
-            <h3 className="list-title positive">Top 5 creșteri</h3>
+            <h3 className="list-title positive">{t.overview.top5Cresteri}</h3>
             <ul className="plain-list">
               {crescatori.map((minister) => (
                 <li key={`up-${minister.cod}`} className="list-row">
@@ -464,7 +458,7 @@ export const OverviewPage = () => {
           </div>
 
           <div>
-            <h3 className="list-title negative">Top 5 scăderi</h3>
+            <h3 className="list-title negative">{t.overview.top5Scaderi}</h3>
             <ul className="plain-list">
               {scaderi.map((minister) => (
                 <li key={`down-${minister.cod}`} className="list-row">

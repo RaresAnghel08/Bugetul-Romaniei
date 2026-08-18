@@ -35,6 +35,8 @@ const escapeXml = (value) =>
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&apos;");
 
+const enPathFor = (path) => (path === "/" ? "/en" : `/en${path}`);
+
 const run = async () => {
   const raw = await readFile(ministerePath, "utf8");
   const ministere = JSON.parse(raw);
@@ -46,15 +48,29 @@ const run = async () => {
     changefreq: "weekly",
   }));
 
-  const routes = [...staticRoutes, ...ministryRoutes];
+  const roRoutes = [...staticRoutes, ...ministryRoutes];
+  const enRoutes = roRoutes.map((route) => ({
+    ...route,
+    path: enPathFor(route.path),
+  }));
+
+  const routes = [...roRoutes, ...enRoutes];
 
   const urlEntries = routes
-    .map(
-      (route) => `  <url>\n    <loc>${escapeXml(toAbsoluteUrl(route.path))}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${route.changefreq}</changefreq>\n    <priority>${route.priority}</priority>\n  </url>`
-    )
+    .map((route) => {
+      const isEn = route.path === "/en" || route.path.startsWith("/en/");
+      const roPath = isEn ? (route.path === "/en" ? "/" : route.path.slice(3)) : route.path;
+      const enPath = enPathFor(roPath);
+      const alternates = [
+        `    <xhtml:link rel="alternate" hreflang="ro" href="${escapeXml(toAbsoluteUrl(roPath))}" />`,
+        `    <xhtml:link rel="alternate" hreflang="en" href="${escapeXml(toAbsoluteUrl(enPath))}" />`,
+        `    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(toAbsoluteUrl(roPath))}" />`,
+      ].join("\n");
+      return `  <url>\n    <loc>${escapeXml(toAbsoluteUrl(route.path))}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${route.changefreq}</changefreq>\n    <priority>${route.priority}</priority>\n${alternates}\n  </url>`;
+    })
     .join("\n");
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>\n`;
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlEntries}\n</urlset>\n`;
 
   const robots = `User-agent: *\nAllow: /\n\nSitemap: ${toAbsoluteUrl("/sitemap.xml")}\n`;
 

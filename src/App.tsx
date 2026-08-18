@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link, NavLink, Route, Routes } from "react-router-dom";
+import { useState, type ReactNode } from "react";
+import { Link, NavLink, Route, Routes, useLocation } from "react-router-dom";
 import { LandingPage } from "./pages/Landing";
 import { OverviewPage } from "./pages/Overview";
 import { MinisterePage } from "./pages/Ministere";
@@ -11,18 +11,58 @@ import { ConfidentialitatePage } from "./pages/Confidentialitate";
 import { ComparatorPage } from "./pages/Comparator";
 import { DesprePage } from "./pages/Despre";
 import { NotFoundPage } from "./pages/NotFound";
+import { LocaleProvider, useLocale, swapLocaleInPath } from "./i18n/LocaleContext";
+import type { Locale } from "./i18n/types";
 
-const navItems = [
-  { to: "/", label: "Acasa" },
-  { to: "/overview", label: "Overview" },
-  { to: "/ministere", label: "Ministere" },
-  { to: "/comparator", label: "Compară ministere" },
-  { to: "/investitii", label: "Investitii" },
-  { to: "/joc", label: "🎮 Joc" },
+const routeDefs: { path: string; element: ReactNode }[] = [
+  { path: "", element: <LandingPage /> },
+  { path: "overview", element: <OverviewPage /> },
+  { path: "ministere", element: <MinisterePage /> },
+  { path: "minister/:cod", element: <MinisterPage /> },
+  { path: "investitii", element: <InvestitiiPage /> },
+  { path: "joc", element: <JocPage /> },
+  { path: "termeni", element: <TermeniPage /> },
+  { path: "confidentialitate", element: <ConfidentialitatePage /> },
+  { path: "comparator", element: <ComparatorPage /> },
+  { path: "despre", element: <DesprePage /> },
 ];
 
-function App() {
+const LanguageSwitcher = () => {
+  const { locale } = useLocale();
+  const location = useLocation();
+
+  const targets: { code: Locale; label: string }[] = [
+    { code: "ro", label: "RO" },
+    { code: "en", label: "EN" },
+  ];
+
+  return (
+    <div className="lang-switch" aria-label="Limba / Language">
+      {targets.map((target) => (
+        <Link
+          key={target.code}
+          to={swapLocaleInPath(location.pathname, target.code) + location.search}
+          className={locale === target.code ? "topnav-link topnav-link-active" : "topnav-link"}
+        >
+          {target.label}
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+const AppShell = () => {
+  const { t, path } = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const navItems = [
+    { to: path("/"), label: t.nav.home, end: true },
+    { to: path("/overview"), label: t.nav.overview, end: false },
+    { to: path("/ministere"), label: t.nav.ministere, end: false },
+    { to: path("/comparator"), label: t.nav.comparator, end: false },
+    { to: path("/investitii"), label: t.nav.investitii, end: false },
+    { to: path("/joc"), label: t.nav.joc, end: false },
+  ];
 
   return (
     <div className="app-shell">
@@ -32,12 +72,12 @@ function App() {
           <h1 className="brand-title">Bugetul României</h1>
         </div>
 
-        <nav className="topnav" aria-label="Navigatie principala">
+        <nav className="topnav" aria-label={t.nav.mainNavAria}>
           {navItems.map((item) => (
             <NavLink
               key={item.to}
               to={item.to}
-              end={item.to === "/"}
+              end={item.end}
               className={({ isActive }) =>
                 isActive ? "topnav-link topnav-link-active" : "topnav-link"
               }
@@ -45,12 +85,13 @@ function App() {
               {item.label}
             </NavLink>
           ))}
+          <LanguageSwitcher />
         </nav>
 
         <button
           type="button"
           className="hamburger-btn"
-          aria-label={menuOpen ? "Închide meniu" : "Deschide meniu"}
+          aria-label={menuOpen ? t.nav.closeMenu : t.nav.openMenu}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((o) => !o)}
         >
@@ -58,12 +99,12 @@ function App() {
         </button>
 
         {menuOpen && (
-          <nav className="mobile-menu" aria-label="Meniu mobil">
+          <nav className="mobile-menu" aria-label={t.nav.mobileNavAria}>
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
                 to={item.to}
-                end={item.to === "/"}
+                end={item.end}
                 className={({ isActive }) =>
                   isActive ? "mobile-menu-link mobile-menu-link--active" : "mobile-menu-link"
                 }
@@ -72,22 +113,16 @@ function App() {
                 {item.label}
               </NavLink>
             ))}
+            <LanguageSwitcher />
           </nav>
         )}
       </header>
 
       <main className="page-wrap">
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/overview" element={<OverviewPage />} />
-          <Route path="/ministere" element={<MinisterePage />} />
-          <Route path="/minister/:cod" element={<MinisterPage />} />
-          <Route path="/investitii" element={<InvestitiiPage />} />
-          <Route path="/joc" element={<JocPage />} />
-          <Route path="/termeni" element={<TermeniPage />} />
-          <Route path="/confidentialitate" element={<ConfidentialitatePage />} />
-          <Route path="/comparator" element={<ComparatorPage />} />
-          <Route path="/despre" element={<DesprePage />} />
+          {routeDefs.map((route) => (
+            <Route key={route.path || "index"} path={route.path} element={route.element} />
+          ))}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
@@ -96,35 +131,32 @@ function App() {
         <div className="site-footer-grid">
           <div>
             <p className="site-footer-brand">bugetul-romaniei.com</p>
-            <p className="landing-copy">
-              Proiect civic independent care transformă fișierele XML bugetare oficiale în
-              vizualizări clare pentru comparații rapide între ani, ministere și investiții.
-            </p>
+            <p className="landing-copy">{t.footer.tagline}</p>
           </div>
 
           <div>
-            <p className="site-footer-title">Servicii</p>
+            <p className="site-footer-title">{t.footer.serviciiTitle}</p>
             <ul className="site-footer-list">
               <li>
-                <Link className="site-footer-link" to="/overview">
-                  Overview bugetar
+                <Link className="site-footer-link" to={path("/overview")}>
+                  {t.footer.overviewLink}
                 </Link>
               </li>
               <li>
-                <Link className="site-footer-link" to="/ministere">
-                  Ministere
+                <Link className="site-footer-link" to={path("/ministere")}>
+                  {t.footer.ministereLink}
                 </Link>
               </li>
               <li>
-                <Link className="site-footer-link" to="/investitii">
-                  Investitii
+                <Link className="site-footer-link" to={path("/investitii")}>
+                  {t.footer.investitiiLink}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <p className="site-footer-title">Resurse</p>
+            <p className="site-footer-title">{t.footer.resurseTitle}</p>
             <ul className="site-footer-list">
               <li>
                 <a
@@ -133,19 +165,19 @@ function App() {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  Surse XML
+                  {t.footer.sourcesLink}
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <p className="site-footer-title">Despre</p>
+            <p className="site-footer-title">{t.footer.despreTitle}</p>
             <ul className="site-footer-list">
-              <li>Proiect civic</li>
+              <li>{t.footer.proiectCivic}</li>
               <li>
                 <a className="site-footer-link" href="https://mfinante.gov.ro/" target="_blank" rel="noreferrer noopener">
-                  Ministerul Finantelor
+                  {t.footer.ministerulFinantelor}
                 </a>
               </li>
               <li>
@@ -155,7 +187,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  Contact / Feedback
+                  {t.footer.contact}
                 </a>
               </li>
             </ul>
@@ -163,26 +195,23 @@ function App() {
         </div>
 
         <div className="site-footer-legal">
-          <Link className="site-footer-link" to="/termeni">
-            Termeni si Conditii
+          <Link className="site-footer-link" to={path("/termeni")}>
+            {t.footer.termeni}
           </Link>
           <span className="site-footer-separator">|</span>
-          <Link className="site-footer-link" to="/confidentialitate">
-            Confidentialitate
+          <Link className="site-footer-link" to={path("/confidentialitate")}>
+            {t.footer.confidentialitate}
           </Link>
           <span className="site-footer-separator">|</span>
-          <Link className="site-footer-link" to="/despre">
-            Despre proiect
+          <Link className="site-footer-link" to={path("/despre")}>
+            {t.footer.despreProiect}
           </Link>
         </div>
 
-        <p className="site-footer-disclaimer">
-          Bugetul României este un proiect civic independent, neafiliat cu ANAF sau Ministerul
-          Finantelor. Datele sunt preluate din surse oficiale publice (XML).
-        </p>
+        <p className="site-footer-disclaimer">{t.footer.disclaimer}</p>
 
         <p className="site-footer-credit">
-          Built by{" "}
+          {t.footer.builtBy}{" "}
           <a
             className="site-footer-link site-footer-credit-name"
             href="https://www.linkedin.com/in/raresanghel/"
@@ -194,6 +223,29 @@ function App() {
         </p>
       </footer>
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Routes>
+      <Route
+        path="/en/*"
+        element={
+          <LocaleProvider locale="en">
+            <AppShell />
+          </LocaleProvider>
+        }
+      />
+      <Route
+        path="/*"
+        element={
+          <LocaleProvider locale="ro">
+            <AppShell />
+          </LocaleProvider>
+        }
+      />
+    </Routes>
   );
 }
 

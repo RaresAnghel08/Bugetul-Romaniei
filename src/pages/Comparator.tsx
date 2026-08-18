@@ -14,6 +14,7 @@ import ministereJson from "../../data/ministere.json";
 import { Seo } from "../components/Seo";
 import { formatAxisBudget, formatMld } from "../lib/format";
 import { toAbsoluteSiteUrl } from "../lib/seo";
+import { useLocale } from "../i18n/LocaleContext";
 import type { MinisterRecord } from "../types";
 
 const ministere = ministereJson as MinisterRecord[];
@@ -36,6 +37,7 @@ const tooltipStyle = {
 };
 
 export const ComparatorPage = () => {
+  const { t, locale, path } = useLocale();
   const [searchParams, setSearchParams] = useSearchParams();
   const [comboQuery, setComboQuery] = useState("");
   const [comboOpen, setComboOpen] = useState(false);
@@ -81,35 +83,33 @@ export const ComparatorPage = () => {
     return point;
   });
 
-  const seoPath = "/comparator";
+  const seoPath = path("/comparator");
 
   return (
     <section className="page-grid">
       <Seo
-        title="Comparator Ministere | Bugetul României"
-        description="Compară evoluția bugetară a ministerelor române între 2015 și 2026 pe același grafic."
+        title={t.comparator.seoTitle}
+        description={t.comparator.seoDescription}
         path={seoPath}
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          name: "Comparator Ministere",
+          name: t.comparator.jsonLdName,
           url: toAbsoluteSiteUrl(seoPath),
-          inLanguage: "ro-RO",
+          inLanguage: t.common.inLanguage,
         }}
       />
 
       <section className="panel reveal-on-load">
-        <p className="ministere-kicker">Analiză comparativă</p>
-        <h2 className="ministere-title">Compară ministere</h2>
-        <p className="landing-copy">
-          Selectează 2–4 ministere pentru a le compara evoluția bugetară 2015–2026.
-        </p>
+        <p className="ministere-kicker">{t.comparator.kicker}</p>
+        <h2 className="ministere-title">{t.comparator.title}</h2>
+        <p className="landing-copy">{t.comparator.lead}</p>
       </section>
 
       {/* position+zIndex lift the stacking context above sibling panels so
           the absolute-positioned dropdown floats over the chart below */}
       <section className="panel" style={{ position: "relative", zIndex: 10 }}>
-        <h3 className="panel-title">Selectează ministere</h3>
+        <h3 className="panel-title">{t.comparator.selectTitle}</h3>
 
         <div className="comparator-combobox">
           <div className="comparator-selected">
@@ -121,7 +121,7 @@ export const ComparatorPage = () => {
                   type="button"
                   className="comparator-chip-remove"
                   onClick={() => toggleMinister(m.cod)}
-                  aria-label={`Elimină ${m.nume}`}
+                  aria-label={`${t.comparator.removeAriaLabelPrefix} ${m.nume}`}
                 >
                   ×
                 </button>
@@ -133,8 +133,8 @@ export const ComparatorPage = () => {
                 className="comparator-search-input"
                 placeholder={
                   selectedCods.length === 0
-                    ? "Caută minister (ex: Apărare, Sănătate)..."
-                    : "Adaugă alt minister..."
+                    ? t.comparator.searchPlaceholderEmpty
+                    : t.comparator.searchPlaceholderMore
                 }
                 value={comboQuery}
                 onChange={(e) => {
@@ -164,7 +164,7 @@ export const ComparatorPage = () => {
                 >
                   <span className="comparator-dropdown-name">{m.nume}</span>
                   <span className="muted comparator-dropdown-amount">
-                    {formatMld(m["2026"] ?? null)}
+                    {formatMld(m["2026"] ?? null, locale)}
                   </span>
                 </li>
               ))}
@@ -174,7 +174,7 @@ export const ComparatorPage = () => {
 
         {selectedCods.length === 0 && (
           <p className="muted" style={{ marginTop: "12px" }}>
-            Niciun minister selectat. Caută în câmpul de mai sus.
+            {t.comparator.noneSelected}
           </p>
         )}
       </section>
@@ -182,10 +182,10 @@ export const ComparatorPage = () => {
       {selectedMinistere.length >= 1 && (
         <section className="panel">
           <h3 className="panel-title">
-            Evoluție bugetară 2015–2026
+            {t.comparator.evolutieTitle}
             {selectedMinistere.length < 2 && (
               <span className="muted" style={{ fontWeight: 400, fontSize: "0.85rem", marginLeft: "8px" }}>
-                (selectează al 2-lea minister pentru comparație)
+                {t.comparator.selectSecondHint}
               </span>
             )}
           </h3>
@@ -205,7 +205,7 @@ export const ComparatorPage = () => {
                   tickMargin={8}
                   tick={{ fill: "#f7f7f7" }}
                   axisLine={{ stroke: "#4e4f66" }}
-                  tickFormatter={(v) => formatAxisBudget(v)}
+                  tickFormatter={(v) => formatAxisBudget(v, locale)}
                 />
                 <Tooltip
                   formatter={(value, name) => {
@@ -215,7 +215,7 @@ export const ComparatorPage = () => {
                         ? `${m.nume.slice(0, 35)}…`
                         : m.nume
                       : String(name);
-                    return [formatMld(Number(value)), label];
+                    return [formatMld(Number(value), locale), label];
                   }}
                   contentStyle={tooltipStyle}
                 />
@@ -247,7 +247,7 @@ export const ComparatorPage = () => {
       {/* Quick-select chips for common ministries */}
       {selectedCods.length === 0 && (
         <section className="panel">
-          <h3 className="panel-title">Pornește rapid</h3>
+          <h3 className="panel-title">{t.comparator.quickStartTitle}</h3>
           <div className="comparator-quick-chips">
             {ministere
               .filter((m) => !m.exclude_from_ranking)

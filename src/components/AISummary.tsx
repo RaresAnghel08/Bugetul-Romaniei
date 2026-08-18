@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import type { CapitolDetail, MinisterRecord } from "../types";
 import { formatPct } from "../lib/format";
+import { useLocale } from "../i18n/LocaleContext";
+import type { Dictionary } from "../i18n/dictionary";
 
 interface AISummaryProps {
   minister: MinisterRecord;
@@ -8,46 +10,51 @@ interface AISummaryProps {
   year: number;
 }
 
-const buildSummary = (minister: MinisterRecord, topCapitole: CapitolDetail[]): string[] => {
+const buildSummary = (
+  minister: MinisterRecord,
+  topCapitole: CapitolDetail[],
+  t: Dictionary["aiSummary"]
+): string[] => {
   const bullets: string[] = [];
 
   const delta = minister.delta_pct;
   if (delta === null || delta === undefined) {
-    bullets.push("Comparatia procentuala fata de anul anterior nu este disponibila pentru acest minister.");
+    bullets.push(t.deltaUnavailable);
   } else if (delta >= 0) {
-    bullets.push(`Bugetul pe 2026 este in crestere fata de 2025, cu ${formatPct(delta)}.`);
+    bullets.push(`${t.deltaGrowingPrefix} ${formatPct(delta)}${t.deltaGrowingSuffix}`);
   } else {
-    bullets.push(`Bugetul pe 2026 este in scadere fata de 2025, cu ${formatPct(delta)}.`);
+    bullets.push(`${t.deltaShrinkingPrefix} ${formatPct(delta)}${t.deltaShrinkingSuffix}`);
   }
 
   const [first, second] = topCapitole;
   if (first && second) {
     bullets.push(
-      `Capitolele dominante in alocare sunt ${first.denumire} si ${second.denumire}, care concentreaza grosul bugetului pe 2026.`
+      `${t.chaptersTwoPrefix} ${first.denumire} ${t.chaptersTwoMiddle} ${second.denumire}${t.chaptersTwoSuffix}`
     );
   } else if (first) {
-    bullets.push(`Principalul capitol ca volum este ${first.denumire}.`);
+    bullets.push(`${t.chaptersOnePrefix} ${first.denumire}${t.chaptersOneSuffix}`);
   } else {
-    bullets.push("Nu exista suficiente date de capitol pentru o distributie detaliata.");
+    bullets.push(t.chaptersNone);
   }
 
   if (minister.estimari_2027 && minister.estimari_2028 && minister.estimari_2029) {
     const trend =
       minister.estimari_2029 > minister.estimari_2027
-        ? "traiectorie usoara de crestere"
+        ? t.trendGrowing
         : minister.estimari_2029 < minister.estimari_2027
-          ? "traiectorie usoara de ajustare"
-          : "traiectorie relativ stabila";
-    bullets.push(`Estimarea 2027-2029 indica o ${trend}, fara schimbari structurale majore.`);
+          ? t.trendAdjusting
+          : t.trendStable;
+    bullets.push(`${t.trendPrefix} ${trend}${t.trendSuffix}`);
   } else {
-    bullets.push("Estimarea pe 2027-2029 este incompleta, deci trendul multianual ramane orientativ.");
+    bullets.push(t.trendIncomplete);
   }
 
   return bullets.slice(0, 3);
 };
 
 export const AISummary = ({ minister, topCapitole, year }: AISummaryProps) => {
-  const storageKey = `summary_${minister.cod}_${year}`;
+  const { t, locale } = useLocale();
+  const storageKey = `summary_${minister.cod}_${year}_${locale}`;
   const initial = useMemo(() => {
     const fromStorage = localStorage.getItem(storageKey);
     if (fromStorage) {
@@ -63,7 +70,7 @@ export const AISummary = ({ minister, topCapitole, year }: AISummaryProps) => {
   const [bullets, setBullets] = useState<string[] | null>(initial);
 
   const regenerate = () => {
-    const next = buildSummary(minister, topCapitole);
+    const next = buildSummary(minister, topCapitole, t.aiSummary);
     setBullets(next);
     localStorage.setItem(storageKey, JSON.stringify(next));
   };
@@ -71,17 +78,17 @@ export const AISummary = ({ minister, topCapitole, year }: AISummaryProps) => {
   return (
     <section className="panel">
       <div className="panel-header-row">
-        <h3 className="panel-title">Sumar automat</h3>
+        <h3 className="panel-title">{t.aiSummary.title}</h3>
         <button className="ghost-btn" onClick={regenerate} type="button">
-          Regenereaza
+          {t.aiSummary.regenerate}
         </button>
       </div>
 
       {!bullets ? (
         <div className="summary-placeholder">
-          <p>Genereaza un rezumat in 3 puncte pentru ministerul curent.</p>
+          <p>{t.aiSummary.placeholderText}</p>
           <button className="primary-btn" type="button" onClick={regenerate}>
-            Genereaza sumar
+            {t.aiSummary.generateBtn}
           </button>
         </div>
       ) : (

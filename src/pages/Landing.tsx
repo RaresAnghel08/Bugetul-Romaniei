@@ -7,6 +7,7 @@ import { Seo } from "../components/Seo";
 import { formatMld } from "../lib/format";
 import { SITE_NAME, toAbsoluteSiteUrl } from "../lib/seo";
 import { getCount, incrementAndGetCount } from "../lib/counter";
+import { useLocale } from "../i18n/LocaleContext";
 import type { InvestitieRecord, MinisterRecord, OverviewData } from "../types";
 
 const overview = overviewJson as OverviewData;
@@ -14,6 +15,7 @@ const ministere = ministereJson as MinisterRecord[];
 const investitii = investitiiJson as InvestitieRecord[];
 
 export const LandingPage = () => {
+  const { t, locale, path } = useLocale();
   const [totalVisits, setTotalVisits] = useState<number | null>(null);
 
   useEffect(() => {
@@ -33,34 +35,33 @@ export const LandingPage = () => {
   const deficit2026 = overview["2026"].deficit;
   const topMinister2026 = [...ministere]
     .sort((a, b) => (b["2026"] ?? 0) - (a["2026"] ?? 0))[0] ?? null;
-  const formattedVisits = new Intl.NumberFormat("ro-RO", { maximumFractionDigits: 0 }).format(
+  const formattedVisits = new Intl.NumberFormat(t.format.numberLocale, { maximumFractionDigits: 0 }).format(
     Math.max(0, totalVisits ?? 0)
   );
 
-  const seoDescription =
-    "Dashboard civic pentru analiza bugetului României 2025-2026: overview național, ministere, investiții și comparații rapide pe date oficiale.";
+  const seoPath = path("/");
 
   const seoJsonLd = [
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: `${SITE_NAME} - Dashboard Civic`,
-      url: toAbsoluteSiteUrl("/"),
-      inLanguage: "ro-RO",
-      description: seoDescription,
+      name: `${SITE_NAME} - ${t.landing.jsonLdWebPageName}`,
+      url: toAbsoluteSiteUrl(seoPath),
+      inLanguage: t.common.inLanguage,
+      description: t.landing.seoDescription,
       isPartOf: {
         "@type": "WebSite",
         name: SITE_NAME,
-        url: toAbsoluteSiteUrl("/"),
+        url: toAbsoluteSiteUrl(seoPath),
       },
     },
     {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Bugetul României 2025-2026",
-      description: "Date bugetare agregate din surse publice oficiale, transformate in vizualizari interactive.",
-      inLanguage: "ro-RO",
-      url: toAbsoluteSiteUrl("/"),
+      name: t.landing.jsonLdDatasetName,
+      description: t.landing.jsonLdDatasetDescription,
+      inLanguage: t.common.inLanguage,
+      url: toAbsoluteSiteUrl(seoPath),
       creator: {
         "@type": "Person",
         name: "Rares Anghel",
@@ -72,66 +73,63 @@ export const LandingPage = () => {
   return (
     <section className="page-grid">
       <Seo
-        title="Bugetul României | Dashboard Civic Bugetar 2025-2026"
-        description={seoDescription}
-        path="/"
+        title={t.landing.seoTitle}
+        description={t.landing.seoDescription}
+        path={seoPath}
         jsonLd={seoJsonLd}
       />
 
       <section className="landing-hero panel reveal-on-load">
         <div className="landing-hero-grid">
           <div>
-            <p className="landing-kicker">Bugetul României 2025-2026</p>
-            <h2 className="landing-title">Unde merg banii publici, într-un tablou clar, explorabil și deschis.</h2>
-            <p className="landing-lead">
-              Proiect civic care transformă fișiere XML bugetare în vizualizări accesibile: ministere,
-              programe și investiții, pentru comparații rapide și transparente.
-            </p>
+            <p className="landing-kicker">{t.landing.heroKicker}</p>
+            <h2 className="landing-title">{t.landing.heroTitle}</h2>
+            <p className="landing-lead">{t.landing.heroLead}</p>
 
             <div className="landing-actions">
-              <Link className="primary-btn inline-btn" to="/overview">
-                Vezi overview
+              <Link className="primary-btn inline-btn" to={path("/overview")}>
+                {t.landing.ctaOverview}
               </Link>
-              <Link className="ghost-btn inline-btn" to="/ministere">
-                Explorează ministere
+              <Link className="ghost-btn inline-btn" to={path("/ministere")}>
+                {t.landing.ctaMinistere}
               </Link>
-              <Link className="ghost-btn inline-btn" to="/investitii">
-                Analizează investiții
+              <Link className="ghost-btn inline-btn" to={path("/investitii")}>
+                {t.landing.ctaInvestitii}
               </Link>
             </div>
 
             <div className="landing-highlight-strip">
               <div className="landing-highlight">
-                <p className="muted">Cel mai mare buget 2026</p>
+                <p className="muted">{t.landing.topMinisterLabel}</p>
                 <p className="landing-highlight-title">
-                  {topMinister2026 ? topMinister2026.nume : "Date indisponibile"}
+                  {topMinister2026 ? topMinister2026.nume : t.landing.dataUnavailable}
                 </p>
               </div>
               <div className="landing-highlight">
-                <p className="muted">Seturi de date locale</p>
-                <p className="landing-highlight-title">Ministere, programe, investiții, overview</p>
+                <p className="muted">{t.landing.datasetsLabel}</p>
+                <p className="landing-highlight-title">{t.landing.datasetsValue}</p>
               </div>
             </div>
           </div>
 
           <div className="landing-hero-kpi-grid">
             <article className="landing-hero-kpi-card">
-              <p className="landing-kpi-label">Buget total ministere 2026</p>
-              <p className="landing-hero-kpi-value">{formatMld(totalMinistere2026)}</p>
+              <p className="landing-kpi-label">{t.landing.kpiTotalMinistere}</p>
+              <p className="landing-hero-kpi-value">{formatMld(totalMinistere2026, locale)}</p>
             </article>
 
             <article className="landing-hero-kpi-card">
-              <p className="landing-kpi-label">Program investiții 2026</p>
-              <p className="landing-hero-kpi-value">{formatMld(totalInvestitii2026)}</p>
+              <p className="landing-kpi-label">{t.landing.kpiInvestitii}</p>
+              <p className="landing-hero-kpi-value">{formatMld(totalInvestitii2026, locale)}</p>
             </article>
 
             <article className="landing-hero-kpi-card deficit">
-              <p className="landing-kpi-label">Deficit 2026</p>
-              <p className="landing-hero-kpi-value">{formatMld(deficit2026)}</p>
+              <p className="landing-kpi-label">{t.landing.kpiDeficit}</p>
+              <p className="landing-hero-kpi-value">{formatMld(deficit2026, locale)}</p>
             </article>
 
             <article className="landing-hero-kpi-card visits">
-              <p className="landing-kpi-label">Vizite totale site</p>
+              <p className="landing-kpi-label">{t.landing.kpiVisits}</p>
               <p className="landing-hero-kpi-value">{formattedVisits}</p>
             </article>
           </div>
@@ -140,50 +138,38 @@ export const LandingPage = () => {
 
       <section className="landing-pillars-grid">
         <article className="panel landing-pillar reveal-on-load">
-          <h3 className="panel-title">Date oficiale, fără opacitate</h3>
-          <p className="landing-copy">
-            Valorile sunt extrase direct din XML-urile publicate oficial și transformate într-un
-            format ușor de verificat și comparat.
-          </p>
+          <h3 className="panel-title">{t.landing.pillar1Title}</h3>
+          <p className="landing-copy">{t.landing.pillar1Body}</p>
         </article>
 
         <article className="panel landing-pillar reveal-on-load">
-          <h3 className="panel-title">Comparații rapide pe ani</h3>
-          <p className="landing-copy">
-            Vezi imediat variații 2025-2026, ierarhii pe ministere, programe și distribuția
-            principalelor capitole bugetare.
-          </p>
+          <h3 className="panel-title">{t.landing.pillar2Title}</h3>
+          <p className="landing-copy">{t.landing.pillar2Body}</p>
         </article>
 
         <article className="panel landing-pillar reveal-on-load">
-          <h3 className="panel-title">Focus pe investiții publice</h3>
-          <p className="landing-copy">
-            Obiectivele de investiții sunt grupate si filtrabile, pentru a intelege unde se
-            concentreaza programarea financiara.
-          </p>
+          <h3 className="panel-title">{t.landing.pillar3Title}</h3>
+          <p className="landing-copy">{t.landing.pillar3Body}</p>
         </article>
       </section>
 
       <section className="panel landing-info">
-        <h3 className="panel-title">Cum este construit proiectul</h3>
+        <h3 className="panel-title">{t.landing.infoTitle}</h3>
+        <p className="landing-copy">{t.landing.infoBody1}</p>
         <p className="landing-copy">
-          Datele provin din anexele XML oficiale și sunt procesate local într-un pipeline Python,
-          apoi servite în frontend-ul React pentru căutare, comparații pe ani și drill-down pe ministere.
-        </p>
-        <p className="landing-copy">
-          Datele provin din{" "}
+          {t.landing.infoBody2Prefix}{" "}
           <a
             href="https://mfinante.gov.ro/domenii/buget"
             target="_blank"
             rel="noreferrer noopener"
             className="site-footer-link"
           >
-            anexele XML oficiale publicate de Ministerul Finanțelor Publice
+            {t.landing.infoBody2LinkText}
           </a>
           .
         </p>
-        <Link className="ghost-btn inline-btn" to="/despre" style={{ marginTop: "0.75rem", display: "inline-block" }}>
-          Despre proiect
+        <Link className="ghost-btn inline-btn" to={path("/despre")} style={{ marginTop: "0.75rem", display: "inline-block" }}>
+          {t.landing.despreLink}
         </Link>
       </section>
     </section>
