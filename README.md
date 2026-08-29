@@ -102,3 +102,7 @@ npm run mcp:test   # teste end-to-end, pe stdio si pe HTTP
 ```
 
 Detalii complete: `mcp/README.md`.
+
+## Licenta
+
+Proiectul este licentiat sub [MIT](LICENSE).
