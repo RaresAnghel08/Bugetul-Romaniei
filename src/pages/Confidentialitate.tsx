@@ -31,6 +31,12 @@ export const ConfidentialitatePage = () => {
 
         <h3 className="panel-title">{t.confidentialitate.s4Title}</h3>
         <p>{t.confidentialitate.s4P}</p>
+
+        <h3 className="panel-title">{t.confidentialitate.s5Title}</h3>
+        <p>{t.confidentialitate.s5P}</p>
+
+        <h3 className="panel-title">{t.confidentialitate.s6Title}</h3>
+        <p>{t.confidentialitate.s6P}</p>
       </section>
     </section>
   );

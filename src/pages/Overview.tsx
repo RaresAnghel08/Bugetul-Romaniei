@@ -262,7 +262,7 @@ export const OverviewPage = () => {
         </h2>
         <div className="chart-wrap tall">
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={chartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }}>
+            <LineChart data={chartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }} accessibilityLayer>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
               <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
               <YAxis
@@ -332,7 +332,7 @@ export const OverviewPage = () => {
         <h2 className="panel-title">{t.overview.deficitAnualTitle}</h2>
         <div className="chart-wrap medium">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={chartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }}>
+            <BarChart data={chartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }} accessibilityLayer>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
               <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
               <YAxis
@@ -384,7 +384,7 @@ export const OverviewPage = () => {
         <h2 className="panel-title">{t.overview.deficitPibTitle}</h2>
         <div className="chart-wrap medium">
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={pibChartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }}>
+            <LineChart data={pibChartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }} accessibilityLayer>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
               <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
               <YAxis

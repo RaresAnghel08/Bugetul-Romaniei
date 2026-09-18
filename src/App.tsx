@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from "react";
 import { Link, NavLink, Route, Routes, useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { LandingPage } from "./pages/Landing";
 import { OverviewPage } from "./pages/Overview";
 import { MinisterePage } from "./pages/Ministere";
@@ -228,24 +229,27 @@ const AppShell = () => {
 
 function App() {
   return (
-    <Routes>
-      <Route
-        path="/en/*"
-        element={
-          <LocaleProvider locale="en">
-            <AppShell />
-          </LocaleProvider>
-        }
-      />
-      <Route
-        path="/*"
-        element={
-          <LocaleProvider locale="ro">
-            <AppShell />
-          </LocaleProvider>
-        }
-      />
-    </Routes>
+    <>
+      <Routes>
+        <Route
+          path="/en/*"
+          element={
+            <LocaleProvider locale="en">
+              <AppShell />
+            </LocaleProvider>
+          }
+        />
+        <Route
+          path="/*"
+          element={
+            <LocaleProvider locale="ro">
+              <AppShell />
+            </LocaleProvider>
+          }
+        />
+      </Routes>
+      <Analytics />
+    </>
   );
 }
 
