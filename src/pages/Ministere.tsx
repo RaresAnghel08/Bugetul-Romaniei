@@ -246,7 +246,7 @@ export const MinisterePage = () => {
         ) : (
           <div className="chart-wrap tall chart-stable" style={{ minWidth: 0, width: "100%" }}>
             <ResponsiveContainer width="100%" height="100%" minWidth={0}>
-              <RadarChart data={radarData} outerRadius="72%">
+              <RadarChart data={radarData} outerRadius="72%" accessibilityLayer>
                 <PolarGrid stroke="rgba(255,255,255,0.18)" />
                 <PolarAngleAxis dataKey="institutie" tick={{ fill: "#e5e7eb", fontSize: 11 }} />
                 <PolarRadiusAxis

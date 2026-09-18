@@ -280,6 +280,8 @@ export interface TermeniDict extends LegalPageDict {
   s3P: string;
   s4Title: string;
   s4P: string;
+  s5Title: string;
+  s5P: string;
 }
 
 export interface ConfidentialitateDict extends LegalPageDict {
@@ -291,6 +293,10 @@ export interface ConfidentialitateDict extends LegalPageDict {
   s3P: string;
   s4Title: string;
   s4P: string;
+  s5Title: string;
+  s5P: string;
+  s6Title: string;
+  s6P: string;
 }
 
 export interface NotFoundDict {

@@ -197,6 +197,7 @@ export const ComparatorPage = () => {
                   ? { left: 4, right: 4, top: 12, bottom: 40 }
                   : { left: 26, right: 12, top: 12, bottom: 40 }
                 }
+                accessibilityLayer
               >
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
                 <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />

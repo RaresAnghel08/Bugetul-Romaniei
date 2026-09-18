@@ -31,6 +31,9 @@ export const TermeniPage = () => {
 
         <h3 className="panel-title">{t.termeni.s4Title}</h3>
         <p>{t.termeni.s4P}</p>
+
+        <h3 className="panel-title">{t.termeni.s5Title}</h3>
+        <p>{t.termeni.s5P}</p>
       </section>
     </section>
   );

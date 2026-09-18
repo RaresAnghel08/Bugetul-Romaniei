@@ -221,7 +221,7 @@ export const MinisterPage = () => {
         </div>
         <div className="chart-wrap medium">
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={trendData} margin={{ left: 26, right: 12, top: 12, bottom: 8 }}>
+            <LineChart data={trendData} margin={{ left: 26, right: 12, top: 12, bottom: 8 }} accessibilityLayer>
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
               <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
               <YAxis
@@ -285,6 +285,7 @@ export const MinisterPage = () => {
               data={chartCapitoleDual}
               layout="vertical"
               margin={{ left: 8, right: 14, top: 10, bottom: 8 }}
+              accessibilityLayer
             >
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
               <XAxis

@@ -2,6 +2,7 @@
 !README.md
 *.md
 !mcp/README.md
+!docs/RETENTION.md
 node_modules
 dist
 build

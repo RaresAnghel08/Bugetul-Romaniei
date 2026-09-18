@@ -18,6 +18,33 @@ const CORS = {
   "Access-Control-Max-Age": "86400",
 };
 
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const RATE_LIMIT_MAX_REQUESTS = 60;
+
+/*
+ * Fereastra fixa in memorie, per instanta serverless "warm" — nu e distribuita si se reseteaza
+ * la cold start, dar e suficienta ca prima linie de aparare impotriva unui singur client care
+ * bombardeaza endpoint-ul, fara sa adauge o dependinta externa (Redis) la scara acestui proiect.
+ */
+const requestLog = new Map();
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  const windowStart = now - RATE_LIMIT_WINDOW_MS;
+
+  const timestamps = (requestLog.get(ip) ?? []).filter((t) => t > windowStart);
+  timestamps.push(now);
+  requestLog.set(ip, timestamps);
+
+  if (requestLog.size > 5000) {
+    for (const [key, value] of requestLog) {
+      if (value.every((t) => t <= windowStart)) requestLog.delete(key);
+    }
+  }
+
+  return timestamps.length > RATE_LIMIT_MAX_REQUESTS;
+}
+
 export default async function handler(req, res) {
   for (const [cheie, valoare] of Object.entries(CORS)) {
     res.setHeader(cheie, valoare);
@@ -26,6 +53,21 @@ export default async function handler(req, res) {
   if (req.method === "OPTIONS") {
     res.statusCode = 204;
     res.end();
+    return;
+  }
+
+  const ip = (req.headers["x-forwarded-for"] ?? req.socket?.remoteAddress ?? "unknown").split(",")[0].trim();
+  if (isRateLimited(ip)) {
+    res.statusCode = 429;
+    res.setHeader("Content-Type", "application/json");
+    res.setHeader("Retry-After", "60");
+    res.end(
+      JSON.stringify({
+        jsonrpc: "2.0",
+        error: { code: -32000, message: "Too Many Requests: limita este de 60 cereri/minut per IP." },
+        id: null,
+      })
+    );
     return;
   }
 

@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
 html,
 body,
 #root {
@@ -2302,6 +2307,10 @@ body {
   border: 1px solid var(--panel-border);
   border-radius: 8px;
   min-height: 44px;
+}
+
+.comparator-selected:focus-within {
+  border-color: var(--accent-cyan);
 }
 
 .comparator-chip {
