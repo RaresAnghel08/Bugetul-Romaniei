@@ -12,6 +12,8 @@ export const en: Dictionary = {
     closeMenu: "Close menu",
     mainNavAria: "Main navigation",
     mobileNavAria: "Mobile menu",
+    switchToLight: "Switch to light theme",
+    switchToDark: "Switch to dark theme",
   },
   footer: {
     tagline:

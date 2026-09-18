@@ -167,10 +167,10 @@ export const MinisterPage = () => {
   };
 
   const tooltipStyle = {
-    background: "#101226",
-    border: "1px solid #3e4261",
+    background: "var(--tooltip-bg)",
+    border: "1px solid var(--tooltip-border)",
     borderRadius: "10px",
-    color: "#fff",
+    color: "var(--tooltip-text)",
   };
 
   const capitolChartHeight = Math.max(260, chartCapitoleDual.length * 56);
@@ -222,13 +222,13 @@ export const MinisterPage = () => {
         <div className="chart-wrap medium">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={trendData} margin={{ left: 26, right: 12, top: 12, bottom: 8 }} accessibilityLayer>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
-              <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />
+              <XAxis dataKey="an" tick={{ fill: "var(--chart-axis-text)" }} axisLine={{ stroke: "var(--chart-axis-line)" }} />
               <YAxis
                 width={90}
                 tickMargin={8}
-                tick={{ fill: "#f7f7f7" }}
-                axisLine={{ stroke: "#4e4f66" }}
+                tick={{ fill: "var(--chart-axis-text)" }}
+                axisLine={{ stroke: "var(--chart-axis-line)" }}
                 tickFormatter={(v) => formatAxisValuta(v, moneda, locale)}
               />
               <Tooltip
@@ -287,19 +287,19 @@ export const MinisterPage = () => {
               margin={{ left: 8, right: 14, top: 10, bottom: 8 }}
               accessibilityLayer
             >
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />
               <XAxis
                 type="number"
-                tick={{ fill: "#f7f7f7" }}
-                axisLine={{ stroke: "#4e4f66" }}
+                tick={{ fill: "var(--chart-axis-text)" }}
+                axisLine={{ stroke: "var(--chart-axis-line)" }}
                 tickFormatter={(v) => formatAxisValuta(v, moneda, locale)}
               />
               <YAxis
                 dataKey="capitol"
                 type="category"
                 width={230}
-                tick={{ fill: "#f7f7f7", fontSize: 11 }}
-                axisLine={{ stroke: "#4e4f66" }}
+                tick={{ fill: "var(--chart-axis-text)", fontSize: 11 }}
+                axisLine={{ stroke: "var(--chart-axis-line)" }}
               />
               <Tooltip
                 formatter={(value, name) => [

@@ -247,10 +247,10 @@ export const MinisterePage = () => {
           <div className="chart-wrap tall chart-stable" style={{ minWidth: 0, width: "100%" }}>
             <ResponsiveContainer width="100%" height="100%" minWidth={0}>
               <RadarChart data={radarData} outerRadius="72%" accessibilityLayer>
-                <PolarGrid stroke="rgba(255,255,255,0.18)" />
-                <PolarAngleAxis dataKey="institutie" tick={{ fill: "#e5e7eb", fontSize: 11 }} />
+                <PolarGrid stroke="var(--chart-grid-strong)" />
+                <PolarAngleAxis dataKey="institutie" tick={{ fill: "var(--chart-axis-text)", fontSize: 11 }} />
                 <PolarRadiusAxis
-                  tick={{ fill: "#c7cedf", fontSize: 11 }}
+                  tick={{ fill: "var(--chart-axis-text)", fontSize: 11 }}
                   tickFormatter={(value) =>
                     Number(value) >= 1
                       ? `${Number(value).toFixed(1)} ${t.format.mldBare}`
@@ -264,10 +264,10 @@ export const MinisterePage = () => {
                       : `${(Number(value) * 1000).toFixed(0)} ${t.format.milSuffix}`
                   }
                   contentStyle={{
-                    background: "#101226",
-                    border: "1px solid #3e4261",
+                    background: "var(--tooltip-bg)",
+                    border: "1px solid var(--tooltip-border)",
                     borderRadius: "10px",
-                    color: "#fff",
+                    color: "var(--tooltip-text)",
                   }}
                 />
                 <Legend />

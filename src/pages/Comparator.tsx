@@ -30,10 +30,10 @@ const LINE_COLORS = [
 ];
 
 const tooltipStyle = {
-  background: "#101226",
-  border: "1px solid #3e4261",
+  background: "var(--tooltip-bg)",
+  border: "1px solid var(--tooltip-border)",
   borderRadius: "10px",
-  color: "#fff",
+  color: "var(--tooltip-text)",
 };
 
 export const ComparatorPage = () => {
@@ -199,13 +199,13 @@ export const ComparatorPage = () => {
                 }
                 accessibilityLayer
               >
-                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
-                <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />
+                <XAxis dataKey="an" tick={{ fill: "var(--chart-axis-text)" }} axisLine={{ stroke: "var(--chart-axis-line)" }} />
                 <YAxis
                   width={isNarrow ? 45 : 90}
                   tickMargin={8}
-                  tick={{ fill: "#f7f7f7" }}
-                  axisLine={{ stroke: "#4e4f66" }}
+                  tick={{ fill: "var(--chart-axis-text)" }}
+                  axisLine={{ stroke: "var(--chart-axis-line)" }}
                   tickFormatter={(v) => formatAxisBudget(v, locale)}
                 />
                 <Tooltip
