@@ -12,6 +12,8 @@ export const ro: Dictionary = {
     closeMenu: "Închide meniu",
     mainNavAria: "Navigatie principala",
     mobileNavAria: "Meniu mobil",
+    switchToLight: "Comută la tema deschisă",
+    switchToDark: "Comută la tema închisă",
   },
   footer: {
     tagline:

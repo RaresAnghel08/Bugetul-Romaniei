@@ -263,13 +263,13 @@ export const OverviewPage = () => {
         <div className="chart-wrap tall">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={chartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }} accessibilityLayer>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
-              <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />
+              <XAxis dataKey="an" tick={{ fill: "var(--chart-axis-text)" }} axisLine={{ stroke: "var(--chart-axis-line)" }} />
               <YAxis
                 width={92}
                 tickMargin={8}
-                tick={{ fill: "#f7f7f7" }}
-                axisLine={{ stroke: "#4e4f66" }}
+                tick={{ fill: "var(--chart-axis-text)" }}
+                axisLine={{ stroke: "var(--chart-axis-line)" }}
                 tickFormatter={(v) => formatAxisValuta(v, moneda, locale)}
               />
               <Tooltip
@@ -279,10 +279,10 @@ export const OverviewPage = () => {
                 }}
                 formatter={(value) => [formatMldValuta(Number(value), moneda, locale)]}
                 contentStyle={{
-                  background: "#101226",
-                  border: "1px solid #3e4261",
+                  background: "var(--tooltip-bg)",
+                  border: "1px solid var(--tooltip-border)",
                   borderRadius: "10px",
-                  color: "#fff",
+                  color: "var(--tooltip-text)",
                 }}
               />
               {/* Benzi colorate pe guverne (vizibile doar cand nu e filtru activ) */}
@@ -333,13 +333,13 @@ export const OverviewPage = () => {
         <div className="chart-wrap medium">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={chartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }} accessibilityLayer>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
-              <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />
+              <XAxis dataKey="an" tick={{ fill: "var(--chart-axis-text)" }} axisLine={{ stroke: "var(--chart-axis-line)" }} />
               <YAxis
                 width={92}
                 tickMargin={8}
-                tick={{ fill: "#f7f7f7" }}
-                axisLine={{ stroke: "#4e4f66" }}
+                tick={{ fill: "var(--chart-axis-text)" }}
+                axisLine={{ stroke: "var(--chart-axis-line)" }}
                 tickFormatter={(v) => formatAxisValuta(v, moneda, locale)}
               />
               <Tooltip
@@ -349,10 +349,10 @@ export const OverviewPage = () => {
                 }}
                 formatter={(value) => [formatMldValuta(Number(value), moneda, locale)]}
                 contentStyle={{
-                  background: "#101226",
-                  border: "1px solid #3e4261",
+                  background: "var(--tooltip-bg)",
+                  border: "1px solid var(--tooltip-border)",
                   borderRadius: "10px",
-                  color: "#fff",
+                  color: "var(--tooltip-text)",
                 }}
               />
               {!selectedGuvern &&
@@ -385,13 +385,13 @@ export const OverviewPage = () => {
         <div className="chart-wrap medium">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={pibChartData} margin={{ left: 26, right: 16, top: 16, bottom: 8 }} accessibilityLayer>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.12)" />
-              <XAxis dataKey="an" tick={{ fill: "#f7f7f7" }} axisLine={{ stroke: "#4e4f66" }} />
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" />
+              <XAxis dataKey="an" tick={{ fill: "var(--chart-axis-text)" }} axisLine={{ stroke: "var(--chart-axis-line)" }} />
               <YAxis
                 width={60}
                 tickMargin={8}
-                tick={{ fill: "#f7f7f7" }}
-                axisLine={{ stroke: "#4e4f66" }}
+                tick={{ fill: "var(--chart-axis-text)" }}
+                axisLine={{ stroke: "var(--chart-axis-line)" }}
                 tickFormatter={(v) => `${Math.abs(v).toFixed(1)}%`}
               />
               <Tooltip
@@ -401,10 +401,10 @@ export const OverviewPage = () => {
                 }}
                 formatter={(value) => [`${Math.abs(Number(value)).toFixed(2)}%`, t.overview.deficitPibLegend]}
                 contentStyle={{
-                  background: "#101226",
-                  border: "1px solid #3e4261",
+                  background: "var(--tooltip-bg)",
+                  border: "1px solid var(--tooltip-border)",
                   borderRadius: "10px",
-                  color: "#fff",
+                  color: "var(--tooltip-text)",
                 }}
               />
               {!selectedGuvern &&

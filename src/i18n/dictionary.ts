@@ -9,6 +9,8 @@ export interface NavDict {
   closeMenu: string;
   mainNavAria: string;
   mobileNavAria: string;
+  switchToLight: string;
+  switchToDark: string;
 }
 
 export interface FooterDict {

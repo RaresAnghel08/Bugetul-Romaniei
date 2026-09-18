@@ -1,8 +1,23 @@
 <!doctype html>
-<html lang="ro">
+<html lang="ro" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f8fc" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("br-theme") === "dark") {
+            document.documentElement.dataset.theme = "dark";
+            document.documentElement.style.colorScheme = "dark";
+            var meta = document.querySelector('meta[name="theme-color"]');
+            if (meta) meta.setAttribute("content", "#0c0d14");
+          } else {
+            document.documentElement.style.colorScheme = "light";
+          }
+        } catch (e) {}
+      })();
+    </script>
     <title>Bugetul României | Dashboard Civic Bugetar 2025-2026</title>
     <meta
       name="keywords"

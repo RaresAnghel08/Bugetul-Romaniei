@@ -7,10 +7,51 @@
   --text: #f7f7f7;
   --muted: #b9bed4;
   --accent-cyan: #22d3ee;
+  --accent-cyan-bright: #67e8f9;
   --accent-amber: #f59e0b;
   --accent-teal: #2ec4b6;
   --danger: #ef4444;
   --ok: #16a34a;
+
+  /* Near-white text tints used on dark glass panels (hero numbers, lead copy) */
+  --text-strong: #f5f9ff;
+  --text-lead: #d1d6e8;
+
+  /* Recharts inline styles read these via var() */
+  --tooltip-bg: #101226;
+  --tooltip-border: #3e4261;
+  --tooltip-text: #fff;
+  --chart-grid: rgba(255, 255, 255, 0.12);
+  --chart-grid-strong: rgba(255, 255, 255, 0.18);
+  --chart-axis-line: #4e4f66;
+  --chart-axis-text: #f7f7f7;
+}
+
+:root[data-theme="light"] {
+  --bg-0: #f6f8fc;
+  --bg-1: #eef2f9;
+  --bg-2: #ffffff;
+  --panel: rgba(255, 255, 255, 0.86);
+  --panel-border: rgba(15, 23, 42, 0.1);
+  --text: #101828;
+  --muted: #5b6478;
+  --accent-cyan: #0891b2;
+  --accent-cyan-bright: #0e7490;
+  --accent-amber: #b45309;
+  --accent-teal: #0f766e;
+  --danger: #dc2626;
+  --ok: #15803d;
+
+  --text-strong: #0f1729;
+  --text-lead: #3d4560;
+
+  --tooltip-bg: #ffffff;
+  --tooltip-border: #d7dce6;
+  --tooltip-text: #101828;
+  --chart-grid: rgba(15, 23, 42, 0.1);
+  --chart-grid-strong: rgba(15, 23, 42, 0.16);
+  --chart-axis-line: #b7bfcf;
+  --chart-axis-text: #3d4560;
 }
 
 * {
@@ -118,6 +159,45 @@ body {
   margin-left: 0;
   border-left: none;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid var(--panel-border);
+  background: none;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+.theme-toggle-btn:hover {
+  border-color: rgba(34, 211, 238, 0.6);
+  transform: translateY(-1px);
+}
+
+.mobile-menu-theme-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.mobile-menu-theme-row .lang-switch {
+  border-top: none;
+  padding: 0;
+}
+
+[data-theme="light"] .mobile-menu-theme-row {
+  border-top-color: rgba(15, 23, 42, 0.08);
 }
 
 .page-wrap {
@@ -1455,7 +1535,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     padding: 6px 11px;
-    color: #f7f7f7;
+    color: var(--text);
     font-size: 1.2rem;
     line-height: 1;
     cursor: pointer;
@@ -1700,14 +1780,14 @@ body {
 }
 
 .joc-scorebar-item {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.7);
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .joc-scorebar-val {
-  color: var(--text);
+  color: #fff;
   font-size: 1.1rem;
 }
 
@@ -1867,7 +1947,7 @@ body {
   font-weight: 900;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.6);
   writing-mode: vertical-lr;
   text-orientation: mixed;
 }
@@ -2419,3 +2499,336 @@ body {
   padding: 6px 12px;
   min-height: unset;
 }
+
+/* ═══════════════════════════════════════════════════════
+   LIGHT THEME — overrides for hardcoded dark-only colors.
+   Dark theme above stays byte-for-byte the current design;
+   everything here only takes effect under [data-theme="light"],
+   which wins on specificity regardless of source order.
+   ═══════════════════════════════════════════════════════ */
+
+[data-theme="light"] body {
+  background:
+    radial-gradient(circle at 14% 12%, rgba(8, 145, 178, 0.14), transparent 42%),
+    radial-gradient(circle at 87% 18%, rgba(180, 83, 9, 0.12), transparent 35%),
+    radial-gradient(circle at 72% 82%, rgba(15, 118, 110, 0.1), transparent 38%),
+    linear-gradient(160deg, var(--bg-0), var(--bg-1) 45%, var(--bg-2));
+}
+
+[data-theme="light"] :focus-visible {
+  outline-color: var(--accent-cyan);
+}
+
+/* ── Topbar / nav ─────────────────────────────────────── */
+
+[data-theme="light"] .topnav-link {
+  border-color: rgba(15, 23, 42, 0.14);
+}
+
+[data-theme="light"] .lang-switch {
+  border-left-color: rgba(15, 23, 42, 0.14);
+}
+
+[data-theme="light"] .mobile-menu .lang-switch {
+  border-top-color: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .hamburger-btn {
+  border-color: rgba(15, 23, 42, 0.18);
+}
+
+[data-theme="light"] .hamburger-btn:hover {
+  color: var(--accent-cyan);
+}
+
+[data-theme="light"] .mobile-menu {
+  background: #ffffff;
+  border-bottom-color: rgba(15, 23, 42, 0.1);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+}
+
+[data-theme="light"] .mobile-menu-link {
+  color: var(--text-lead);
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .mobile-menu-link:hover,
+[data-theme="light"] .mobile-menu-link:focus {
+  background: rgba(8, 145, 178, 0.08);
+  color: var(--accent-cyan);
+}
+
+[data-theme="light"] .mobile-menu-link--active {
+  color: var(--accent-cyan);
+  background: rgba(8, 145, 178, 0.1);
+}
+
+/* ── Panels / inputs / tables ─────────────────────────── */
+
+[data-theme="light"] .search-input,
+[data-theme="light"] .filter-select {
+  border-color: rgba(15, 23, 42, 0.16);
+  background: #ffffff;
+}
+
+[data-theme="light"] .data-table th,
+[data-theme="light"] .data-table td {
+  border-bottom-color: rgba(15, 23, 42, 0.1);
+}
+
+[data-theme="light"] .progress-track,
+[data-theme="light"] .progress-track-native,
+[data-theme="light"] .progress-track-native::-webkit-progress-bar {
+  background: rgba(15, 23, 42, 0.12);
+}
+
+[data-theme="light"] .ghost-btn {
+  background: rgba(15, 23, 42, 0.04);
+  border-color: rgba(15, 23, 42, 0.16);
+}
+
+[data-theme="light"] .radar-mobile-row {
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+
+/* ── Headline / delta / KPI positive-negative-neutral badges ── */
+
+[data-theme="light"] .headline-value.positive { color: #15803d; }
+[data-theme="light"] .headline-value.negative { color: #b91c1c; }
+[data-theme="light"] .headline-value.neutral { color: #1d4ed8; }
+
+[data-theme="light"] .delta-positive { color: #15803d; }
+[data-theme="light"] .delta-negative { color: #b91c1c; }
+[data-theme="light"] .delta-neutral { color: #1d4ed8; }
+
+[data-theme="light"] .overview-kpi-positive {
+  background: linear-gradient(145deg, rgba(220, 252, 231, 0.85), rgba(255, 255, 255, 0.7));
+}
+
+[data-theme="light"] .overview-kpi-positive .number-card-value,
+[data-theme="light"] .overview-kpi-positive .overview-kpi-subtitle {
+  color: #15803d;
+}
+
+[data-theme="light"] .overview-kpi-negative {
+  background: linear-gradient(145deg, rgba(254, 226, 226, 0.85), rgba(255, 255, 255, 0.7));
+}
+
+[data-theme="light"] .overview-kpi-negative .number-card-value,
+[data-theme="light"] .overview-kpi-negative .overview-kpi-subtitle {
+  color: #b91c1c;
+}
+
+[data-theme="light"] .overview-kpi-neutral {
+  background: linear-gradient(145deg, rgba(241, 245, 249, 0.9), rgba(255, 255, 255, 0.75));
+}
+
+/* ── Landing hero ─────────────────────────────────────── */
+
+[data-theme="light"] .landing-hero {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(8, 145, 178, 0.12), transparent 42%),
+    radial-gradient(circle at 92% 10%, rgba(180, 83, 9, 0.1), transparent 36%),
+    linear-gradient(130deg, #ffffff, #f3f6fc 60%, #eef2f9);
+}
+
+[data-theme="light"] .landing-hero-kpi-card {
+  border-color: rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .landing-hero-kpi-card.deficit {
+  border-color: rgba(220, 38, 38, 0.35);
+  background: linear-gradient(145deg, rgba(254, 242, 242, 0.9), rgba(255, 255, 255, 0.72));
+}
+
+[data-theme="light"] .landing-hero-kpi-card.visits {
+  border-color: rgba(8, 145, 178, 0.35);
+  background: linear-gradient(145deg, rgba(224, 249, 255, 0.85), rgba(255, 255, 255, 0.72));
+}
+
+[data-theme="light"] .landing-hero-kpi-value { color: var(--text-strong); }
+[data-theme="light"] .landing-lead { color: var(--text-lead); }
+
+[data-theme="light"] .landing-highlight {
+  border-color: rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .landing-highlight-title { color: var(--text-strong); }
+[data-theme="light"] .landing-copy { color: var(--text-lead); }
+
+/* ── Ministere hero ───────────────────────────────────── */
+
+[data-theme="light"] .ministere-hero {
+  background:
+    radial-gradient(circle at 82% 20%, rgba(15, 118, 110, 0.1), transparent 32%),
+    radial-gradient(circle at 8% 16%, rgba(8, 145, 178, 0.1), transparent 36%),
+    linear-gradient(150deg, #ffffff, #f3f6fc 55%, #eef2f9);
+}
+
+[data-theme="light"] .ministere-hero-upgraded {
+  border-color: rgba(15, 118, 110, 0.3);
+  background:
+    radial-gradient(circle at 84% 12%, rgba(8, 145, 178, 0.14), transparent 34%),
+    radial-gradient(circle at 14% 86%, rgba(22, 163, 74, 0.1), transparent 38%),
+    linear-gradient(155deg, #ffffff, #f3f6fc 55%, #e9eef8);
+}
+
+[data-theme="light"] .ministere-hero-metric {
+  border-color: rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+[data-theme="light"] .ministere-total-inline { color: var(--text-strong); }
+
+[data-theme="light"] .ministere-growth-positive .ministere-growth-value {
+  color: #15803d;
+  background: rgba(22, 163, 74, 0.12);
+  border-color: rgba(34, 197, 94, 0.4);
+}
+
+[data-theme="light"] .ministere-growth-negative .ministere-growth-value {
+  color: #b91c1c;
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(248, 113, 113, 0.42);
+}
+
+[data-theme="light"] .ministere-growth-neutral .ministere-growth-value {
+  color: #334155;
+  background: rgba(100, 116, 139, 0.14);
+  border-color: rgba(148, 163, 184, 0.42);
+}
+
+[data-theme="light"] .ministere-hero-leader { color: var(--text-strong); }
+[data-theme="light"] .ministere-kicker { color: var(--accent-cyan-bright); }
+
+[data-theme="light"] .minister-card {
+  background:
+    radial-gradient(circle at 85% 15%, rgba(8, 145, 178, 0.1), transparent 35%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(246, 248, 252, 0.85));
+}
+
+[data-theme="light"] .mega-value { color: var(--text-strong); }
+
+/* ── Investitii ───────────────────────────────────────── */
+
+[data-theme="light"] .investitii-hero {
+  background:
+    radial-gradient(circle at 8% 18%, rgba(8, 145, 178, 0.12), transparent 34%),
+    radial-gradient(circle at 85% 20%, rgba(180, 83, 9, 0.1), transparent 36%),
+    linear-gradient(145deg, #ffffff, #f3f6fc 55%, #eef2f9);
+}
+
+[data-theme="light"] .investitii-filters-card {
+  border-color: rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+[data-theme="light"] .investitii-kpi-value { color: var(--text-strong); }
+
+[data-theme="light"] .investitii-mini-kpi {
+  border-color: rgba(15, 23, 42, 0.1);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+[data-theme="light"] .investitii-mini-kpi-positive {
+  border-color: rgba(34, 197, 94, 0.4);
+  background: linear-gradient(145deg, rgba(220, 252, 231, 0.85), rgba(255, 255, 255, 0.72));
+}
+
+[data-theme="light"] .investitii-mini-kpi-positive .investitii-kpi-value { color: #15803d; }
+
+[data-theme="light"] .investitii-mini-kpi-negative {
+  border-color: rgba(239, 68, 68, 0.4);
+  background: linear-gradient(145deg, rgba(254, 226, 226, 0.85), rgba(255, 255, 255, 0.72));
+}
+
+[data-theme="light"] .investitii-mini-kpi-negative .investitii-kpi-value { color: #b91c1c; }
+
+[data-theme="light"] .investitii-group-amount { color: var(--text-strong); }
+
+[data-theme="light"] .mini-chip {
+  border-color: rgba(15, 23, 42, 0.14);
+  color: var(--text-lead);
+  background: rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .investitii-growth-chip-positive { color: #15803d; background: rgba(22, 163, 74, 0.1); }
+[data-theme="light"] .investitii-growth-chip-negative { color: #b91c1c; background: rgba(239, 68, 68, 0.1); }
+[data-theme="light"] .investitii-growth-chip-neutral { color: #334155; background: rgba(100, 116, 139, 0.12); }
+
+[data-theme="light"] .investitii-objective-row {
+  border-color: rgba(15, 23, 42, 0.1);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .objective-amount { color: var(--text-strong); }
+
+/* ── Legal pages / footer ─────────────────────────────── */
+
+[data-theme="light"] .legal-hero {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(8, 145, 178, 0.1), transparent 36%),
+    radial-gradient(circle at 90% 18%, rgba(180, 83, 9, 0.08), transparent 34%),
+    linear-gradient(145deg, #ffffff, #f3f6fc 55%, #eef2f9);
+}
+
+[data-theme="light"] .legal-content p { color: var(--text-lead); }
+
+[data-theme="light"] .site-footer {
+  background:
+    radial-gradient(circle at 8% 16%, rgba(8, 145, 178, 0.12), transparent 36%),
+    radial-gradient(circle at 84% 12%, rgba(15, 118, 110, 0.1), transparent 34%),
+    linear-gradient(145deg, #ffffff, #f3f6fc 55%, #eef2f9);
+}
+
+[data-theme="light"] .site-footer-title { color: var(--accent-cyan-bright); }
+[data-theme="light"] .site-footer-list { color: var(--text-lead); }
+[data-theme="light"] .site-footer-link { color: var(--text-lead); }
+[data-theme="light"] .site-footer-separator { color: var(--accent-cyan-bright); }
+[data-theme="light"] .site-footer-disclaimer { color: var(--text-lead); }
+[data-theme="light"] .site-footer-credit { color: var(--text-lead); }
+[data-theme="light"] .site-footer-credit .site-footer-credit-name:hover { color: var(--accent-cyan); }
+
+/* ── Chart / filter chips (comparator, moneda, guvern) ── */
+
+[data-theme="light"] .moneda-btn {
+  border-color: rgba(15, 23, 42, 0.16);
+  background: rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .moneda-btn:hover {
+  border-color: rgba(15, 23, 42, 0.3);
+}
+
+[data-theme="light"] .guvern-chip {
+  border-color: rgba(15, 23, 42, 0.16);
+  background: rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="light"] .guvern-chip--active {
+  background: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .guvern-chip-dot {
+  background: rgba(15, 23, 42, 0.3);
+}
+
+[data-theme="light"] .comparator-chip {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="light"] .comparator-dropdown {
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.14);
+}
+
+[data-theme="light"] .comparator-dropdown-item:hover {
+  background: rgba(15, 23, 42, 0.06);
+}
+
+/* ── Joc (game) — menu / gameover / leaderboard adapt via tokens; the
+   scorebar + vs-badge stay a fixed dark HUD strip on purpose, see their
+   own rules above for the always-light text color used on top of it. ── */
+
+[data-theme="light"] .joc-lb-rank-2 td { color: #9ca3af; }

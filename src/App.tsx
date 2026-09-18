@@ -14,6 +14,7 @@ import { DesprePage } from "./pages/Despre";
 import { NotFoundPage } from "./pages/NotFound";
 import { LocaleProvider, useLocale, swapLocaleInPath } from "./i18n/LocaleContext";
 import type { Locale } from "./i18n/types";
+import { ThemeProvider, useTheme } from "./theme/ThemeContext";
 
 const routeDefs: { path: string; element: ReactNode }[] = [
   { path: "", element: <LandingPage /> },
@@ -52,6 +53,23 @@ const LanguageSwitcher = () => {
   );
 };
 
+const ThemeToggle = () => {
+  const { theme, toggleTheme } = useTheme();
+  const { t } = useLocale();
+
+  return (
+    <button
+      type="button"
+      className="theme-toggle-btn"
+      onClick={toggleTheme}
+      aria-label={theme === "dark" ? t.nav.switchToLight : t.nav.switchToDark}
+      title={theme === "dark" ? t.nav.switchToLight : t.nav.switchToDark}
+    >
+      {theme === "dark" ? "☀️" : "🌙"}
+    </button>
+  );
+};
+
 const AppShell = () => {
   const { t, path } = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -87,6 +105,7 @@ const AppShell = () => {
             </NavLink>
           ))}
           <LanguageSwitcher />
+          <ThemeToggle />
         </nav>
 
         <button
@@ -114,7 +133,10 @@ const AppShell = () => {
                 {item.label}
               </NavLink>
             ))}
-            <LanguageSwitcher />
+            <div className="mobile-menu-theme-row">
+              <LanguageSwitcher />
+              <ThemeToggle />
+            </div>
           </nav>
         )}
       </header>
@@ -229,7 +251,7 @@ const AppShell = () => {
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Routes>
         <Route
           path="/en/*"
@@ -249,7 +271,7 @@ function App() {
         />
       </Routes>
       <Analytics />
-    </>
+    </ThemeProvider>
   );
 }
 
